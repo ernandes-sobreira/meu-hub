@@ -40,12 +40,7 @@
 
     .wrap{max-width:1150px; margin:0 auto; padding:22px 16px 70px;}
 
-    header{
-      display:flex;
-      gap:16px;
-      flex-wrap:wrap;
-      align-items:stretch;
-    }
+    header{display:flex; gap:16px; flex-wrap:wrap; align-items:stretch;}
 
     .hero{
       flex:1 1 680px;
@@ -57,7 +52,6 @@
       position:relative;
       overflow:hidden;
     }
-
     .hero::before{
       content:"";
       position:absolute;
@@ -117,22 +111,9 @@
       padding:16px;
     }
     .panel h2{margin:0 0 10px; font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:.3px;}
-    .search{
-      display:flex; gap:10px; align-items:center;
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:10px 12px;
-      background:#fff;
-    }
-    .search input{border:0; outline:none; width:100%; font-size:14px;}
-    .hint{margin-top:10px; color:var(--muted); font-size:12.5px; line-height:1.5;}
 
-    .counts{
-      margin-top:10px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
+    .hint{margin-top:10px; color:var(--muted); font-size:12.5px; line-height:1.5;}
+    .counts{margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;}
     .pill{
       border:1px solid var(--line);
       background:#fff;
@@ -178,43 +159,18 @@
       box-shadow: 0 12px 28px rgba(15,23,42,.08);
       background:#fff;
       overflow:hidden;
-      position:relative;
       min-height: 150px;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
     }
-
     .bar{height:10px;}
     .body{padding:12px;}
-    .kicker{
-      font-weight:950;
-      font-size:12px;
-      letter-spacing:.3px;
-      text-transform:uppercase;
-      opacity:.75;
-      margin-bottom:6px;
-    }
-    .title{
-      font-weight:950;
-      font-size:15px;
-      margin:0;
-      line-height:1.2;
-    }
-    .desc{
-      margin:8px 0 0;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.45;
-      min-height: 42px;
-    }
+    .kicker{font-weight:950; font-size:12px; letter-spacing:.3px; text-transform:uppercase; opacity:.75; margin-bottom:6px;}
+    .title{font-weight:950; font-size:15px; margin:0; line-height:1.2;}
+    .desc{margin:8px 0 0; color:var(--muted); font-size:13px; line-height:1.45; min-height: 42px;}
 
-    .actions{
-      display:flex;
-      gap:10px;
-      padding:12px;
-      padding-top:0;
-    }
+    .actions{display:flex; gap:10px; padding:12px; padding-top:0;}
     .go{
       flex:1;
       border:0;
@@ -240,7 +196,7 @@
       user-select:none;
     }
 
-    /* Paleta de gradientes */
+    /* Gradientes */
     .g-red    { background: linear-gradient(90deg, var(--red),   var(--orange)); }
     .g-green  { background: linear-gradient(90deg, var(--green), var(--teal)); }
     .g-blue   { background: linear-gradient(90deg, var(--blue),  var(--purple)); }
@@ -284,20 +240,16 @@
             <div class="chips" id="chips"></div>
 
             <div class="hint" style="margin-top:12px;">
-              Hub fixo (público). Para mudar links/categorias, edite <code>data/links.json</code> no GitHub.
+              Hub fixo (público). Para adicionar/remover apps, edite <code>data/links.json</code> no GitHub.
             </div>
           </div>
         </div>
       </section>
 
       <aside class="panel">
-        <h2>Busca (opcional)</h2>
-        <div class="search">
-          <span style="font-weight:950;color:var(--muted)">🔎</span>
-          <input id="q" placeholder="Buscar por app (opcional)…" />
-        </div>
+        <h2>Status</h2>
         <div class="counts" id="counts"></div>
-        <div class="hint" id="status">Carregando…</div>
+        <div class="hint" id="status">Carregando seus apps…</div>
       </aside>
     </header>
 
@@ -341,23 +293,18 @@
         if(!key) continue;
         if(seen.has(key)) continue;
         seen.add(key);
-        out.push(l);
+        out.push({ ...l, url: normUrl(l.url) });
       }
       return out;
     }
 
     function groupByCategory(data){
       const map = new Map();
-      const catList = data.categories || [];
-      catList.forEach(c=> map.set(c.id, { cat: c, links: [] }));
-
+      (data.categories||[]).forEach(c=> map.set(c.id, { cat:c, links:[] }));
       (data.links||[]).forEach(l=>{
-        const bucket = map.get(l.catId);
-        if(bucket) bucket.links.push(l);
+        if(map.has(l.catId)) map.get(l.catId).links.push(l);
       });
-
-      // ordena por título dentro de cada categoria
-      for(const [k, v] of map){
+      for(const [k,v] of map){
         v.links.sort((a,b)=> (a.title||"").localeCompare((b.title||""), "pt-BR"));
       }
       return [...map.values()];
@@ -366,7 +313,7 @@
     function renderCounts(data){
       const counts = $("counts");
       counts.innerHTML = "";
-      const total = uniqueLinks(data.links||[]).length;
+      const total = (data.links||[]).length;
 
       const pill = (txt)=> {
         const s = document.createElement("span");
@@ -382,26 +329,15 @@
       });
     }
 
-    function matchesQuery(link, q){
-      if(!q) return true;
-      const t=(link.title||"").toLowerCase();
-      const d=(link.desc||"").toLowerCase();
-      const u=(link.url||"").toLowerCase();
-      return t.includes(q) || d.includes(q) || u.includes(q);
-    }
-
     function renderSections(data){
-      const q = ($("q").value||"").trim().toLowerCase();
       const sections = $("sections");
       sections.innerHTML = "";
 
       const groups = groupByCategory(data);
-
       let shown = 0;
 
       groups.forEach((g, gi)=>{
-        const links = (g.links||[]).filter(l => matchesQuery(l, q));
-        if(links.length === 0) return;
+        if(!g.links || g.links.length===0) return;
 
         const sec = document.createElement("section");
         sec.className = "section";
@@ -417,33 +353,13 @@
         left.appendChild(h3);
         if(p.textContent) left.appendChild(p);
 
-        const right = document.createElement("div");
-        right.style.display="flex";
-        right.style.gap="10px";
-        right.style.flexWrap="wrap";
-        const open = document.createElement("button");
-        open.className = "copy";
-        open.textContent = `Abrir ${links.length}`;
-        open.onclick = ()=>{
-          if(links.length>12){
-            const ok = confirm(`Abrir ${links.length} links? Pode bloquear pop-ups.`);
-            if(!ok) return;
-          }
-          links.forEach(l=>{
-            if(l.url) window.open(l.url, "_blank", "noopener,noreferrer");
-          });
-        }
-        right.appendChild(open);
-
         head.appendChild(left);
-        head.appendChild(right);
 
         const grid = document.createElement("div");
         grid.className = "grid";
 
-        links.forEach((l, idx)=>{
+        g.links.forEach((l, idx)=>{
           shown++;
-
           const card = document.createElement("div");
           card.className = "card";
 
@@ -506,7 +422,7 @@
         sections.appendChild(sec);
       });
 
-      $("status").textContent = q ? `Mostrando resultados para: “${q}” (${shown} cards)` : `Mostrando tudo (${shown} cards).`;
+      $("status").textContent = `Mostrando tudo (${shown} cards).`;
     }
 
     async function init(){
@@ -516,12 +432,11 @@
 
       data.links = uniqueLinks(data.links||[]);
 
-      // Perfil
       $("name").textContent = data.profile?.name || "Meu Mundo";
       $("bio").innerHTML = (data.profile?.bio || "").replaceAll("\n","<br/>");
       $("ph").textContent = initials(data.profile?.name || "Ernandes Sobreira");
 
-      // Foto opcional fixa em assets/profile.jpg
+      // Foto fixa opcional
       const imgPath = data.profile?.photo || "assets/profile.jpg";
       const av = $("avatar");
       const img = new Image();
@@ -553,15 +468,11 @@
 
       renderCounts(data);
       renderSections(data);
-
-      $("q").addEventListener("input", ()=> renderSections(data));
-
-      $("status").textContent = `Carregado (${data.links.length} apps).`;
     }
 
     init().catch(err=>{
       console.error(err);
-      $("status").textContent = "Erro ao carregar data/links.json. Crie o arquivo no repositório e confirme o GitHub Pages.";
+      $("status").textContent = "Erro: crie o arquivo data/links.json no repositório (e confirme GitHub Pages).";
     });
   </script>
 </body>
