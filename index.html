@@ -8,23 +8,21 @@
 
   <style>
     :root{
-      --bg: #0b1220;
+      --bg:#0b1220;
       --bg2:#0f1a33;
-      --card: rgba(255,255,255,.06);
       --stroke: rgba(255,255,255,.10);
-      --txt: #eaf0ff;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --txt:#eaf0ff;
       --muted:#b8c3e6;
       --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
 
       --brand:#6ea8ff;
       --brand2:#b58cff;
-
       --ok:#2fe59d;
       --warn:#ffd66e;
       --bad:#ff6e7a;
-
-      --radius: 18px;
-      --gap: 16px;
     }
 
     *{box-sizing:border-box}
@@ -42,31 +40,22 @@
     }
 
     a{color:inherit; text-decoration:none}
-    .wrap{
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 28px 18px 70px;
-    }
+
+    .wrap{ max-width:1180px; margin:0 auto; padding:28px 18px 70px; }
 
     header{
-      display:flex;
-      gap:18px;
-      align-items: stretch;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      display:flex; gap:18px; align-items:stretch; justify-content:space-between; flex-wrap:wrap;
     }
 
     .hero{
-      flex: 1 1 640px;
+      flex:1 1 640px;
       background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border: 1px solid var(--stroke);
+      border:1px solid var(--stroke);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 18px;
-      position: relative;
-      overflow:hidden;
+      padding:18px;
+      position:relative; overflow:hidden;
     }
-
     .hero::before{
       content:"";
       position:absolute; inset:-80px -60px auto auto;
@@ -76,106 +65,63 @@
       border-radius: 999px;
     }
 
-    .row{
-      display:flex;
-      gap:14px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
+    .row{ display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
 
     .avatar{
-      width:86px; height:86px;
-      border-radius: 22px;
+      width:86px; height:86px; border-radius:22px;
       border:1px solid var(--stroke);
       background: rgba(255,255,255,.06);
       display:flex; align-items:center; justify-content:center;
-      overflow:hidden;
-      position:relative;
-      flex: 0 0 auto;
-      cursor:pointer;
+      overflow:hidden; cursor:pointer; flex:0 0 auto;
     }
-    .avatar img{
-      width:100%; height:100%;
-      object-fit: cover;
-      display:block;
-    }
-    .avatar .placeholder{
-      font-weight:800;
-      letter-spacing:.5px;
-      color: rgba(234,240,255,.85);
-      font-size: 22px;
-      user-select:none;
-    }
+    .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .avatar .placeholder{ font-weight:900; letter-spacing:.5px; font-size:22px; color: rgba(234,240,255,.85); user-select:none; }
 
-    .title{
-      display:flex;
-      flex-direction:column;
-      gap:6px;
-      min-width: 280px;
-    }
-    .title h1{
-      margin:0;
-      font-size: 22px;
-      line-height: 1.15;
-    }
-    .title p{
-      margin:0;
-      color: var(--muted);
-      line-height:1.45;
-      font-size: 13.5px;
-    }
+    .title{ display:flex; flex-direction:column; gap:6px; min-width:280px; }
+    .title h1{ margin:0; font-size:22px; line-height:1.15; }
+    .title p{ margin:0; color: var(--muted); line-height:1.45; font-size:13.5px; }
 
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top: 10px;
-    }
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
     .chip{
-      border: 1px solid var(--stroke);
+      border:1px solid var(--stroke);
       background: rgba(255,255,255,.05);
-      padding: 7px 10px;
-      border-radius: 999px;
-      font-size: 12.5px;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:12.5px;
       color: rgba(234,240,255,.92);
       backdrop-filter: blur(10px);
     }
 
     .panel{
-      flex: 0 0 360px;
+      flex:0 0 360px;
       background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border: 1px solid var(--stroke);
+      border:1px solid var(--stroke);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 16px;
+      padding:16px;
     }
+    .panel h2{ margin:0 0 10px; font-size:14px; letter-spacing:.2px; }
 
-    .panel h2{
-      margin:0 0 10px;
-      font-size: 14px;
-      letter-spacing: .2px;
-      color: rgba(234,240,255,.92);
-    }
-
-    .grid2{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
 
     .btn{
       appearance:none;
-      border: 1px solid var(--stroke);
+      border:1px solid var(--stroke);
       background: rgba(255,255,255,.06);
       color: var(--txt);
-      padding: 10px 12px;
-      border-radius: 14px;
+      padding:10px 12px;
+      border-radius:14px;
       cursor:pointer;
-      font-weight: 650;
-      font-size: 13px;
+      font-weight:700;
+      font-size:13px;
       transition: transform .08s ease, background .2s ease, border-color .2s ease;
       text-align:center;
       user-select:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      white-space:nowrap;
     }
     .btn:hover{ background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.18); }
     .btn:active{ transform: scale(.99); }
@@ -197,8 +143,11 @@
       background: linear-gradient(180deg, rgba(255,110,122,.18), rgba(255,110,122,.06));
     }
 
+    .smallNote{ margin-top:10px; color: rgba(184,195,230,.9); font-size:12px; line-height:1.5; }
+    .foot{ margin-top: 18px; color: rgba(184,195,230,.85); font-size:12px; line-height:1.55; }
+
     .searchRow{
-      margin-top: 16px;
+      margin-top:16px;
       display:flex;
       gap:10px;
       flex-wrap:wrap;
@@ -233,10 +182,10 @@
     }
 
     main{
-      margin-top: 18px;
+      margin-top:18px;
       display:grid;
       grid-template-columns: 280px 1fr;
-      gap: 16px;
+      gap:16px;
     }
     @media (max-width: 980px){
       main{ grid-template-columns: 1fr; }
@@ -252,24 +201,16 @@
       top: 14px;
       height: fit-content;
     }
-
     .sidebar h3{
       margin: 0 0 10px;
       font-size: 13px;
-      color: rgba(234,240,255,.92);
       letter-spacing:.2px;
     }
-    .cats{
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-    }
+    .cats{ display:flex; flex-direction:column; gap:8px; }
     .catBtn{
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
+      display:flex; align-items:center; justify-content:space-between;
       gap:10px;
-      padding: 10px 12px;
+      padding:10px 12px;
       border-radius: 14px;
       border: 1px solid var(--stroke);
       background: rgba(255,255,255,.05);
@@ -291,9 +232,7 @@
       background: rgba(255,255,255,.05);
     }
 
-    .content{
-      min-height: 400px;
-    }
+    .content{ min-height:420px; }
 
     .sectionHead{
       display:flex;
@@ -303,93 +242,89 @@
       flex-wrap:wrap;
       margin-bottom: 10px;
     }
-    .sectionHead h2{
-      margin:0;
-      font-size: 15px;
-      letter-spacing:.2px;
-      color: rgba(234,240,255,.95);
-    }
-    .sectionHead p{
-      margin:0;
-      color: rgba(184,195,230,.95);
-      font-size: 12.5px;
-      max-width: 660px;
-      line-height:1.45;
-    }
+    .sectionHead h2{ margin:0; font-size:15px; letter-spacing:.2px; }
+    .sectionHead p{ margin:0; color: rgba(184,195,230,.95); font-size:12.5px; max-width:760px; line-height:1.45; }
 
-    .cards{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-    }
-    @media (max-width: 980px){
-      .cards{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 560px){
-      .cards{ grid-template-columns: 1fr; }
-    }
-
-    .card{
+    /* ====== Category Blocks (buttons) ====== */
+    .catBlock{
       border: 1px solid var(--stroke);
       background: rgba(255,255,255,.05);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 12px;
+      margin-bottom: 12px;
+    }
+    .catHeader{
+      display:flex; gap:10px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
+      margin-bottom: 10px;
+    }
+    .catHeader .left{
       display:flex;
       flex-direction:column;
-      gap:10px;
-      position: relative;
-      overflow:hidden;
-      transition: transform .08s ease, border-color .2s ease, background .2s ease;
+      gap:4px;
     }
-    .card:hover{
-      transform: translateY(-1px);
-      background: rgba(255,255,255,.07);
-      border-color: rgba(255,255,255,.18);
+    .catHeader .name{
+      font-weight:850;
+      letter-spacing:.2px;
     }
-
-    .cardTop{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      justify-content: space-between;
-    }
-
-    .pill{
-      font-size: 11px;
-      border-radius: 999px;
-      padding: 5px 8px;
-      border: 1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.05);
-      color: rgba(234,240,255,.92);
-      width: fit-content;
-    }
-
-    .card h4{
-      margin: 2px 0 0;
-      font-size: 14px;
-      line-height:1.25;
-    }
-    .card p{
-      margin:0;
+    .catHeader .desc{
       color: rgba(184,195,230,.95);
       font-size: 12.5px;
       line-height:1.45;
-      min-height: 34px;
     }
-
-    .cardActions{
+    .catHeader .right{
       display:flex;
       gap:8px;
+      align-items:center;
       flex-wrap:wrap;
-      margin-top: 2px;
     }
 
-    .mini{
-      border-radius: 12px;
+    .btnLink{
+      width: 100%;
+      justify-content: space-between;
+      padding: 12px 12px;
+      border-radius: 14px;
+    }
+    .btnLink .meta{
+      display:flex;
+      flex-direction:column;
+      gap:3px;
+      text-align:left;
+      overflow:hidden;
+      min-width: 0;
+      flex:1;
+    }
+    .btnLink .meta .t{
+      font-weight:850;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space:nowrap;
+    }
+    .btnLink .meta .d{
+      font-size: 12px;
+      color: rgba(184,195,230,.95);
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space:nowrap;
+    }
+    .btnLink .actions{
+      display:flex;
+      gap:8px;
+      flex:0 0 auto;
+    }
+    .btnLink .actions .mini{
       padding: 9px 10px;
-      font-size: 12.5px;
-      font-weight: 700;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+
+    .btnGrid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:10px;
+    }
+    @media (max-width: 860px){
+      .btnGrid{ grid-template-columns: 1fr; }
     }
 
     .empty{
@@ -429,11 +364,7 @@
       gap: 12px;
       border-bottom: 1px solid rgba(255,255,255,.10);
     }
-    .modalHeader h3{
-      margin:0;
-      font-size: 14px;
-      letter-spacing:.2px;
-    }
+    .modalHeader h3{ margin:0; font-size:14px; letter-spacing:.2px; }
     .close{
       width:38px; height:38px;
       border-radius: 12px;
@@ -442,7 +373,7 @@
       color: var(--txt);
       cursor:pointer;
       font-size: 18px;
-      font-weight: 800;
+      font-weight: 900;
     }
     .modalBody{
       padding: 14px 16px 16px;
@@ -494,21 +425,6 @@
       z-index: 60;
       font-size: 13px;
     }
-
-    .smallNote{
-      margin-top: 10px;
-      color: rgba(184,195,230,.9);
-      font-size: 12px;
-      line-height:1.5;
-    }
-
-    .foot{
-      margin-top: 18px;
-      color: rgba(184,195,230,.8);
-      font-size: 12px;
-      line-height:1.55;
-      opacity:.95;
-    }
   </style>
 </head>
 
@@ -535,8 +451,8 @@
 
         <div class="foot">
           <strong>O que é “multi-dados” aqui?</strong><br/>
-          É um jeito prático de dizer: <em>um ecossistema de ferramentas diferentes</em> (clima, carbono, saúde, mapas, jogos, educação, painéis e apps)
-          reunidas num único lugar. Você não precisa lembrar onde hospedou cada coisa: entra aqui e acha tudo por categoria.
+          É um ecossistema de ferramentas diferentes (clima, carbono, saúde, mapas, jogos, educação e painéis)
+          reunidas num único lugar — para você e para quem acessa suas soluções.
         </div>
       </section>
 
@@ -552,8 +468,9 @@
         </div>
 
         <div class="smallNote">
-          • Tudo é salvo no seu navegador (localStorage).<br/>
-          • Use Exportar/Importar pra levar seus links pra outro PC/celular.
+          • Links já vêm pré-carregados.<br/>
+          • Adições/edições ficam salvas neste navegador.<br/>
+          • Use Exportar/Importar para levar para outro PC/celular.
         </div>
       </aside>
     </header>
@@ -561,7 +478,7 @@
     <div class="searchRow">
       <div class="search" title="Pesquisar por nome, descrição ou URL">
         <span class="hint">🔎</span>
-        <input id="search" placeholder="Pesquisar… (ex.: carbono, pantanal, dengue, quiz, mapbiomas)" />
+        <input id="search" placeholder="Pesquisar… (ex.: dengue, carbono, cota, quiz, exames)" />
         <span class="hint" id="countHint">0 links</span>
       </div>
 
@@ -576,7 +493,7 @@
         <h3>Categorias</h3>
         <div class="cats" id="cats"></div>
         <div class="smallNote">
-          Dica: crie categorias do seu jeito (ex.: Clima, Hidrologia, Mapas, Extensão, Ensino, Bibliometria).
+          Dica: você pode criar categorias novas quando quiser.
         </div>
       </aside>
 
@@ -584,15 +501,15 @@
         <div class="sectionHead">
           <div>
             <h2 id="sectionTitle">Tudo</h2>
-            <p id="sectionDesc">Seus apps e plataformas organizados em botões. Clique em “Visitar” para abrir.</p>
+            <p id="sectionDesc">Seus apps e plataformas organizados por categoria, em botões. Clique em “Abrir” para acessar.</p>
           </div>
         </div>
 
-        <div id="cards" class="cards"></div>
+        <div id="blocks"></div>
 
         <div id="empty" class="empty" style="display:none;">
-          <strong>Nenhum link por aqui ainda.</strong><br/>
-          Clique em <b>“+ Adicionar link”</b> e comece a montar seu hub.
+          <strong>Nenhum link nessa visão.</strong><br/>
+          Tente “Tudo” ou limpe a busca.
         </div>
       </section>
     </main>
@@ -609,7 +526,7 @@
       <div class="modalBody">
         <label>
           Nome do app / plataforma
-          <input id="fTitle" placeholder="Ex.: Painel Dengue • Climogramas-BR • Jogo Carbono" />
+          <input id="fTitle" placeholder="Ex.: Painel Dengue • Climogramas-BR • Carbono em Jogo" />
         </label>
 
         <label>
@@ -624,7 +541,7 @@
 
         <label style="grid-column:1/-1;">
           Descrição (curta)
-          <textarea id="fDesc" placeholder="O que faz? O que a pessoa encontra ao abrir?"></textarea>
+          <textarea id="fDesc" placeholder="O que faz?"></textarea>
         </label>
       </div>
 
@@ -652,7 +569,7 @@
 
         <label>
           “Chips” (separe por vírgula)
-          <input id="pChips" placeholder="Pantanal, Carbono, Saúde, Jogos, Mapas, Extensão, Ensino" />
+          <input id="pChips" placeholder="Pantanal, Carbono, Saúde, Jogos, Mapas..." />
         </label>
 
         <label style="grid-column:1/-1;">
@@ -699,9 +616,8 @@
   <input id="hiddenAvatarPick" type="file" accept="image/*" style="display:none;" />
 
   <script>
-    const KEY = "meuMundoHub_v1";
+    const KEY = "meuMundoHub_v2_buttons";
 
-    // ====== Default Data (ATUALIZADO) ======
     const defaultData = {
       profile: {
         name: "Ernandes Sobreira",
@@ -713,18 +629,44 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         photoDataUrl: ""
       },
       categories: [
-        { id: "all", name: "Tudo", desc: "Visão geral de todos os links." },
-        { id: "clima", name: "Clima & Hidrologia", desc: "Temperatura, precipitação, índices, cotas, conforto térmico." },
-        { id: "saude", name: "Saúde", desc: "Clima & saúde, dengue, mortalidade, painéis, exames." },
-        { id: "jogos", name: "Jogos", desc: "Jogos educativos e experiências interativas (inclui dengue e carbono)." },
-        { id: "mapas", name: "Mapas", desc: "Leaflet, GEE outputs, visualizadores geoespaciais." },
-        { id: "ensino", name: "Ensino", desc: "Materiais didáticos, bibliometria, plataformas de turma." },
-        { id: "extensao", name: "Extensão", desc: "Projetos, redes, eventos, participação social." },
-        { id: "util", name: "Utilidades", desc: "Ferramentas leves do dia a dia (sorteios, escolhas rápidas, etc.)." }
+        { id: "all",   name: "Tudo",              desc: "Visão geral de todos os links." },
+        { id: "clima", name: "Clima & Hidrologia",desc: "Climogramas, chuva, cotas e leituras ambientais." },
+        { id: "saude", name: "Saúde",             desc: "Saúde ambiental e humana, painéis e ferramentas." },
+        { id: "jogos", name: "Jogos",             desc: "Jogos educativos e experiências interativas." },
+        { id: "ensino",name: "Ensino",            desc: "Ferramentas didáticas e apoio a orientação." },
+        { id: "util",  name: "Utilidades",        desc: "Ferramentas leves do dia a dia." }
       ],
-      links: [],
-      ui: { activeCatId: "all", sortAZ: false, search: "" },
-      migrations: { movedDengueGames: false }
+      // ✅ TODOS os links que você mandou (sem repetidos) + descrições
+      links: [
+        { id:"climogramas", title:"Climogramas BR (v2)", catId:"clima", url:"https://ernandes-sobreira.github.io/climogramas-br.v2/", desc:"Climogramas interativos (temp/chuva) para municípios do Brasil." },
+        { id:"cota-paraguai", title:"Cota do Rio Paraguai", catId:"clima", url:"https://ernandes-sobreira.github.io/cota-rio-paraguai/", desc:"Painel para acompanhar níveis/cotas do Rio Paraguai." },
+
+        { id:"meu-exame", title:"Meu Exame", catId:"saude", url:"https://ernandes-sobreira.github.io/meu-exame/", desc:"Leitor/organizador de exames para acompanhar histórico e valores." },
+        { id:"guardia-saude", title:"Guardiã da Saúde", catId:"saude", url:"https://ernandes-sobreira.github.io/guardia-da-saude/index.html", desc:"Educação e vigilância em saúde ambiental (formato interativo)." },
+        { id:"cardio-br", title:"Cardio BR", catId:"saude", url:"https://ernandes-sobreira.github.io/cardio-br/", desc:"Painel/visualizações sobre saúde cardiovascular." },
+        { id:"painel-dengue", title:"Painel Dengue (v3)", catId:"saude", url:"https://ernandes-sobreira.github.io/painel-dengue.v3/", desc:"Monitoramento interativo e organização de informações sobre dengue." },
+        { id:"dengue-taxon", title:"Dengue Taxon", catId:"saude", url:"https://ernandes-sobreira.github.io/dengue-taxon/#inicio", desc:"Conteúdo e navegação sobre vetores e classificação (taxon)." },
+
+        // ✅ Jogos (inclui Mata Dengue e Chuva & Dengue como você pediu)
+        { id:"mata-dengue", title:"Mata Dengue", catId:"jogos", url:"https://ernandes-sobreira.github.io/mata-dengue/", desc:"Jogo educativo: combate ao mosquito e conscientização." },
+        { id:"chuva-dengue", title:"Chuva & Dengue", catId:"jogos", url:"https://ernandes-sobreira.github.io/chuva-dengue/", desc:"Jogo/experiência: relação entre chuva e dinâmica da dengue." },
+        { id:"carbono-jogo", title:"Carbono em Jogo", catId:"jogos", url:"https://ernandes-sobreira.github.io/carbono-em-jogo/", desc:"Jogo educativo sobre ciclo do carbono e fluxos." },
+        { id:"roleta-cientifica", title:"Roleta Científica", catId:"jogos", url:"https://ernandes-sobreira.github.io/roleta-cientifica/", desc:"Roleta interativa de temas/perguntas científicas." },
+        { id:"sorte-em-ciencia", title:"Há Sorte em Ciência", catId:"jogos", url:"https://ernandes-sobreira.github.io/ha-sorte-em-ciencia/", desc:"Jogo interativo com perguntas e desafios de ciência." },
+        { id:"quiz-br-2024", title:"Quiz Brasil 2024", catId:"jogos", url:"https://ernandes-sobreira.github.io/quiz-brasil2024/", desc:"Quiz educativo com perguntas sobre o Brasil." },
+
+        // Ensino
+        { id:"lab-tcc", title:"Lab de Perguntas (TCC)", catId:"ensino", url:"https://ernandes-sobreira.github.io/lab-de-perguntas-tcc/", desc:"Ajuda a construir perguntas e estruturas de TCC/pesquisa." },
+        { id:"professor", title:"Professor", catId:"ensino", url:"https://ernandes-sobreira.github.io/professor-/", desc:"Ferramentas/apoio para organização e rotina docente." },
+
+        // Utilidades
+        { id:"ta-com-fome", title:"Tá com fome de quê?", catId:"util", url:"https://ernandes-sobreira.github.io/ta.com.fome.de.que/", desc:"Ferramenta leve para decidir/compor ideias rapidamente." },
+        { id:"sorteando", title:"Sorteando", catId:"util", url:"https://ernandes-sobreira.github.io/sorteando/", desc:"App simples para sorteios." },
+
+        // (Você mandou um link "carbon/" sem contexto; mantive como categoria Utilidades/Carbono? vou colocar em Carbono como ferramenta.
+        { id:"carbon", title:"Carbon", catId:"clima", url:"https://ernandes-sobreira.github.io/carbon/", desc:"Ferramenta/página relacionada a carbono (hub/experimento em andamento)." }
+      ],
+      ui: { activeCatId:"all", sortAZ:false, search:"" }
     };
 
     const $ = (id) => document.getElementById(id);
@@ -732,8 +674,8 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
 
     const safeUrl = (u) => {
       const s = String(u || "").trim();
-      if (!s) return "";
-      if (!/^https?:\/\//i.test(s)) return "https://" + s;
+      if(!s) return "";
+      if(!/^https?:\/\//i.test(s)) return "https://" + s;
       return s;
     };
 
@@ -752,7 +694,24 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         if(Array.isArray(obj.categories)) out.categories = obj.categories;
         if(Array.isArray(obj.links)) out.links = obj.links;
         if(obj.ui) out.ui = { ...out.ui, ...obj.ui };
-        if(obj.migrations) out.migrations = { ...out.migrations, ...obj.migrations };
+      }
+      return out;
+    }
+
+    function dedupeLinks(links){
+      // dedupe por URL normalizada (removendo trailing slash e anchors)
+      const seen = new Set();
+      const out = [];
+      for(const l of links || []){
+        const u = String(l.url||"").trim().toLowerCase();
+        const norm = u
+          .replace(/#.*$/,"")
+          .replace(/\/+$/,"/")
+          .replace(/\s+/g,"");
+        if(!norm) continue;
+        if(seen.has(norm)) continue;
+        seen.add(norm);
+        out.push(l);
       }
       return out;
     }
@@ -760,18 +719,27 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
     function load(){
       try{
         const raw = localStorage.getItem(KEY);
-        if(!raw) return structuredClone(defaultData);
+        if(!raw){
+          const st = structuredClone(defaultData);
+          st.links = dedupeLinks(st.links);
+          return st;
+        }
         const parsed = JSON.parse(raw);
-        return mergeDefaults(parsed, defaultData);
+        const merged = mergeDefaults(parsed, defaultData);
+        merged.links = dedupeLinks(merged.links);
+        return merged;
       }catch(e){
         console.warn(e);
-        return structuredClone(defaultData);
+        const st = structuredClone(defaultData);
+        st.links = dedupeLinks(st.links);
+        return st;
       }
     }
 
     let state = load();
 
     function save(){
+      state.links = dedupeLinks(state.links);
       localStorage.setItem(KEY, JSON.stringify(state));
     }
 
@@ -780,35 +748,6 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
       const a = parts[0]?.[0] || "E";
       const b = parts[1]?.[0] || (parts[0]?.[1] || "S");
       return (a + b).toUpperCase();
-    }
-
-    // ====== MIGRAÇÃO (ATUALIZA Mata Dengue e Chuva & Dengue para Jogos) ======
-    function migrateMoveDengueGames(){
-      if(state.migrations?.movedDengueGames) return;
-
-      const patterns = [
-        "ernandes-sobreira.github.io/mata-dengue",
-        "ernandes-sobreira.github.io/chuva-dengue"
-      ];
-
-      let changed = 0;
-      state.links = (state.links || []).map(l=>{
-        const u = (l.url || "").toLowerCase();
-        const isTarget = patterns.some(p => u.includes(p));
-        if(isTarget && (l.catId === "saude")){
-          changed++;
-          return { ...l, catId: "jogos" };
-        }
-        return l;
-      });
-
-      state.migrations = state.migrations || {};
-      state.migrations.movedDengueGames = true;
-
-      if(changed){
-        save();
-        toast(`Ajustei ${changed} item(ns) de dengue para a categoria Jogos.`);
-      }
     }
 
     function renderProfile(){
@@ -886,16 +825,8 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
       });
     }
 
-    function renderLinks(){
-      const cards = $("cards");
-      cards.innerHTML = "";
-
+    function filterList(){
       const activeCat = state.ui.activeCatId || "all";
-      const catObj = (state.categories || []).find(c=>c.id===activeCat) || state.categories?.[0];
-
-      $("sectionTitle").textContent = catObj?.name || "Tudo";
-      $("sectionDesc").textContent = catObj?.desc || "Seus links organizados.";
-
       const q = (state.ui.search || "").trim().toLowerCase();
 
       let list = (state.links || []).slice();
@@ -917,75 +848,158 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         list.sort((a,b)=> (a.title||"").localeCompare((b.title||""), "pt-BR"));
       }
 
+      return list;
+    }
+
+    function renderBlocks(){
+      const blocks = $("blocks");
+      blocks.innerHTML = "";
+
+      const activeCat = state.ui.activeCatId || "all";
+      const catObj = (state.categories || []).find(c=>c.id===activeCat) || state.categories?.[0];
+
+      $("sectionTitle").textContent = catObj?.name || "Tudo";
+      $("sectionDesc").textContent = catObj?.desc || "Seus links organizados.";
+
+      const list = filterList();
       $("countHint").textContent = `${list.length} link(s)`;
-      $("empty").style.display = (list.length===0 ? "block" : "none");
 
-      list.forEach(link=>{
-        const cat = (state.categories || []).find(c=>c.id===link.catId);
-        const card = document.createElement("div");
-        card.className = "card";
+      if(list.length === 0){
+        $("empty").style.display = "block";
+        return;
+      }
+      $("empty").style.display = "none";
 
-        const top = document.createElement("div");
-        top.className = "cardTop";
+      // Agrupa por categoria (mesmo quando "Tudo")
+      const group = new Map();
+      for(const l of list){
+        const cid = l.catId || "util";
+        if(!group.has(cid)) group.set(cid, []);
+        group.get(cid).push(l);
+      }
+
+      const catOrder = (state.categories || [])
+        .filter(c => c.id !== "all")
+        .map(c => c.id);
+
+      const orderedKeys = (activeCat === "all")
+        ? catOrder.filter(k=>group.has(k)).concat([...group.keys()].filter(k=>!catOrder.includes(k)))
+        : [activeCat];
+
+      for(const cid of orderedKeys){
+        const cat = (state.categories || []).find(c=>c.id===cid);
+        const items = group.get(cid) || [];
+        if(items.length === 0) continue;
+
+        const block = document.createElement("div");
+        block.className = "catBlock";
+
+        const header = document.createElement("div");
+        header.className = "catHeader";
 
         const left = document.createElement("div");
-        left.style.flex="1";
+        left.className = "left";
 
-        const pill = document.createElement("div");
-        pill.className = "pill";
-        pill.textContent = cat?.name || "Sem categoria";
+        const name = document.createElement("div");
+        name.className = "name";
+        name.textContent = (cat?.name || "Categoria");
 
-        const h4 = document.createElement("h4");
-        h4.textContent = link.title || "(Sem título)";
+        const desc = document.createElement("div");
+        desc.className = "desc";
+        desc.textContent = (cat?.desc || "");
 
-        const p = document.createElement("p");
-        p.textContent = link.desc || "Sem descrição.";
+        left.appendChild(name);
+        if(desc.textContent) left.appendChild(desc);
 
-        left.appendChild(pill);
-        left.appendChild(h4);
-        left.appendChild(p);
+        const right = document.createElement("div");
+        right.className = "right";
 
-        const actions = document.createElement("div");
-        actions.className = "cardActions";
-
-        const visit = document.createElement("button");
-        visit.className = "btn mini primary";
-        visit.textContent = "Visitar";
-        visit.addEventListener("click", ()=>{
-          const url = safeUrl(link.url);
-          if(!url) return toast("Esse link está sem URL.");
-          window.open(url, "_blank", "noopener,noreferrer");
-        });
-
-        const edit = document.createElement("button");
-        edit.className = "btn mini";
-        edit.textContent = "Editar";
-        edit.addEventListener("click", ()=> openLinkModal(link.id));
-
-        const copy = document.createElement("button");
-        copy.className = "btn mini";
-        copy.textContent = "Copiar URL";
-        copy.addEventListener("click", async ()=>{
-          const url = safeUrl(link.url);
-          if(!url) return toast("Sem URL pra copiar.");
-          try{
-            await navigator.clipboard.writeText(url);
-            toast("URL copiada.");
-          }catch{
-            toast("Não consegui copiar (permissão do navegador).");
+        const openAll = document.createElement("button");
+        openAll.className = "btn";
+        openAll.textContent = `Abrir ${items.length}`;
+        openAll.addEventListener("click", ()=>{
+          if(items.length > 12){
+            const ok = confirm(`Você está prestes a abrir ${items.length} links. Continuar?`);
+            if(!ok) return;
           }
+          items.forEach(it=>{
+            const u = safeUrl(it.url);
+            if(u) window.open(u, "_blank", "noopener,noreferrer");
+          });
         });
 
-        actions.appendChild(visit);
-        actions.appendChild(edit);
-        actions.appendChild(copy);
+        right.appendChild(openAll);
 
-        top.appendChild(left);
-        card.appendChild(top);
-        card.appendChild(actions);
+        header.appendChild(left);
+        header.appendChild(right);
 
-        cards.appendChild(card);
-      });
+        const grid = document.createElement("div");
+        grid.className = "btnGrid";
+
+        items.forEach(link=>{
+          const wrapBtn = document.createElement("div");
+          // usa um "button-card"
+          const btn = document.createElement("button");
+          btn.className = "btn btnLink primary";
+          btn.title = link.url || "";
+          btn.addEventListener("click", ()=>{
+            const u = safeUrl(link.url);
+            if(!u) return toast("Esse link está sem URL.");
+            window.open(u, "_blank", "noopener,noreferrer");
+          });
+
+          const meta = document.createElement("div");
+          meta.className = "meta";
+
+          const t = document.createElement("div");
+          t.className = "t";
+          t.textContent = link.title || "(Sem título)";
+
+          const d = document.createElement("div");
+          d.className = "d";
+          d.textContent = link.desc || "Sem descrição.";
+
+          meta.appendChild(t);
+          meta.appendChild(d);
+
+          const actions = document.createElement("div");
+          actions.className = "actions";
+
+          const edit = document.createElement("button");
+          edit.className = "btn mini";
+          edit.textContent = "Editar";
+          edit.addEventListener("click", (e)=>{
+            e.stopPropagation();
+            openLinkModal(link.id);
+          });
+
+          const del = document.createElement("button");
+          del.className = "btn mini bad";
+          del.textContent = "Excluir";
+          del.addEventListener("click", (e)=>{
+            e.stopPropagation();
+            const ok = confirm(`Excluir "${link.title}"?`);
+            if(!ok) return;
+            state.links = (state.links || []).filter(x=>x.id !== link.id);
+            save();
+            renderAll();
+            toast("Excluído.");
+          });
+
+          actions.appendChild(edit);
+          actions.appendChild(del);
+
+          btn.appendChild(meta);
+          btn.appendChild(actions);
+
+          wrapBtn.appendChild(btn);
+          grid.appendChild(wrapBtn);
+        });
+
+        block.appendChild(header);
+        block.appendChild(grid);
+        blocks.appendChild(block);
+      }
     }
 
     function fillCatSelect(selectEl, keep){
@@ -1005,6 +1019,8 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         const active = state.ui.activeCatId;
         if(active && active !== "all" && (state.categories || []).some(c=>c.id===active)){
           selectEl.value = active;
+        }else{
+          selectEl.value = (selectEl.options[0]?.value || "util");
         }
       }
     }
@@ -1013,7 +1029,6 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
 
     function openLinkModal(id=null){
       editingLinkId = id;
-      const modal = $("modalLink");
       const delBtn = $("btnDeleteLink");
       const title = $("modalLinkTitle");
 
@@ -1026,7 +1041,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         $("fUrl").value = link?.url || "";
         $("fDesc").value = link?.desc || "";
         fillCatSelect($("fCat"), link?.catId);
-        delBtn.style.display = "inline-block";
+        delBtn.style.display = "inline-flex";
       }else{
         title.textContent = "Adicionar link";
         $("fTitle").value = "";
@@ -1035,7 +1050,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         delBtn.style.display = "none";
       }
 
-      modal.style.display = "flex";
+      $("modalLink").style.display = "flex";
       setTimeout(()=> $("fTitle").focus(), 40);
     }
 
@@ -1072,7 +1087,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
       if(!editingLinkId) return;
       const idx = (state.links || []).findIndex(l=>l.id===editingLinkId);
       if(idx < 0) return;
-      state.links.splice(idx,1);
+      state.links.splice(idx, 1);
       save();
       closeLinkModal();
       renderAll();
@@ -1120,7 +1135,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
     }
 
     function addCategory(){
-      const name = prompt("Nome da nova categoria (ex.: Hidrologia, Bibliometria, PPGCA, etc.):");
+      const name = prompt("Nome da nova categoria:");
       if(!name) return;
 
       const id = name.toLowerCase()
@@ -1134,7 +1149,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
         return;
       }
 
-      const desc = prompt("Descrição curta da categoria (opcional):") || "";
+      const desc = prompt("Descrição curta (opcional):") || "";
       state.categories.push({ id, name: name.trim(), desc: desc.trim() });
       save();
       renderAll();
@@ -1142,19 +1157,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
     }
 
     function openAllInCategory(){
-      const active = state.ui.activeCatId || "all";
-      const q = (state.ui.search || "").trim().toLowerCase();
-
-      let list = (state.links || []).slice();
-      if(active !== "all") list = list.filter(l => l.catId === active);
-      if(q){
-        list = list.filter(l=>{
-          const t=(l.title||"").toLowerCase();
-          const d=(l.desc||"").toLowerCase();
-          const u=(l.url||"").toLowerCase();
-          return t.includes(q)||d.includes(q)||u.includes(q);
-        });
-      }
+      const list = filterList();
       if(list.length===0) return toast("Nada pra abrir nessa visão.");
       if(list.length>12){
         const ok = confirm(`Você está prestes a abrir ${list.length} links. Continuar?`);
@@ -1171,7 +1174,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
       state.ui.sortAZ = !state.ui.sortAZ;
       save();
       renderAll();
-      toast(state.ui.sortAZ ? "Ordenado A→Z" : "Ordem manual");
+      toast(state.ui.sortAZ ? "Ordenado A→Z" : "Ordem original");
     }
 
     function exportJson(){
@@ -1201,6 +1204,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
       try{
         const parsed = JSON.parse(raw);
         state = mergeDefaults(parsed, defaultData);
+        state.links = dedupeLinks(state.links);
         save();
         closeImportModal();
         renderAll();
@@ -1211,9 +1215,10 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
     }
 
     function resetAll(){
-      const ok = confirm("Isso apaga seus links e categorias deste navegador. Quer mesmo resetar?");
+      const ok = confirm("Isso apaga edições deste navegador e volta ao padrão (com seus links). Quer mesmo?");
       if(!ok) return;
       state = structuredClone(defaultData);
+      state.links = dedupeLinks(state.links);
       save();
       renderAll();
       toast("Resetado.");
@@ -1222,11 +1227,11 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
     function renderAll(){
       renderProfile();
       renderCategories();
-      renderLinks();
+      renderBlocks();
       $("search").value = state.ui.search || "";
     }
 
-    // Avatar click -> quick photo
+    // Avatar: foto rápida
     $("avatarBox").addEventListener("click", ()=> $("hiddenAvatarPick").click());
     $("hiddenAvatarPick").addEventListener("change", async (e)=>{
       const f = e.target.files?.[0];
@@ -1261,6 +1266,7 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
     $("btnCancelImport").addEventListener("click", closeImportModal);
     $("btnDoImport").addEventListener("click", doImport);
 
+    // close modal by clicking backdrop
     ["modalLink","modalProfile","modalImport"].forEach(id=>{
       $(id).addEventListener("click", (e)=>{
         if(e.target.id===id) $(id).style.display="none";
@@ -1281,8 +1287,9 @@ Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
       }
     });
 
-    // ====== INIT ======
-    migrateMoveDengueGames();
+    // Init
+    state.links = dedupeLinks(state.links);
+    save();
     renderAll();
   </script>
 </body>
