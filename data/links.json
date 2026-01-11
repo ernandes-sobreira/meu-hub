@@ -1,8 +1,8 @@
 {
   "profile": {
     "name": "Ernandes Sobreira",
-    "bio": "Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara\nMestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)\nProfessor visitante da Universidade do Estado de Mato Grosso (UNEMAT)",
-    "chips": ["Clima", "Hidrologia", "Saúde", "Jogos", "Ensino", "Utilidades", "Pantanal"],
+    "bio": "Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara\nMestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)\nProfessor visitante da Universidade do Estado de Mato Grosso (UNEMAT)\nAtuo integrando ensino, pesquisa, extensão e inovação — criando plataformas e jogos educativos para organizar dados ambientais e de saúde e transformar informação em ação.",
+    "chips": ["Ensino", "Pesquisa", "Extensão", "Inovação", "Pantanal", "Saúde", "Dados & Apps"],
     "photo": "assets/profile.jpg"
   },
   "categories": [
@@ -80,12 +80,6 @@
       "catId": "jogos",
       "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
       "desc": "Jogo educativo sobre ciclo do carbono e fluxos."
-    },
-    {
-      "title": "Carbon Quiz",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
-      "desc": "Quiz/jogo sobre carbono (usa sua plataforma de carbono em jogo)."
     },
     {
       "title": "Roleta Científica",
