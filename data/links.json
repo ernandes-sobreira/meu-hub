@@ -1,0 +1,135 @@
+{
+  "profile": {
+    "name": "Ernandes Sobreira",
+    "bio": "Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara\nMestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)\nProfessor visitante da Universidade do Estado de Mato Grosso (UNEMAT)",
+    "chips": ["Clima", "Hidrologia", "Saúde", "Jogos", "Ensino", "Utilidades", "Pantanal"],
+    "photo": "assets/profile.jpg"
+  },
+  "categories": [
+    { "id": "clima", "name": "Clima & Hidrologia", "desc": "Clima, chuva, cotas e painéis ambientais." },
+    { "id": "saude", "name": "Saúde", "desc": "Saúde ambiental e humana: painéis e ferramentas." },
+    { "id": "jogos", "name": "Jogos", "desc": "Jogos educativos, quizzes e experiências interativas." },
+    { "id": "ensino", "name": "Ensino", "desc": "Ferramentas didáticas e apoio à orientação." },
+    { "id": "util", "name": "Utilidades", "desc": "Ferramentas leves do dia a dia." }
+  ],
+  "links": [
+    {
+      "title": "Climogramas BR (v2)",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/climogramas-br.v2/",
+      "desc": "Climogramas interativos de temperatura e chuva por município."
+    },
+    {
+      "title": "Cota do Rio Paraguai",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/cota-rio-paraguai/",
+      "desc": "Painel para acompanhar níveis/cotas do Rio Paraguai."
+    },
+    {
+      "title": "Carbon",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/carbon/",
+      "desc": "Hub/página relacionada a carbono (experimentos e recursos)."
+    },
+
+    {
+      "title": "Meu Exame",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/meu-exame/",
+      "desc": "Organizador de exames: histórico e acompanhamento de valores."
+    },
+    {
+      "title": "Guardiã da Saúde",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/guardia-da-saude/index.html",
+      "desc": "Educação e vigilância em saúde ambiental (interativo)."
+    },
+    {
+      "title": "Cardio BR",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/cardio-br/",
+      "desc": "Painel/visualizações sobre saúde cardiovascular."
+    },
+    {
+      "title": "Painel Dengue (v3)",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/painel-dengue.v3/",
+      "desc": "Monitoramento e organização de informações sobre dengue."
+    },
+    {
+      "title": "Dengue Taxon",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/dengue-taxon/",
+      "desc": "Conteúdo e navegação sobre vetores e classificação (taxonomia)."
+    },
+
+    {
+      "title": "Mata Dengue",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/mata-dengue/",
+      "desc": "Jogo educativo: combate ao mosquito e conscientização."
+    },
+    {
+      "title": "Chuva & Dengue",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/chuva-dengue/",
+      "desc": "Jogo/experiência: relação entre chuva e dinâmica da dengue."
+    },
+    {
+      "title": "Carbono em Jogo",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
+      "desc": "Jogo educativo sobre ciclo do carbono e fluxos."
+    },
+    {
+      "title": "Carbon Quiz",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
+      "desc": "Quiz/jogo sobre carbono (usa sua plataforma de carbono em jogo)."
+    },
+    {
+      "title": "Roleta Científica",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/roleta-cientifica/",
+      "desc": "Roleta interativa de temas e perguntas científicas."
+    },
+    {
+      "title": "Há Sorte em Ciência",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/ha-sorte-em-ciencia/",
+      "desc": "Jogo interativo com perguntas e desafios de ciência."
+    },
+    {
+      "title": "Quiz Brasil 2024",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/quiz-brasil2024/",
+      "desc": "Quiz educativo com perguntas sobre o Brasil."
+    },
+
+    {
+      "title": "Lab de Perguntas (TCC)",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/lab-de-perguntas-tcc/",
+      "desc": "Ajuda a construir perguntas e estruturas de TCC/pesquisa."
+    },
+    {
+      "title": "Professor",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/professor-/",
+      "desc": "Ferramentas e apoio para organização e rotina docente."
+    },
+
+    {
+      "title": "Tá com fome de quê?",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/ta.com.fome.de.que/",
+      "desc": "Ferramenta leve para decidir ideias rapidamente."
+    },
+    {
+      "title": "Sorteando",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/sorteando/",
+      "desc": "App simples para sorteios."
+    }
+  ]
+}
