@@ -3,151 +3,163 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Meu Mundo — Hub de Apps do Ernandes</title>
-  <meta name="theme-color" content="#0b5cff"/>
+  <title>Meu Mundo — Ernandes Sobreira</title>
+  <meta name="theme-color" content="#ffffff" />
 
   <style>
     :root{
-      --bg:#0b1220;
-      --bg2:#0f1a33;
-      --stroke: rgba(255,255,255,.10);
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.08);
-      --txt:#eaf0ff;
-      --muted:#b8c3e6;
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
-      --radius: 18px;
+      --bg: #ffffff;
+      --txt: #0b1020;
+      --muted: #5b647a;
+      --line: #e9ecf4;
 
-      --brand:#6ea8ff;
-      --brand2:#b58cff;
-      --ok:#2fe59d;
-      --warn:#ffd66e;
-      --bad:#ff6e7a;
+      /* cores vivas (antagonistas) */
+      --c1: #ff2d55;  /* rosa forte */
+      --c2: #00c2ff;  /* ciano */
+      --c3: #00d084;  /* verde */
+      --c4: #ffb000;  /* amarelo/laranja */
+      --c5: #7c3aed;  /* roxo */
+      --c6: #111827;  /* quase preto */
+
+      --shadow: 0 14px 40px rgba(15, 23, 42, .10);
+      --radius: 18px;
     }
 
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color: var(--txt);
       background:
-        radial-gradient(1200px 600px at 10% -10%, rgba(110,168,255,.35), transparent 60%),
-        radial-gradient(900px 540px at 90% 10%, rgba(181,140,255,.25), transparent 55%),
-        radial-gradient(1000px 650px at 40% 120%, rgba(47,229,157,.18), transparent 55%),
-        linear-gradient(180deg, var(--bg), var(--bg2));
-      overflow-x:hidden;
+        radial-gradient(700px 280px at 10% 0%, rgba(0,194,255,.18), transparent 60%),
+        radial-gradient(700px 280px at 90% 0%, rgba(255,45,85,.14), transparent 55%),
+        radial-gradient(900px 380px at 50% 110%, rgba(124,58,237,.12), transparent 60%),
+        var(--bg);
     }
 
     a{color:inherit; text-decoration:none}
-
-    .wrap{ max-width:1180px; margin:0 auto; padding:28px 18px 70px; }
+    .wrap{max-width: 1150px; margin: 0 auto; padding: 22px 16px 70px;}
 
     header{
-      display:flex; gap:18px; align-items:stretch; justify-content:space-between; flex-wrap:wrap;
+      display:flex;
+      align-items:stretch;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
     }
 
     .hero{
-      flex:1 1 640px;
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border:1px solid var(--stroke);
+      flex: 1 1 640px;
+      border: 1px solid var(--line);
       border-radius: var(--radius);
+      background: #fff;
       box-shadow: var(--shadow);
-      padding:18px;
-      position:relative; overflow:hidden;
+      padding: 18px;
+      position: relative;
+      overflow:hidden;
     }
     .hero::before{
       content:"";
-      position:absolute; inset:-80px -60px auto auto;
-      width:220px; height:220px;
-      background: radial-gradient(circle at 30% 30%, rgba(110,168,255,.45), transparent 60%);
-      filter: blur(2px);
+      position:absolute;
+      inset: -120px -120px auto auto;
+      width: 280px; height: 280px;
+      background:
+        conic-gradient(from 180deg,
+          rgba(255,45,85,.35),
+          rgba(0,194,255,.35),
+          rgba(0,208,132,.35),
+          rgba(255,176,0,.35),
+          rgba(124,58,237,.35),
+          rgba(255,45,85,.35)
+        );
       border-radius: 999px;
+      filter: blur(20px);
+      opacity: .9;
     }
 
-    .row{ display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+    .topRow{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      flex-wrap:wrap;
+      position:relative;
+      z-index:1;
+    }
 
     .avatar{
-      width:86px; height:86px; border-radius:22px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      display:flex; align-items:center; justify-content:center;
-      overflow:hidden; cursor:pointer; flex:0 0 auto;
+      width: 86px;
+      height: 86px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(0,194,255,.18), rgba(255,45,85,.14));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      flex:0 0 auto;
     }
-    .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
-    .avatar .placeholder{ font-weight:900; letter-spacing:.5px; font-size:22px; color: rgba(234,240,255,.85); user-select:none; }
+    .avatar img{width:100%; height:100%; object-fit:cover; display:block;}
+    .avatar .ph{
+      font-weight: 900;
+      letter-spacing:.5px;
+      font-size: 22px;
+      color: var(--c6);
+      opacity:.9;
+      user-select:none;
+    }
 
-    .title{ display:flex; flex-direction:column; gap:6px; min-width:280px; }
-    .title h1{ margin:0; font-size:22px; line-height:1.15; }
-    .title p{ margin:0; color: var(--muted); line-height:1.45; font-size:13.5px; }
+    .who{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      min-width: 260px;
+    }
+    .who h1{margin:0; font-size: 22px; line-height:1.15;}
+    .who p{margin:0; color: var(--muted); font-size: 13.5px; line-height:1.5;}
 
-    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top: 10px;
+      position:relative;
+      z-index:1;
+    }
     .chip{
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.05);
-      padding:7px 10px;
-      border-radius:999px;
-      font-size:12.5px;
-      color: rgba(234,240,255,.92);
-      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 800;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .dot{
+      width:10px; height:10px;
+      border-radius: 999px;
+      display:inline-block;
     }
 
     .panel{
-      flex:0 0 360px;
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border:1px solid var(--stroke);
+      flex: 0 0 360px;
+      border: 1px solid var(--line);
       border-radius: var(--radius);
+      background:#fff;
       box-shadow: var(--shadow);
-      padding:16px;
+      padding: 16px;
     }
-    .panel h2{ margin:0 0 10px; font-size:14px; letter-spacing:.2px; }
-
-    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
-
-    .btn{
-      appearance:none;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      color: var(--txt);
-      padding:10px 12px;
-      border-radius:14px;
-      cursor:pointer;
-      font-weight:700;
-      font-size:13px;
-      transition: transform .08s ease, background .2s ease, border-color .2s ease;
-      text-align:center;
-      user-select:none;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      white-space:nowrap;
+    .panel h2{
+      margin:0 0 10px;
+      font-size: 13px;
+      letter-spacing:.2px;
+      color: var(--muted);
+      text-transform: uppercase;
     }
-    .btn:hover{ background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.18); }
-    .btn:active{ transform: scale(.99); }
-
-    .btn.primary{
-      border-color: rgba(110,168,255,.45);
-      background: linear-gradient(180deg, rgba(110,168,255,.22), rgba(110,168,255,.08));
-    }
-    .btn.good{
-      border-color: rgba(47,229,157,.45);
-      background: linear-gradient(180deg, rgba(47,229,157,.20), rgba(47,229,157,.07));
-    }
-    .btn.warn{
-      border-color: rgba(255,214,110,.45);
-      background: linear-gradient(180deg, rgba(255,214,110,.20), rgba(255,214,110,.07));
-    }
-    .btn.bad{
-      border-color: rgba(255,110,122,.50);
-      background: linear-gradient(180deg, rgba(255,110,122,.18), rgba(255,110,122,.06));
-    }
-
-    .smallNote{ margin-top:10px; color: rgba(184,195,230,.9); font-size:12px; line-height:1.5; }
-    .foot{ margin-top: 18px; color: rgba(184,195,230,.85); font-size:12px; line-height:1.55; }
 
     .searchRow{
-      margin-top:16px;
       display:flex;
       gap:10px;
       flex-wrap:wrap;
@@ -156,85 +168,95 @@
     }
 
     .search{
-      flex:1 1 420px;
-      display:flex;
-      align-items:center;
-      gap:10px;
-      border: 1px solid var(--stroke);
-      border-radius: 16px;
+      flex:1 1 260px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
       padding: 10px 12px;
-      background: rgba(255,255,255,.05);
-      backdrop-filter: blur(10px);
+      display:flex;
+      gap:10px;
+      align-items:center;
+      background: #fff;
     }
     .search input{
+      border:0; outline:none;
       width:100%;
-      background: transparent;
-      border:0;
-      outline:none;
-      color: var(--txt);
       font-size: 14px;
     }
-    .search .hint{
-      color: rgba(184,195,230,.85);
-      font-size: 12px;
-      white-space: nowrap;
+    .pillBtn{
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 10px 12px;
+      font-weight: 900;
+      cursor:pointer;
+      transition: transform .08s ease, box-shadow .2s ease;
+      box-shadow: 0 8px 18px rgba(15,23,42,.06);
       user-select:none;
+      white-space:nowrap;
     }
+    .pillBtn:active{ transform: scale(.99); }
 
     main{
-      margin-top:18px;
+      margin-top: 16px;
       display:grid;
       grid-template-columns: 280px 1fr;
       gap:16px;
+      align-items:start;
     }
     @media (max-width: 980px){
       main{ grid-template-columns: 1fr; }
+      .panel{ flex: 1 1 100%; }
     }
 
     .sidebar{
-      background: rgba(255,255,255,.04);
-      border: 1px solid var(--stroke);
+      border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 14px;
+      background:#fff;
       box-shadow: var(--shadow);
+      padding: 12px;
       position: sticky;
       top: 14px;
-      height: fit-content;
     }
-    .sidebar h3{
-      margin: 0 0 10px;
-      font-size: 13px;
-      letter-spacing:.2px;
+    @media (max-width: 980px){
+      .sidebar{ position: relative; top:auto; }
     }
-    .cats{ display:flex; flex-direction:column; gap:8px; }
-    .catBtn{
-      display:flex; align-items:center; justify-content:space-between;
+
+    .cats{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .cat{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
       gap:10px;
-      padding:10px 12px;
+      padding: 10px 12px;
       border-radius: 14px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      background:#fff;
       cursor:pointer;
-      transition: background .2s ease, border-color .2s ease;
       user-select:none;
+      transition: background .2s ease, transform .08s ease;
     }
-    .catBtn:hover{ background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); }
-    .catBtn.active{
-      background: linear-gradient(180deg, rgba(181,140,255,.20), rgba(181,140,255,.07));
-      border-color: rgba(181,140,255,.45);
+    .cat:hover{ background: #f7f8fd; }
+    .cat:active{ transform: scale(.995); }
+    .cat.active{
+      border-color: rgba(17,24,39,.18);
+      background: linear-gradient(180deg, rgba(0,194,255,.10), rgba(255,45,85,.06));
     }
     .badge{
+      font-weight: 900;
       font-size: 12px;
-      color: rgba(234,240,255,.92);
-      border: 1px solid rgba(255,255,255,.14);
-      padding: 3px 8px;
+      padding: 5px 9px;
       border-radius: 999px;
-      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      white-space:nowrap;
     }
 
-    .content{ min-height:420px; }
-
-    .sectionHead{
+    .contentHead{
       display:flex;
       align-items:flex-end;
       justify-content: space-between;
@@ -242,187 +264,131 @@
       flex-wrap:wrap;
       margin-bottom: 10px;
     }
-    .sectionHead h2{ margin:0; font-size:15px; letter-spacing:.2px; }
-    .sectionHead p{ margin:0; color: rgba(184,195,230,.95); font-size:12.5px; max-width:760px; line-height:1.45; }
+    .contentHead h2{ margin:0; font-size: 18px; }
+    .contentHead p{ margin:0; color: var(--muted); font-size: 13px; line-height:1.45; max-width: 780px; }
 
-    /* ====== Category Blocks (buttons) ====== */
-    .catBlock{
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.05);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 12px;
-      margin-bottom: 12px;
-    }
-    .catHeader{
-      display:flex; gap:10px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
-      margin-bottom: 10px;
-    }
-    .catHeader .left{
-      display:flex;
-      flex-direction:column;
-      gap:4px;
-    }
-    .catHeader .name{
-      font-weight:850;
-      letter-spacing:.2px;
-    }
-    .catHeader .desc{
-      color: rgba(184,195,230,.95);
-      font-size: 12.5px;
-      line-height:1.45;
-    }
-    .catHeader .right{
-      display:flex;
-      gap:8px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-
-    .btnLink{
-      width: 100%;
-      justify-content: space-between;
-      padding: 12px 12px;
-      border-radius: 14px;
-    }
-    .btnLink .meta{
-      display:flex;
-      flex-direction:column;
-      gap:3px;
-      text-align:left;
-      overflow:hidden;
-      min-width: 0;
-      flex:1;
-    }
-    .btnLink .meta .t{
-      font-weight:850;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      white-space:nowrap;
-    }
-    .btnLink .meta .d{
-      font-size: 12px;
-      color: rgba(184,195,230,.95);
-      overflow:hidden;
-      text-overflow: ellipsis;
-      white-space:nowrap;
-    }
-    .btnLink .actions{
-      display:flex;
-      gap:8px;
-      flex:0 0 auto;
-    }
-    .btnLink .actions .mini{
-      padding: 9px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-    }
-
-    .btnGrid{
+    .grid{
       display:grid;
       grid-template-columns: repeat(2, minmax(0,1fr));
-      gap:10px;
+      gap:12px;
     }
     @media (max-width: 860px){
-      .btnGrid{ grid-template-columns: 1fr; }
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:#fff;
+      box-shadow: 0 10px 26px rgba(15,23,42,.06);
+      padding: 12px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      overflow:hidden;
+      position:relative;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0 auto 0 0;
+      width: 8px;
+      background: var(--c2);
+    }
+    .card[data-accent="c1"]::before{background: var(--c1);}
+    .card[data-accent="c2"]::before{background: var(--c2);}
+    .card[data-accent="c3"]::before{background: var(--c3);}
+    .card[data-accent="c4"]::before{background: var(--c4);}
+    .card[data-accent="c5"]::before{background: var(--c5);}
+
+    .cardTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .kicker{
+      font-weight: 900;
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing:.3px;
+    }
+    .titleApp{
+      margin: 2px 0 0;
+      font-size: 15px;
+      font-weight: 950;
+      line-height:1.2;
+    }
+    .descApp{
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height:1.45;
+      min-height: 36px;
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 4px;
+    }
+    .go{
+      flex: 1 1 160px;
+      border: 0;
+      border-radius: 14px;
+      padding: 11px 12px;
+      font-weight: 950;
+      cursor:pointer;
+      color:#fff;
+      background: linear-gradient(90deg, var(--c2), var(--c5));
+      box-shadow: 0 12px 22px rgba(124,58,237,.18);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      user-select:none;
+    }
+    .go:active{ transform: scale(.99); }
+
+    .copy{
+      border: 1px solid var(--line);
+      background:#fff;
+      border-radius: 14px;
+      padding: 11px 12px;
+      font-weight: 900;
+      cursor:pointer;
+      user-select:none;
     }
 
     .empty{
-      border: 1px dashed rgba(255,255,255,.25);
-      background: rgba(255,255,255,.03);
+      border: 1px dashed #cfd6ea;
       border-radius: var(--radius);
       padding: 16px;
-      color: rgba(234,240,255,.85);
-      line-height: 1.55;
+      background:#fff;
+      color: var(--muted);
     }
 
-    /* Modal */
-    .modalBackdrop{
-      position: fixed;
-      inset:0;
-      background: rgba(0,0,0,.55);
-      backdrop-filter: blur(10px);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      padding: 18px;
-      z-index: 50;
-    }
-    .modal{
-      width: min(720px, 100%);
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,.16);
-      background: linear-gradient(180deg, rgba(15,26,51,.92), rgba(11,18,32,.92));
-      box-shadow: 0 30px 90px rgba(0,0,0,.60);
-      overflow:hidden;
-    }
-    .modalHeader{
-      padding: 14px 16px;
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 12px;
-      border-bottom: 1px solid rgba(255,255,255,.10);
-    }
-    .modalHeader h3{ margin:0; font-size:14px; letter-spacing:.2px; }
-    .close{
-      width:38px; height:38px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      color: var(--txt);
-      cursor:pointer;
-      font-size: 18px;
-      font-weight: 900;
-    }
-    .modalBody{
-      padding: 14px 16px 16px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    @media (max-width: 720px){
-      .modalBody{ grid-template-columns: 1fr; }
-    }
-    label{
-      display:flex;
-      flex-direction:column;
-      gap:6px;
-      font-size: 12px;
-      color: rgba(184,195,230,.95);
-    }
-    input, textarea, select{
-      width:100%;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      padding: 10px 12px;
-      color: var(--txt);
-      outline:none;
-      font-size: 14px;
-    }
-    textarea{ min-height: 92px; resize: vertical; }
-    .modalFooter{
-      padding: 12px 16px 16px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-      border-top: 1px solid rgba(255,255,255,.10);
+    .note{
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height:1.5;
     }
 
     .toast{
       position: fixed;
-      right: 16px;
-      bottom: 16px;
-      background: rgba(15,26,51,.95);
-      border: 1px solid rgba(255,255,255,.16);
-      color: var(--txt);
+      right: 14px;
+      bottom: 14px;
+      background: #111827;
+      color: #fff;
       padding: 10px 12px;
       border-radius: 14px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.55);
+      box-shadow: 0 18px 40px rgba(0,0,0,.22);
       display:none;
-      z-index: 60;
+      z-index: 999;
+      font-weight: 800;
       font-size: 13px;
     }
   </style>
@@ -432,15 +398,15 @@
   <div class="wrap">
     <header>
       <section class="hero">
-        <div class="row">
-          <div class="avatar" id="avatarBox" title="Clique para definir sua foto">
-            <div class="placeholder" id="avatarPH">ES</div>
-            <img id="avatarImg" alt="Foto de perfil" style="display:none;">
+        <div class="topRow">
+          <div class="avatar" id="avatar">
+            <!-- opcional: coloque uma foto em assets/profile.jpg e o script tenta carregar -->
+            <span class="ph" id="ph">ES</span>
           </div>
 
-          <div class="title">
-            <h1 id="nameEl">Ernandes Sobreira</h1>
-            <p id="bioEl">
+          <div class="who">
+            <h1 id="name">Ernandes Sobreira</h1>
+            <p id="bio">
               Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara<br/>
               Mestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)<br/>
               Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)
@@ -449,848 +415,335 @@
           </div>
         </div>
 
-        <div class="foot">
-          <strong>O que é “multi-dados” aqui?</strong><br/>
-          É um ecossistema de ferramentas diferentes (clima, carbono, saúde, mapas, jogos, educação e painéis)
-          reunidas num único lugar — para você e para quem acessa suas soluções.
+        <div class="note">
+          <b>Hub fixo (público):</b> esta página é somente para acesso aos apps. Para alterar links/categorias,
+          edite o arquivo <code>data/links.json</code> no GitHub.
         </div>
       </section>
 
       <aside class="panel">
-        <h2>Atalhos</h2>
-        <div class="grid2">
-          <button class="btn primary" id="btnAdd">+ Adicionar link</button>
-          <button class="btn" id="btnEditProfile">Editar perfil</button>
-          <button class="btn good" id="btnExport">Exportar (JSON)</button>
-          <button class="btn warn" id="btnImport">Importar (JSON)</button>
-          <button class="btn" id="btnOpenAll">Abrir categoria</button>
-          <button class="btn bad" id="btnReset">Resetar</button>
+        <h2>Buscar e filtrar</h2>
+        <div class="searchRow">
+          <div class="search">
+            <span style="font-weight:900;color:var(--muted)">🔎</span>
+            <input id="q" placeholder="Digite: dengue, carbono, cota, exame, quiz..." />
+          </div>
+
+          <button class="pillBtn" id="btnAll">Tudo</button>
+          <button class="pillBtn" id="btnOpenCat">Abrir categoria</button>
         </div>
 
-        <div class="smallNote">
-          • Links já vêm pré-carregados.<br/>
-          • Adições/edições ficam salvas neste navegador.<br/>
-          • Use Exportar/Importar para levar para outro PC/celular.
-        </div>
+        <div class="note" id="count">Carregando…</div>
       </aside>
     </header>
 
-    <div class="searchRow">
-      <div class="search" title="Pesquisar por nome, descrição ou URL">
-        <span class="hint">🔎</span>
-        <input id="search" placeholder="Pesquisar… (ex.: dengue, carbono, cota, quiz, exames)" />
-        <span class="hint" id="countHint">0 links</span>
-      </div>
-
-      <div class="row" style="justify-content:flex-end; gap:10px;">
-        <button class="btn" id="btnNewCategory">+ Categoria</button>
-        <button class="btn" id="btnSort">Ordenar A→Z</button>
-      </div>
-    </div>
-
     <main>
       <aside class="sidebar">
-        <h3>Categorias</h3>
         <div class="cats" id="cats"></div>
-        <div class="smallNote">
-          Dica: você pode criar categorias novas quando quiser.
-        </div>
       </aside>
 
-      <section class="content">
-        <div class="sectionHead">
+      <section>
+        <div class="contentHead">
           <div>
-            <h2 id="sectionTitle">Tudo</h2>
-            <p id="sectionDesc">Seus apps e plataformas organizados por categoria, em botões. Clique em “Abrir” para acessar.</p>
+            <h2 id="secTitle">Tudo</h2>
+            <p id="secDesc">Apps e plataformas organizados por categoria.</p>
           </div>
         </div>
 
-        <div id="blocks"></div>
-
-        <div id="empty" class="empty" style="display:none;">
-          <strong>Nenhum link nessa visão.</strong><br/>
-          Tente “Tudo” ou limpe a busca.
-        </div>
+        <div class="grid" id="grid"></div>
+        <div class="empty" id="empty" style="display:none;">Nada encontrado. Tente outra busca ou escolha “Tudo”.</div>
       </section>
     </main>
   </div>
 
-  <!-- Modal: Link -->
-  <div class="modalBackdrop" id="modalLink">
-    <div class="modal" role="dialog" aria-modal="true">
-      <div class="modalHeader">
-        <h3 id="modalLinkTitle">Adicionar link</h3>
-        <button class="close" id="closeLink" aria-label="Fechar">×</button>
-      </div>
-
-      <div class="modalBody">
-        <label>
-          Nome do app / plataforma
-          <input id="fTitle" placeholder="Ex.: Painel Dengue • Climogramas-BR • Carbono em Jogo" />
-        </label>
-
-        <label>
-          Categoria
-          <select id="fCat"></select>
-        </label>
-
-        <label style="grid-column:1/-1;">
-          URL (link)
-          <input id="fUrl" placeholder="https://..." />
-        </label>
-
-        <label style="grid-column:1/-1;">
-          Descrição (curta)
-          <textarea id="fDesc" placeholder="O que faz?"></textarea>
-        </label>
-      </div>
-
-      <div class="modalFooter">
-        <button class="btn" id="btnCancelLink">Cancelar</button>
-        <button class="btn bad" id="btnDeleteLink" style="display:none;">Excluir</button>
-        <button class="btn primary" id="btnSaveLink">Salvar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Perfil -->
-  <div class="modalBackdrop" id="modalProfile">
-    <div class="modal" role="dialog" aria-modal="true">
-      <div class="modalHeader">
-        <h3>Editar perfil</h3>
-        <button class="close" id="closeProfile" aria-label="Fechar">×</button>
-      </div>
-
-      <div class="modalBody">
-        <label>
-          Nome
-          <input id="pName" />
-        </label>
-
-        <label>
-          “Chips” (separe por vírgula)
-          <input id="pChips" placeholder="Pantanal, Carbono, Saúde, Jogos, Mapas..." />
-        </label>
-
-        <label style="grid-column:1/-1;">
-          Bio (texto curto)
-          <textarea id="pBio"></textarea>
-        </label>
-
-        <label style="grid-column:1/-1;">
-          Foto de perfil (arquivo)
-          <input id="pPhoto" type="file" accept="image/*" />
-        </label>
-      </div>
-
-      <div class="modalFooter">
-        <button class="btn" id="btnCancelProfile">Cancelar</button>
-        <button class="btn primary" id="btnSaveProfile">Salvar perfil</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Import -->
-  <div class="modalBackdrop" id="modalImport">
-    <div class="modal" role="dialog" aria-modal="true">
-      <div class="modalHeader">
-        <h3>Importar (JSON)</h3>
-        <button class="close" id="closeImport" aria-label="Fechar">×</button>
-      </div>
-
-      <div class="modalBody" style="grid-template-columns:1fr;">
-        <label>
-          Cole aqui o JSON exportado
-          <textarea id="importBox" placeholder='{"profile":...,"categories":[...],"links":[...]}'></textarea>
-        </label>
-      </div>
-
-      <div class="modalFooter">
-        <button class="btn" id="btnCancelImport">Cancelar</button>
-        <button class="btn warn" id="btnDoImport">Importar</button>
-      </div>
-    </div>
-  </div>
-
   <div class="toast" id="toast"></div>
-  <input id="hiddenAvatarPick" type="file" accept="image/*" style="display:none;" />
 
   <script>
-    const KEY = "meuMundoHub_v2_buttons";
+    const $ = (id)=>document.getElementById(id);
 
-    const defaultData = {
-      profile: {
-        name: "Ernandes Sobreira",
-        bio:
-`Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara
-Mestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)
-Professor visitante da Universidade do Estado de Mato Grosso (UNEMAT)`,
-        chips: ["Pantanal","Carbono","Saúde","Jogos","Mapas","Extensão","Ensino"],
-        photoDataUrl: ""
-      },
-      categories: [
-        { id: "all",   name: "Tudo",              desc: "Visão geral de todos os links." },
-        { id: "clima", name: "Clima & Hidrologia",desc: "Climogramas, chuva, cotas e leituras ambientais." },
-        { id: "saude", name: "Saúde",             desc: "Saúde ambiental e humana, painéis e ferramentas." },
-        { id: "jogos", name: "Jogos",             desc: "Jogos educativos e experiências interativas." },
-        { id: "ensino",name: "Ensino",            desc: "Ferramentas didáticas e apoio a orientação." },
-        { id: "util",  name: "Utilidades",        desc: "Ferramentas leves do dia a dia." }
-      ],
-      // ✅ TODOS os links que você mandou (sem repetidos) + descrições
-      links: [
-        { id:"climogramas", title:"Climogramas BR (v2)", catId:"clima", url:"https://ernandes-sobreira.github.io/climogramas-br.v2/", desc:"Climogramas interativos (temp/chuva) para municípios do Brasil." },
-        { id:"cota-paraguai", title:"Cota do Rio Paraguai", catId:"clima", url:"https://ernandes-sobreira.github.io/cota-rio-paraguai/", desc:"Painel para acompanhar níveis/cotas do Rio Paraguai." },
-
-        { id:"meu-exame", title:"Meu Exame", catId:"saude", url:"https://ernandes-sobreira.github.io/meu-exame/", desc:"Leitor/organizador de exames para acompanhar histórico e valores." },
-        { id:"guardia-saude", title:"Guardiã da Saúde", catId:"saude", url:"https://ernandes-sobreira.github.io/guardia-da-saude/index.html", desc:"Educação e vigilância em saúde ambiental (formato interativo)." },
-        { id:"cardio-br", title:"Cardio BR", catId:"saude", url:"https://ernandes-sobreira.github.io/cardio-br/", desc:"Painel/visualizações sobre saúde cardiovascular." },
-        { id:"painel-dengue", title:"Painel Dengue (v3)", catId:"saude", url:"https://ernandes-sobreira.github.io/painel-dengue.v3/", desc:"Monitoramento interativo e organização de informações sobre dengue." },
-        { id:"dengue-taxon", title:"Dengue Taxon", catId:"saude", url:"https://ernandes-sobreira.github.io/dengue-taxon/#inicio", desc:"Conteúdo e navegação sobre vetores e classificação (taxon)." },
-
-        // ✅ Jogos (inclui Mata Dengue e Chuva & Dengue como você pediu)
-        { id:"mata-dengue", title:"Mata Dengue", catId:"jogos", url:"https://ernandes-sobreira.github.io/mata-dengue/", desc:"Jogo educativo: combate ao mosquito e conscientização." },
-        { id:"chuva-dengue", title:"Chuva & Dengue", catId:"jogos", url:"https://ernandes-sobreira.github.io/chuva-dengue/", desc:"Jogo/experiência: relação entre chuva e dinâmica da dengue." },
-        { id:"carbono-jogo", title:"Carbono em Jogo", catId:"jogos", url:"https://ernandes-sobreira.github.io/carbono-em-jogo/", desc:"Jogo educativo sobre ciclo do carbono e fluxos." },
-        { id:"roleta-cientifica", title:"Roleta Científica", catId:"jogos", url:"https://ernandes-sobreira.github.io/roleta-cientifica/", desc:"Roleta interativa de temas/perguntas científicas." },
-        { id:"sorte-em-ciencia", title:"Há Sorte em Ciência", catId:"jogos", url:"https://ernandes-sobreira.github.io/ha-sorte-em-ciencia/", desc:"Jogo interativo com perguntas e desafios de ciência." },
-        { id:"quiz-br-2024", title:"Quiz Brasil 2024", catId:"jogos", url:"https://ernandes-sobreira.github.io/quiz-brasil2024/", desc:"Quiz educativo com perguntas sobre o Brasil." },
-
-        // Ensino
-        { id:"lab-tcc", title:"Lab de Perguntas (TCC)", catId:"ensino", url:"https://ernandes-sobreira.github.io/lab-de-perguntas-tcc/", desc:"Ajuda a construir perguntas e estruturas de TCC/pesquisa." },
-        { id:"professor", title:"Professor", catId:"ensino", url:"https://ernandes-sobreira.github.io/professor-/", desc:"Ferramentas/apoio para organização e rotina docente." },
-
-        // Utilidades
-        { id:"ta-com-fome", title:"Tá com fome de quê?", catId:"util", url:"https://ernandes-sobreira.github.io/ta.com.fome.de.que/", desc:"Ferramenta leve para decidir/compor ideias rapidamente." },
-        { id:"sorteando", title:"Sorteando", catId:"util", url:"https://ernandes-sobreira.github.io/sorteando/", desc:"App simples para sorteios." },
-
-        // (Você mandou um link "carbon/" sem contexto; mantive como categoria Utilidades/Carbono? vou colocar em Carbono como ferramenta.
-        { id:"carbon", title:"Carbon", catId:"clima", url:"https://ernandes-sobreira.github.io/carbon/", desc:"Ferramenta/página relacionada a carbono (hub/experimento em andamento)." }
-      ],
-      ui: { activeCatId:"all", sortAZ:false, search:"" }
-    };
-
-    const $ = (id) => document.getElementById(id);
-    const uid = () => "id_" + Math.random().toString(16).slice(2) + Date.now().toString(16);
-
-    const safeUrl = (u) => {
-      const s = String(u || "").trim();
-      if(!s) return "";
-      if(!/^https?:\/\//i.test(s)) return "https://" + s;
-      return s;
-    };
+    const ACCENTS = ["c1","c2","c3","c4","c5"];
+    const DOTS = ["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)","var(--c2)"];
 
     function toast(msg){
       const t = $("toast");
       t.textContent = msg;
       t.style.display = "block";
       clearTimeout(toast._tm);
-      toast._tm = setTimeout(()=> t.style.display = "none", 2200);
+      toast._tm = setTimeout(()=> t.style.display = "none", 1800);
     }
 
-    function mergeDefaults(obj, def){
-      const out = structuredClone(def);
-      if(obj && typeof obj === "object"){
-        if(obj.profile) out.profile = { ...out.profile, ...obj.profile };
-        if(Array.isArray(obj.categories)) out.categories = obj.categories;
-        if(Array.isArray(obj.links)) out.links = obj.links;
-        if(obj.ui) out.ui = { ...out.ui, ...obj.ui };
-      }
-      return out;
+    function normUrl(u){
+      return String(u||"").trim()
+        .replace(/\s+/g,"")
+        .replace(/#.*$/,"")
+        .replace(/\/+$/,"/");
     }
 
-    function dedupeLinks(links){
-      // dedupe por URL normalizada (removendo trailing slash e anchors)
+    function initials(name){
+      const parts = String(name||"").trim().split(/\s+/).filter(Boolean);
+      const a = parts[0]?.[0] || "E";
+      const b = parts[1]?.[0] || (parts[0]?.[1] || "S");
+      return (a+b).toUpperCase();
+    }
+
+    let DATA = null;
+    let activeCat = "all";
+
+    function uniqueLinks(list){
       const seen = new Set();
       const out = [];
-      for(const l of links || []){
-        const u = String(l.url||"").trim().toLowerCase();
-        const norm = u
-          .replace(/#.*$/,"")
-          .replace(/\/+$/,"/")
-          .replace(/\s+/g,"");
-        if(!norm) continue;
-        if(seen.has(norm)) continue;
-        seen.add(norm);
+      for(const l of (list||[])){
+        const key = normUrl(l.url).toLowerCase();
+        if(!key) continue;
+        if(seen.has(key)) continue;
+        seen.add(key);
         out.push(l);
       }
       return out;
     }
 
-    function load(){
-      try{
-        const raw = localStorage.getItem(KEY);
-        if(!raw){
-          const st = structuredClone(defaultData);
-          st.links = dedupeLinks(st.links);
-          return st;
-        }
-        const parsed = JSON.parse(raw);
-        const merged = mergeDefaults(parsed, defaultData);
-        merged.links = dedupeLinks(merged.links);
-        return merged;
-      }catch(e){
-        console.warn(e);
-        const st = structuredClone(defaultData);
-        st.links = dedupeLinks(st.links);
-        return st;
-      }
+    function getCategories(){
+      // "all" virtual
+      const cats = DATA.categories || [];
+      return [{ id:"all", name:"Tudo", desc:"Visão geral de todos os links." }, ...cats];
     }
 
-    let state = load();
+    function filteredLinks(){
+      const q = ($("q").value||"").trim().toLowerCase();
 
-    function save(){
-      state.links = dedupeLinks(state.links);
-      localStorage.setItem(KEY, JSON.stringify(state));
-    }
-
-    function initials(name){
-      const parts = String(name).trim().split(/\s+/).filter(Boolean);
-      const a = parts[0]?.[0] || "E";
-      const b = parts[1]?.[0] || (parts[0]?.[1] || "S");
-      return (a + b).toUpperCase();
-    }
-
-    function renderProfile(){
-      $("nameEl").textContent = state.profile.name || "Meu Mundo";
-      $("bioEl").innerHTML = (state.profile.bio || "").replaceAll("\n","<br/>");
-
-      const chipsBox = $("chips");
-      chipsBox.innerHTML = "";
-      (state.profile.chips || []).forEach(c=>{
-        const span = document.createElement("span");
-        span.className = "chip";
-        span.textContent = c.trim();
-        chipsBox.appendChild(span);
-      });
-
-      const img = $("avatarImg");
-      const ph = $("avatarPH");
-      const durl = state.profile.photoDataUrl || "";
-      if(durl){
-        img.src = durl;
-        img.style.display = "block";
-        ph.style.display = "none";
-      }else{
-        img.style.display = "none";
-        ph.style.display = "block";
-        ph.textContent = initials(state.profile.name || "ES");
-      }
-    }
-
-    function countByCategory(){
-      const map = {};
-      (state.categories || []).forEach(c => map[c.id]=0);
-      (state.links || []).forEach(l=>{
-        const cid = l.catId || "all";
-        map[cid] = (map[cid] || 0) + 1;
-      });
-      map["all"] = (state.links || []).length;
-      return map;
-    }
-
-    function renderCategories(){
-      const cats = $("cats");
-      cats.innerHTML = "";
-      const counts = countByCategory();
-
-      (state.categories || []).forEach(cat=>{
-        const btn = document.createElement("div");
-        btn.className = "catBtn" + (state.ui.activeCatId === cat.id ? " active" : "");
-        btn.dataset.id = cat.id;
-
-        const left = document.createElement("div");
-        left.style.display="flex";
-        left.style.gap="10px";
-        left.style.alignItems="center";
-
-        const name = document.createElement("div");
-        name.textContent = cat.name;
-
-        left.appendChild(name);
-
-        const badge = document.createElement("span");
-        badge.className = "badge";
-        badge.textContent = String(counts[cat.id] || 0);
-
-        btn.appendChild(left);
-        btn.appendChild(badge);
-
-        btn.addEventListener("click", ()=>{
-          state.ui.activeCatId = cat.id;
-          save();
-          renderAll();
-        });
-
-        cats.appendChild(btn);
-      });
-    }
-
-    function filterList(){
-      const activeCat = state.ui.activeCatId || "all";
-      const q = (state.ui.search || "").trim().toLowerCase();
-
-      let list = (state.links || []).slice();
+      let list = uniqueLinks(DATA.links || []);
 
       if(activeCat !== "all"){
-        list = list.filter(l => (l.catId || "") === activeCat);
+        list = list.filter(l => (l.catId||"") === activeCat);
       }
 
       if(q){
         list = list.filter(l=>{
-          const t = (l.title||"").toLowerCase();
-          const d = (l.desc||"").toLowerCase();
-          const u = (l.url||"").toLowerCase();
+          const t=(l.title||"").toLowerCase();
+          const d=(l.desc||"").toLowerCase();
+          const u=(l.url||"").toLowerCase();
           return t.includes(q) || d.includes(q) || u.includes(q);
         });
       }
 
-      if(state.ui.sortAZ){
-        list.sort((a,b)=> (a.title||"").localeCompare((b.title||""), "pt-BR"));
-      }
-
+      // ordena por título
+      list.sort((a,b)=> (a.title||"").localeCompare((b.title||""), "pt-BR"));
       return list;
     }
 
-    function renderBlocks(){
-      const blocks = $("blocks");
-      blocks.innerHTML = "";
+    function countByCat(){
+      const map = {};
+      const cats = getCategories();
+      cats.forEach(c=> map[c.id]=0);
 
-      const activeCat = state.ui.activeCatId || "all";
-      const catObj = (state.categories || []).find(c=>c.id===activeCat) || state.categories?.[0];
+      const list = uniqueLinks(DATA.links || []);
+      list.forEach(l=>{
+        const cid = l.catId || "all";
+        map[cid] = (map[cid]||0)+1;
+        map["all"] = (map["all"]||0)+1;
+      });
+      return map;
+    }
 
-      $("sectionTitle").textContent = catObj?.name || "Tudo";
-      $("sectionDesc").textContent = catObj?.desc || "Seus links organizados.";
+    function renderProfile(){
+      $("name").textContent = DATA.profile?.name || "Meu Mundo";
+      $("bio").innerHTML = (DATA.profile?.bio || "").replaceAll("\n","<br/>");
 
-      const list = filterList();
-      $("countHint").textContent = `${list.length} link(s)`;
+      $("ph").textContent = initials(DATA.profile?.name || "Ernandes Sobreira");
 
-      if(list.length === 0){
-        $("empty").style.display = "block";
-        return;
-      }
-      $("empty").style.display = "none";
+      const chips = $("chips");
+      chips.innerHTML = "";
+      const arr = DATA.profile?.chips || [];
+      arr.forEach((txt, i)=>{
+        const chip = document.createElement("span");
+        chip.className = "chip";
+        const dot = document.createElement("span");
+        dot.className = "dot";
+        dot.style.background = DOTS[i % DOTS.length];
+        const t = document.createElement("span");
+        t.textContent = txt;
+        chip.appendChild(dot);
+        chip.appendChild(t);
+        chips.appendChild(chip);
+      });
 
-      // Agrupa por categoria (mesmo quando "Tudo")
-      const group = new Map();
-      for(const l of list){
-        const cid = l.catId || "util";
-        if(!group.has(cid)) group.set(cid, []);
-        group.get(cid).push(l);
-      }
+      // tenta carregar foto fixa (opcional)
+      const imgPath = DATA.profile?.photo || "assets/profile.jpg";
+      const av = $("avatar");
+      const img = new Image();
+      img.onload = ()=>{
+        av.innerHTML = "";
+        img.style.width="100%";
+        img.style.height="100%";
+        img.style.objectFit="cover";
+        av.appendChild(img);
+      };
+      img.onerror = ()=>{ /* sem foto, fica iniciais */ };
+      img.src = imgPath;
+      img.alt = "Foto de perfil";
+    }
 
-      const catOrder = (state.categories || [])
-        .filter(c => c.id !== "all")
-        .map(c => c.id);
+    function renderCats(){
+      const catsBox = $("cats");
+      catsBox.innerHTML = "";
+      const cats = getCategories();
+      const counts = countByCat();
 
-      const orderedKeys = (activeCat === "all")
-        ? catOrder.filter(k=>group.has(k)).concat([...group.keys()].filter(k=>!catOrder.includes(k)))
-        : [activeCat];
-
-      for(const cid of orderedKeys){
-        const cat = (state.categories || []).find(c=>c.id===cid);
-        const items = group.get(cid) || [];
-        if(items.length === 0) continue;
-
-        const block = document.createElement("div");
-        block.className = "catBlock";
-
-        const header = document.createElement("div");
-        header.className = "catHeader";
+      cats.forEach((c)=>{
+        const el = document.createElement("div");
+        el.className = "cat" + (activeCat===c.id ? " active" : "");
+        el.addEventListener("click", ()=>{
+          activeCat = c.id;
+          renderAll();
+        });
 
         const left = document.createElement("div");
-        left.className = "left";
+        left.style.display="flex";
+        left.style.flexDirection="column";
+        left.style.gap="2px";
 
         const name = document.createElement("div");
-        name.className = "name";
-        name.textContent = (cat?.name || "Categoria");
+        name.style.fontWeight = "950";
+        name.textContent = c.name;
 
         const desc = document.createElement("div");
-        desc.className = "desc";
-        desc.textContent = (cat?.desc || "");
+        desc.style.fontSize = "12px";
+        desc.style.color = "var(--muted)";
+        desc.textContent = c.desc || "";
 
         left.appendChild(name);
-        if(desc.textContent) left.appendChild(desc);
+        if(c.id!=="all" && desc.textContent) left.appendChild(desc);
 
-        const right = document.createElement("div");
-        right.className = "right";
+        const badge = document.createElement("div");
+        badge.className = "badge";
+        badge.textContent = String(counts[c.id] || 0);
 
-        const openAll = document.createElement("button");
-        openAll.className = "btn";
-        openAll.textContent = `Abrir ${items.length}`;
-        openAll.addEventListener("click", ()=>{
-          if(items.length > 12){
-            const ok = confirm(`Você está prestes a abrir ${items.length} links. Continuar?`);
-            if(!ok) return;
-          }
-          items.forEach(it=>{
-            const u = safeUrl(it.url);
-            if(u) window.open(u, "_blank", "noopener,noreferrer");
-          });
-        });
+        el.appendChild(left);
+        el.appendChild(badge);
 
-        right.appendChild(openAll);
-
-        header.appendChild(left);
-        header.appendChild(right);
-
-        const grid = document.createElement("div");
-        grid.className = "btnGrid";
-
-        items.forEach(link=>{
-          const wrapBtn = document.createElement("div");
-          // usa um "button-card"
-          const btn = document.createElement("button");
-          btn.className = "btn btnLink primary";
-          btn.title = link.url || "";
-          btn.addEventListener("click", ()=>{
-            const u = safeUrl(link.url);
-            if(!u) return toast("Esse link está sem URL.");
-            window.open(u, "_blank", "noopener,noreferrer");
-          });
-
-          const meta = document.createElement("div");
-          meta.className = "meta";
-
-          const t = document.createElement("div");
-          t.className = "t";
-          t.textContent = link.title || "(Sem título)";
-
-          const d = document.createElement("div");
-          d.className = "d";
-          d.textContent = link.desc || "Sem descrição.";
-
-          meta.appendChild(t);
-          meta.appendChild(d);
-
-          const actions = document.createElement("div");
-          actions.className = "actions";
-
-          const edit = document.createElement("button");
-          edit.className = "btn mini";
-          edit.textContent = "Editar";
-          edit.addEventListener("click", (e)=>{
-            e.stopPropagation();
-            openLinkModal(link.id);
-          });
-
-          const del = document.createElement("button");
-          del.className = "btn mini bad";
-          del.textContent = "Excluir";
-          del.addEventListener("click", (e)=>{
-            e.stopPropagation();
-            const ok = confirm(`Excluir "${link.title}"?`);
-            if(!ok) return;
-            state.links = (state.links || []).filter(x=>x.id !== link.id);
-            save();
-            renderAll();
-            toast("Excluído.");
-          });
-
-          actions.appendChild(edit);
-          actions.appendChild(del);
-
-          btn.appendChild(meta);
-          btn.appendChild(actions);
-
-          wrapBtn.appendChild(btn);
-          grid.appendChild(wrapBtn);
-        });
-
-        block.appendChild(header);
-        block.appendChild(grid);
-        blocks.appendChild(block);
-      }
-    }
-
-    function fillCatSelect(selectEl, keep){
-      selectEl.innerHTML = "";
-      (state.categories || [])
-        .filter(c => c.id !== "all")
-        .forEach(c=>{
-          const opt = document.createElement("option");
-          opt.value = c.id;
-          opt.textContent = c.name;
-          selectEl.appendChild(opt);
-        });
-
-      if(keep && keep !== "all"){
-        selectEl.value = keep;
-      }else{
-        const active = state.ui.activeCatId;
-        if(active && active !== "all" && (state.categories || []).some(c=>c.id===active)){
-          selectEl.value = active;
-        }else{
-          selectEl.value = (selectEl.options[0]?.value || "util");
-        }
-      }
-    }
-
-    let editingLinkId = null;
-
-    function openLinkModal(id=null){
-      editingLinkId = id;
-      const delBtn = $("btnDeleteLink");
-      const title = $("modalLinkTitle");
-
-      fillCatSelect($("fCat"));
-
-      if(id){
-        const link = (state.links || []).find(l=>l.id===id);
-        title.textContent = "Editar link";
-        $("fTitle").value = link?.title || "";
-        $("fUrl").value = link?.url || "";
-        $("fDesc").value = link?.desc || "";
-        fillCatSelect($("fCat"), link?.catId);
-        delBtn.style.display = "inline-flex";
-      }else{
-        title.textContent = "Adicionar link";
-        $("fTitle").value = "";
-        $("fUrl").value = "";
-        $("fDesc").value = "";
-        delBtn.style.display = "none";
-      }
-
-      $("modalLink").style.display = "flex";
-      setTimeout(()=> $("fTitle").focus(), 40);
-    }
-
-    function closeLinkModal(){
-      $("modalLink").style.display = "none";
-      editingLinkId = null;
-    }
-
-    function saveLink(){
-      const title = $("fTitle").value.trim();
-      const url = $("fUrl").value.trim();
-      const desc = $("fDesc").value.trim();
-      const catId = $("fCat").value;
-
-      if(!title) return toast("Coloque um nome pro link.");
-      if(!url) return toast("Coloque a URL do link.");
-
-      const payload = { id: editingLinkId || uid(), title, url: safeUrl(url), desc, catId };
-
-      if(editingLinkId){
-        const idx = (state.links || []).findIndex(l=>l.id===editingLinkId);
-        if(idx >= 0) state.links[idx] = payload;
-      }else{
-        state.links.unshift(payload);
-      }
-
-      save();
-      closeLinkModal();
-      renderAll();
-      toast("Salvo.");
-    }
-
-    function deleteLink(){
-      if(!editingLinkId) return;
-      const idx = (state.links || []).findIndex(l=>l.id===editingLinkId);
-      if(idx < 0) return;
-      state.links.splice(idx, 1);
-      save();
-      closeLinkModal();
-      renderAll();
-      toast("Excluído.");
-    }
-
-    function openProfileModal(){
-      $("pName").value = state.profile.name || "";
-      $("pBio").value = state.profile.bio || "";
-      $("pChips").value = (state.profile.chips || []).join(", ");
-      $("pPhoto").value = "";
-      $("modalProfile").style.display = "flex";
-      setTimeout(()=> $("pName").focus(), 40);
-    }
-    function closeProfileModal(){ $("modalProfile").style.display = "none"; }
-
-    async function fileToDataUrl(file){
-      return new Promise((resolve,reject)=>{
-        const r = new FileReader();
-        r.onload = ()=> resolve(String(r.result||""));
-        r.onerror = reject;
-        r.readAsDataURL(file);
+        catsBox.appendChild(el);
       });
     }
 
-    async function saveProfile(){
-      const name = $("pName").value.trim() || "Meu Mundo";
-      const bio = $("pBio").value.trim();
-      const chips = $("pChips").value.split(",").map(s=>s.trim()).filter(Boolean).slice(0, 20);
+    function renderGrid(){
+      const grid = $("grid");
+      grid.innerHTML = "";
 
-      const file = $("pPhoto").files?.[0];
-      if(file){
-        const durl = await fileToDataUrl(file);
-        state.profile.photoDataUrl = durl;
-      }
+      const cats = getCategories();
+      const catObj = cats.find(c=>c.id===activeCat) || cats[0];
 
-      state.profile.name = name;
-      state.profile.bio = bio;
-      state.profile.chips = chips;
+      $("secTitle").textContent = catObj.name || "Tudo";
+      $("secDesc").textContent = catObj.desc || "Apps e plataformas.";
 
-      save();
-      closeProfileModal();
-      renderAll();
-      toast("Perfil salvo.");
+      const list = filteredLinks();
+      $("count").textContent = `${list.length} link(s) nesta visão`;
+
+      $("empty").style.display = (list.length===0) ? "block" : "none";
+
+      list.forEach((l, idx)=>{
+        const card = document.createElement("div");
+        card.className = "card";
+        card.dataset.accent = ACCENTS[idx % ACCENTS.length];
+
+        const top = document.createElement("div");
+        top.className = "cardTop";
+
+        const left = document.createElement("div");
+        left.style.flex="1";
+
+        const catName = (DATA.categories||[]).find(x=>x.id===l.catId)?.name || "Categoria";
+        const kicker = document.createElement("div");
+        kicker.className = "kicker";
+        kicker.textContent = catName;
+
+        const title = document.createElement("div");
+        title.className = "titleApp";
+        title.textContent = l.title || "(Sem título)";
+
+        const desc = document.createElement("p");
+        desc.className = "descApp";
+        desc.textContent = l.desc || "Sem descrição.";
+
+        left.appendChild(kicker);
+        left.appendChild(title);
+        left.appendChild(desc);
+
+        top.appendChild(left);
+
+        const actions = document.createElement("div");
+        actions.className = "actions";
+
+        const go = document.createElement("button");
+        go.className = "go";
+        go.innerHTML = "Abrir <span style='opacity:.85'>↗</span>";
+        go.addEventListener("click", ()=>{
+          const u = String(l.url||"").trim();
+          if(!u) return;
+          window.open(u, "_blank", "noopener,noreferrer");
+        });
+
+        const copy = document.createElement("button");
+        copy.className = "copy";
+        copy.textContent = "Copiar link";
+        copy.addEventListener("click", async ()=>{
+          try{
+            await navigator.clipboard.writeText(l.url);
+            toast("Link copiado!");
+          }catch{
+            toast("Não consegui copiar (permissão do navegador).");
+          }
+        });
+
+        actions.appendChild(go);
+        actions.appendChild(copy);
+
+        card.appendChild(top);
+        card.appendChild(actions);
+
+        grid.appendChild(card);
+      });
     }
 
-    function addCategory(){
-      const name = prompt("Nome da nova categoria:");
-      if(!name) return;
-
-      const id = name.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
-        .replace(/[^a-z0-9]+/g,"-")
-        .replace(/(^-|-$)/g,"")
-        .slice(0, 32) || uid();
-
-      if((state.categories || []).some(c=>c.id===id)){
-        toast("Já existe uma categoria com esse ID. Tente outro nome.");
-        return;
-      }
-
-      const desc = prompt("Descrição curta (opcional):") || "";
-      state.categories.push({ id, name: name.trim(), desc: desc.trim() });
-      save();
-      renderAll();
-      toast("Categoria criada.");
-    }
-
-    function openAllInCategory(){
-      const list = filterList();
-      if(list.length===0) return toast("Nada pra abrir nessa visão.");
+    function openAllInView(){
+      const list = filteredLinks();
+      if(list.length===0) return toast("Nada pra abrir.");
       if(list.length>12){
-        const ok = confirm(`Você está prestes a abrir ${list.length} links. Continuar?`);
+        const ok = confirm(`Abrir ${list.length} links? Pode bloquear pop-ups.`);
         if(!ok) return;
       }
       list.forEach(l=>{
-        const url = safeUrl(l.url);
-        if(url) window.open(url, "_blank", "noopener,noreferrer");
+        if(l.url) window.open(l.url, "_blank", "noopener,noreferrer");
       });
-      toast("Abrindo links…");
-    }
-
-    function toggleSort(){
-      state.ui.sortAZ = !state.ui.sortAZ;
-      save();
-      renderAll();
-      toast(state.ui.sortAZ ? "Ordenado A→Z" : "Ordem original");
-    }
-
-    function exportJson(){
-      const payload = JSON.stringify(state, null, 2);
-      const blob = new Blob([payload], {type:"application/json"});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "meu-mundo-hub.json";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-      toast("Exportado.");
-    }
-
-    function openImportModal(){
-      $("importBox").value = "";
-      $("modalImport").style.display = "flex";
-      setTimeout(()=> $("importBox").focus(), 40);
-    }
-    function closeImportModal(){ $("modalImport").style.display = "none"; }
-
-    function doImport(){
-      const raw = $("importBox").value.trim();
-      if(!raw) return toast("Cole o JSON primeiro.");
-      try{
-        const parsed = JSON.parse(raw);
-        state = mergeDefaults(parsed, defaultData);
-        state.links = dedupeLinks(state.links);
-        save();
-        closeImportModal();
-        renderAll();
-        toast("Importado.");
-      }catch(e){
-        toast("JSON inválido.");
-      }
-    }
-
-    function resetAll(){
-      const ok = confirm("Isso apaga edições deste navegador e volta ao padrão (com seus links). Quer mesmo?");
-      if(!ok) return;
-      state = structuredClone(defaultData);
-      state.links = dedupeLinks(state.links);
-      save();
-      renderAll();
-      toast("Resetado.");
     }
 
     function renderAll(){
-      renderProfile();
-      renderCategories();
-      renderBlocks();
-      $("search").value = state.ui.search || "";
+      renderCats();
+      renderGrid();
     }
 
-    // Avatar: foto rápida
-    $("avatarBox").addEventListener("click", ()=> $("hiddenAvatarPick").click());
-    $("hiddenAvatarPick").addEventListener("change", async (e)=>{
-      const f = e.target.files?.[0];
-      if(!f) return;
-      state.profile.photoDataUrl = await fileToDataUrl(f);
-      save();
+    async function init(){
+      // carrega JSON fixo do GitHub
+      const res = await fetch("data/links.json", { cache: "no-store" });
+      DATA = await res.json();
+
+      // saneia duplicados
+      DATA.links = uniqueLinks(DATA.links || []);
+
+      renderProfile();
       renderAll();
-      toast("Foto atualizada.");
-      e.target.value = "";
-    });
 
-    // Events
-    $("btnAdd").addEventListener("click", ()=> openLinkModal(null));
-    $("btnEditProfile").addEventListener("click", openProfileModal);
-    $("btnExport").addEventListener("click", exportJson);
-    $("btnImport").addEventListener("click", openImportModal);
-    $("btnOpenAll").addEventListener("click", openAllInCategory);
-    $("btnReset").addEventListener("click", resetAll);
-    $("btnNewCategory").addEventListener("click", addCategory);
-    $("btnSort").addEventListener("click", toggleSort);
-
-    $("closeLink").addEventListener("click", closeLinkModal);
-    $("btnCancelLink").addEventListener("click", closeLinkModal);
-    $("btnSaveLink").addEventListener("click", saveLink);
-    $("btnDeleteLink").addEventListener("click", deleteLink);
-
-    $("closeProfile").addEventListener("click", closeProfileModal);
-    $("btnCancelProfile").addEventListener("click", closeProfileModal);
-    $("btnSaveProfile").addEventListener("click", saveProfile);
-
-    $("closeImport").addEventListener("click", closeImportModal);
-    $("btnCancelImport").addEventListener("click", closeImportModal);
-    $("btnDoImport").addEventListener("click", doImport);
-
-    // close modal by clicking backdrop
-    ["modalLink","modalProfile","modalImport"].forEach(id=>{
-      $(id).addEventListener("click", (e)=>{
-        if(e.target.id===id) $(id).style.display="none";
+      $("q").addEventListener("input", ()=> renderGrid());
+      $("btnAll").addEventListener("click", ()=>{
+        activeCat = "all";
+        renderAll();
       });
-    });
+      $("btnOpenCat").addEventListener("click", openAllInView);
+    }
 
-    $("search").addEventListener("input", (e)=>{
-      state.ui.search = e.target.value || "";
-      save();
-      renderAll();
+    init().catch(err=>{
+      console.error(err);
+      $("count").textContent = "Erro ao carregar data/links.json. Confira se o arquivo existe no repositório.";
     });
-
-    document.addEventListener("keydown", (e)=>{
-      if(e.key === "Escape"){
-        $("modalLink").style.display="none";
-        $("modalProfile").style.display="none";
-        $("modalImport").style.display="none";
-      }
-    });
-
-    // Init
-    state.links = dedupeLinks(state.links);
-    save();
-    renderAll();
   </script>
 </body>
 </html>
