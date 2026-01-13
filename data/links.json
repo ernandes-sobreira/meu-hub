@@ -124,6 +124,12 @@
       "catId": "util",
       "url": "https://ernandes-sobreira.github.io/sorteando/",
       "desc": "App simples para sorteios."
+    },
+    { 
+      "title": "Já bebeu água hoje?",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/ja-bebeu-agua-hoje/",
+      "desc": "App para beber água e monitorar a hidratação."
     }
   ]
 }
