@@ -138,5 +138,11 @@
       "url": "https://ernandes-sobreira.github.io/ja-bebeu-agua-hoje/",
       "desc": "App para beber água e monitorar a hidratação."
     }
+     { 
+      "title": "Partiu viajar",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/partiu-holanda-brasil/",
+      "desc": "Checklist de viagens."
+    }
   ]
 }
