@@ -126,7 +126,7 @@
       "desc": "Ajuda a construir perguntas e estruturas de TCC/pesquisa."
     },
     {
-      "title": "Professor",
+      "title": "Professor", 
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/professor-/",
       "desc": "Ferramentas e apoio para organização e rotina docente."
