@@ -26,6 +26,19 @@
       "desc": "Painel para acompanhar níveis/cotas do Rio Paraguai."
     },
     {
+      "title": "Clima de Cáceres",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/clima-caceres/",
+      "desc": "Painel demonstrativo de variáveis climáticas de Cáceres."
+    },
+    
+    {
+      "title": "Clima do Pantanal",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/clima-pantanal/",
+      "desc": "Painel demonstrativo de variáveis climáticas do Pantanal, tanto planície quanto planalto."
+    },
+    {
       "title": "Carbon",
       "catId": "clima",
       "url": "https://ernandes-sobreira.github.io/carbon/",
