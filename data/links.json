@@ -113,6 +113,12 @@
       "desc": "Jogo interativo com perguntas e desafios de ciência."
     },
     {
+      "title": "Deveres dos Universitários",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/dado-e-deveres/",
+      "desc": "Jogo interativo para estabelecer as tarefas dos universitários."
+    },
+    {
       "title": "Quiz Brasil 2024",
       "catId": "jogos",
       "url": "https://ernandes-sobreira.github.io/quiz-brasil2024/",
