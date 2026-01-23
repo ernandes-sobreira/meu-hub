@@ -143,6 +143,12 @@
       "url": "https://ernandes-sobreira.github.io/projetos/",
       "desc": "Ferramentas de apoio para organização de projetos."
     },
+    {
+      "title": "Guru de Banca",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/guru-de-banca/",
+      "desc": "Ferramentas de apoio para alunos que vão passar por bancas avaliadoras."
+    },
  {
       "title": "Análise de Projetos",
       "catId": "ensino",
