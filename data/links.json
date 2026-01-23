@@ -143,6 +143,12 @@
       "url": "https://ernandes-sobreira.github.io/projetos/",
       "desc": "Ferramentas de apoio para organização de projetos."
     },
+ {
+      "title": "Análise de Projetos",
+      "catId": "ensino",
+      "url": "https://script.google.com/macros/s/AKfycbwpc6hexZbNKN9EypZsJlYFNDIEKcYNBVz2lyVkE8Zu6u6moPZkqdSExvyQLu4hb7aj/exec",
+      "desc": "Ferramentas de apoio para organização de ideias para a construção e execução de projetos."
+    },
 
     {
       "title": "Eco³",
