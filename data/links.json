@@ -53,6 +53,11 @@
       "desc": "Hubs, páginas pessoais, protótipos, versões históricas, repositórios vazios ou não-web."
     },
     {
+      "id": "construcao",
+      "name": "🚧 Ainda em construção",
+      "desc": "Projetos em desenvolvimento ativo, ainda não prontos para a vitrine principal."
+    },
+    {
       "id": "avaliacao",
       "name": "🧪 Em avaliação",
       "desc": "Projetos temporariamente fora da vitrine principal enquanto passam por revisão, testes ou ajustes."
@@ -179,7 +184,7 @@
     },
     {
       "title": "Meu Saude",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/meu-saude/",
       "repo": "meu-saude",
@@ -189,8 +194,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -339,34 +344,18 @@
     },
     {
       "title": "Painel Dengue",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/painel-dengue/",
       "repo": "painel-dengue",
-      "desc": "Projeto Painel Dengue.",
+      "desc": "Painel de dengue ainda em construção; revisar antes de retornar à vitrine principal.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
-    },
-    {
-      "title": "Painel Dengue V2",
-      "catId": "sistemas",
-      "domain": "Saúde",
-      "url": "https://ernandes-sobreira.github.io/painel-dengue.v2/",
-      "repo": "painel-dengue.v2",
-      "desc": "Projeto Painel Dengue V2.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -403,18 +392,18 @@
     },
     {
       "title": "Microplast Counter",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Pantanal & Ambiente",
       "url": "https://github.com/ernandes-sobreira/microplast-counter",
       "repo": "microplast-counter",
-      "desc": "Projeto Microplast Counter.",
+      "desc": "Ferramenta de contagem/análise de microplásticos ainda em construção; repositório sem index.html web padrão.",
       "validation": {
         "repo": true,
         "structure": false,
         "page": null,
         "functional": null,
-        "status": "ajuste",
-        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -755,18 +744,18 @@
     },
     {
       "title": "Pantanal Pelo Clima",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/pantanal-pelo-clima/",
       "repo": "pantanal-pelo-clima",
-      "desc": "Projeto Pantanal Pelo Clima.",
+      "desc": "Projeto Pantanal pelo Clima ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -1331,7 +1320,7 @@
     },
     {
       "title": "Nutri Pantanal",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/nutri-pantanal/",
       "repo": "nutri-pantanal",
@@ -1341,8 +1330,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -1459,18 +1448,18 @@
     },
     {
       "title": "Pantanal Contexto",
-      "catId": "sistemas",
+      "catId": "jogos",
       "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/pantanal-contexto/",
       "repo": "pantanal-contexto",
-      "desc": "Projeto Pantanal Contexto.",
+      "desc": "Jogo/experiência interativa sobre contexto ambiental e territorial do Pantanal.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "note": "Classificação revisada manualmente pelo autor: tratar como jogo."
       }
     },
     {
@@ -1602,19 +1591,19 @@
       }
     },
     {
-      "title": "Pantanal Acao",
-      "catId": "sistemas",
+      "title": "Pantanal Ação",
+      "catId": "jogos",
       "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/pantanal-acao/",
       "repo": "pantanal-acao",
-      "desc": "Projeto Pantanal Acao.",
+      "desc": "Jogo/experiência interativa sobre o Pantanal.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "note": "Classificação revisada manualmente pelo autor: tratar como jogo."
       }
     },
     {
