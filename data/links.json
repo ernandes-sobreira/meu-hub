@@ -847,23 +847,6 @@
       "registered": false
     },
     {
-      "title": "Projetos",
-      "catId": "gestao",
-      "domain": "Ensino & Pesquisa",
-      "url": "https://ernandes-sobreira.github.io/projetos/",
-      "repo": "projetos",
-      "desc": "Projeto Projetos.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Partiu Holanda Brasil",
       "catId": "pessoal",
       "domain": "Geral",
@@ -1193,23 +1176,6 @@
       "audience": "Alunos da disciplina de Estatística e Modelagem"
     },
     {
-      "title": "Diaria Profagua",
-      "catId": "gestao",
-      "domain": "Água & Hidrologia",
-      "url": "https://ernandes-sobreira.github.io/diaria-profagua/",
-      "repo": "diaria-profagua",
-      "desc": "Projeto Diaria Profagua.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Radar ConcursosProfessor",
       "catId": "gestao",
       "domain": "Ensino & Pesquisa",
@@ -1320,7 +1286,7 @@
     },
     {
       "title": "Projeto Estruturante Profagua",
-      "catId": "gestao",
+      "catId": "construcao",
       "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/projeto.estruturante-profagua/",
       "repo": "projeto.estruturante-profagua",
@@ -1330,8 +1296,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
