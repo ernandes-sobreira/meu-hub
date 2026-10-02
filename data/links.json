@@ -84,7 +84,8 @@
         "functional": null,
         "status": "ajuste",
         "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Teste",
@@ -100,7 +101,8 @@
         "functional": null,
         "status": "ajuste",
         "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Website",
@@ -116,7 +118,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Mudancas Climaticas",
@@ -132,7 +135,8 @@
         "functional": null,
         "status": "arquivo",
         "note": "Repositório vazio ou sem app web publicável."
-      }
+      },
+      "registered": false
     },
     {
       "title": "MAPAINTERATIVO",
@@ -148,7 +152,8 @@
         "functional": null,
         "status": "arquivo",
         "note": "Repositório vazio ou sem app web publicável."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Meu Mapa",
@@ -164,7 +169,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Meu Mundo",
@@ -180,7 +186,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Meu Saude",
@@ -196,7 +203,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Eco3",
@@ -212,7 +220,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Sorteando",
@@ -228,7 +237,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Guardi S Da Sa De",
@@ -244,7 +254,8 @@
         "functional": null,
         "status": "arquivo",
         "note": "Repositório vazio ou sem app web publicável."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Guardia Da Saude",
@@ -260,7 +271,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Quiz",
@@ -276,7 +288,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Quiz Brasil2024",
@@ -292,7 +305,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Carbono Quiz — Fases",
@@ -308,7 +322,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Classificação revisada manualmente: é um jogo educativo. README precisa ser atualizado para refletir o conteúdo real."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Professor ",
@@ -324,7 +339,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Climogramas Br",
@@ -340,7 +356,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Painel Dengue",
@@ -356,7 +373,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Ta Com Fome De Que",
@@ -372,7 +390,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Saude Plena",
@@ -388,7 +407,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Microplast Counter",
@@ -404,7 +424,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Climogramas Br V2",
@@ -420,7 +441,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Painel Dengue V3",
@@ -436,7 +458,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Cardio Br",
@@ -452,7 +475,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Dengue Taxon",
@@ -468,7 +492,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Curso Oratoria",
@@ -484,7 +509,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pantanal Knowledge Hub",
@@ -500,7 +526,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Ha Sorte Em Ciencia",
@@ -516,7 +543,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Cota Rio Paraguai",
@@ -532,7 +560,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Roleta Cientifica",
@@ -548,7 +577,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Jogo Científico Integrador",
@@ -564,7 +594,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pantanal Quiz",
@@ -580,7 +611,8 @@
         "functional": null,
         "status": "ajuste",
         "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pantanal Quiz V2",
@@ -596,7 +628,8 @@
         "functional": null,
         "status": "ajuste",
         "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Mata Dengue",
@@ -612,7 +645,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Chuva Dengue",
@@ -628,7 +662,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Carbono Em Jogo",
@@ -644,7 +679,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Respira Carbono",
@@ -660,7 +696,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Lab De Perguntas Tcc",
@@ -676,7 +713,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Meu Exame",
@@ -692,7 +730,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Cuiabá Heat — Limiar Térmico + IDT/THI",
@@ -708,7 +747,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Projeto principal recomendado para Cuiabá. Estrutura e funcionalidades identificadas no código; teste externo completo ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Carbon Pantanal",
@@ -724,7 +764,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Co2 Pantanal",
@@ -740,7 +781,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pantanal Pelo Clima",
@@ -756,7 +798,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Meu Repositorio",
@@ -772,7 +815,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Meu Hub",
@@ -788,7 +832,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Projetos",
@@ -804,7 +849,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Partiu Holanda Brasil",
@@ -820,7 +866,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Ja Bebeu Agua Hoje",
@@ -836,7 +883,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Sem Diverticulose",
@@ -852,7 +900,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Estatistica",
@@ -868,7 +917,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "BARÃO-PANTANAL",
@@ -884,7 +934,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Classificação revisada manualmente pelo autor: tratar como jogo, não como sistema/painel."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Clima Pantanal",
@@ -900,7 +951,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Clima Caceres",
@@ -916,7 +968,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Clima Cuiabá",
@@ -932,7 +985,8 @@
         "functional": false,
         "status": "avaliacao",
         "note": "index.html atual vazio. Manter fora da vitrine principal até decisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Guru De Banca",
@@ -948,7 +1002,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Dado E Deveres",
@@ -964,7 +1019,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Beach App",
@@ -980,7 +1036,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pay Me Back",
@@ -996,7 +1053,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "CO2 Play",
@@ -1012,7 +1070,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Scientific Evolution",
@@ -1028,7 +1087,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Ghg Checklist",
@@ -1044,7 +1104,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Carbon Where",
@@ -1060,7 +1121,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Ash Pantanal",
@@ -1076,7 +1138,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Dossie Estatistico",
@@ -1092,7 +1155,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Auxiliar De Modelagem",
@@ -1108,7 +1172,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Calendario Ppgca",
@@ -1124,7 +1189,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Diaria Profagua",
@@ -1140,7 +1206,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Radar ConcursosProfessor",
@@ -1156,7 +1223,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Atas Ppgca Unemat",
@@ -1172,7 +1240,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Estacao Clima Unemat",
@@ -1188,7 +1257,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "CEUA Project Console — Cinzas, Carbono & Biodiversidade",
@@ -1204,7 +1274,8 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido para Em avaliação; manter fora da vitrine principal até revisão funcional e documental."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Medidas De Tendencia Central",
@@ -1220,7 +1291,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Diarias Profagua",
@@ -1236,7 +1308,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Biolab",
@@ -1252,7 +1325,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Projeto Estruturante Profagua",
@@ -1268,7 +1342,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Som Ambiental",
@@ -1284,7 +1359,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "SOPA Web",
@@ -1300,7 +1376,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Luminosidade Estatistica",
@@ -1316,7 +1393,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Nutri Pantanal",
@@ -1332,7 +1410,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Temp Local",
@@ -1348,7 +1427,8 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Estatistica Viva",
@@ -1364,7 +1444,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Flux Calc",
@@ -1380,7 +1461,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Carbon Flux",
@@ -1396,7 +1478,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Bioclima",
@@ -1412,7 +1495,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "FishRep — Reprodução de Peixes",
@@ -1428,7 +1512,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Transforma Acoes",
@@ -1444,7 +1529,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pantanal Contexto",
@@ -1460,7 +1546,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Classificação revisada manualmente pelo autor: tratar como jogo."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Expedições Pantaneiras",
@@ -1476,7 +1563,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Expedição Pantaneira",
@@ -1492,7 +1580,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Projetos Unemat",
@@ -1508,7 +1597,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Ana Lu",
@@ -1524,7 +1614,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Fit Family",
@@ -1540,7 +1631,8 @@
         "functional": null,
         "status": "ajuste",
         "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Saga Da Pesquisa",
@@ -1556,7 +1648,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Carta Cop Pantanal",
@@ -1572,7 +1665,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Cinzas Pantanal V1",
@@ -1588,7 +1682,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Pantanal Ação",
@@ -1604,7 +1699,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Classificação revisada manualmente pelo autor: tratar como jogo."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Banca Ativa — Sorteio em Sala",
@@ -1620,7 +1716,8 @@
         "functional": null,
         "status": "pendente",
         "note": "Arquivo criado e estrutura verificada; teste externo da publicação pendente."
-      }
+      },
+      "registered": false
     },
     {
       "title": "Análise de Projetos",
@@ -1635,7 +1732,12 @@
         "functional": null,
         "status": "externo",
         "note": "Ferramenta externa; não faz parte dos repositórios GitHub auditados."
-      }
+      },
+      "registered": false
     }
-  ]
+  ],
+  "registrationLegend": {
+    "registered": "Programa de computador com registro confirmado por certificado.",
+    "pending": "Aguardando conferência documental."
+  }
 }
