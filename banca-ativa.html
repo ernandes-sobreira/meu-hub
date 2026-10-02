@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Banca Ativa — Sorteio em Sala</title>
+<style>
+:root{--bg:#050505;--card:#111;--red:#ff1f2d;--red2:#8d0008;--yellow:#ffd60a;--white:#fff;--muted:#b7b7b7}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at top,rgba(255,31,45,.18),transparent 28%),linear-gradient(180deg,#050505 0%,#0b0b0b 55%,#140003 100%);color:#fff;min-height:100vh}
+.wrap{max-width:1200px;margin:auto;padding:28px}.hero{background:linear-gradient(135deg,#080808,#190003 65%,#280006);border:1px solid #2b0b0e;border-radius:28px;padding:28px;box-shadow:0 20px 60px #0008}
+h1{font-size:clamp(40px,6vw,76px);margin:0;font-weight:1000;letter-spacing:-2px}h1 span{color:var(--red)}.subtitle{font-size:19px;color:#ddd;margin-top:8px}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.pill{padding:8px 12px;border-radius:999px;background:#202020;font-weight:900}.pill.red{background:#390006;color:#ffb4bc}.pill.yellow{background:#332a00;color:#ffe55c}
+.card{margin-top:20px;background:linear-gradient(180deg,#111,#090909);border:1px solid #272727;border-radius:22px;padding:22px;box-shadow:0 15px 40px #0006}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+label{font-weight:900;display:block;margin-bottom:8px}textarea,select{width:100%;background:#070707;color:#fff;border:1px solid #333;border-radius:14px;padding:14px;font-size:16px}textarea{min-height:280px;resize:vertical;line-height:1.5}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}button{border:0;border-radius:14px;padding:14px 18px;font-weight:1000;font-size:16px;cursor:pointer}.primary{background:linear-gradient(135deg,#ff2a39,#b8000b);color:#fff;box-shadow:0 10px 28px #ff1f2d44}.yellow{background:linear-gradient(135deg,#ffe240,#e8a700);color:#140d00}.ghost{background:#242424;color:#fff;border:1px solid #383838}
+.mode-title{font-size:24px;margin:0 0 6px}.hint{color:var(--muted);font-size:14px;line-height:1.45}.presenter{margin-top:18px;padding:20px;border-radius:18px;background:linear-gradient(135deg,#170003,#500008);border:1px solid #6d1018}.presenter small{color:#ff9da5;font-weight:950}.presenter strong{display:block;font-size:34px;margin-top:5px}
+.results{display:none}.role{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:20px;margin-top:14px;border-radius:18px;background:linear-gradient(135deg,#101010,#1a0003);border:1px solid #401016;animation:reveal .5s ease both}.who{font-size:26px;font-weight:1000}.badge{display:inline-block;margin-top:8px;padding:7px 11px;border-radius:999px;background:linear-gradient(135deg,#ff2a39,#8f0009);font-weight:1000;font-size:13px}.task{font-size:18px;line-height:1.5}.task b{color:var(--yellow)}
+#suspense{position:fixed;inset:0;display:none;z-index:9999;background:radial-gradient(circle,rgba(255,0,20,.25),transparent 30%),linear-gradient(180deg,#000,#1a0003);align-items:center;justify-content:center;text-align:center;padding:30px}.sbox{max-width:950px;width:100%}.emoji{font-size:clamp(80px,12vw,160px);animation:pulse .8s infinite alternate}.stitle{font-size:clamp(36px,6vw,80px);font-weight:1000}.count{font-size:clamp(100px,18vw,230px);line-height:1;font-weight:1000;color:var(--yellow);margin:10px}.ssub{font-size:clamp(20px,3vw,32px);color:#ffb4bc;font-weight:900}
+#winner{display:none;position:fixed;inset:0;z-index:10000;background:radial-gradient(circle at center,rgba(255,31,45,.28),transparent 38%),linear-gradient(180deg,#000,#170003);align-items:center;justify-content:center;text-align:center;padding:30px}.winner-label{font-size:clamp(24px,3vw,42px);color:#ff9ba4;font-weight:1000}.winner-name{font-size:clamp(56px,10vw,140px);font-weight:1000;line-height:1;color:white;text-shadow:0 0 35px #ff1f2d88;margin:20px 0}.winner-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+@keyframes pulse{from{transform:scale(.92) rotate(-2deg)}to{transform:scale(1.08) rotate(2deg)}}@keyframes reveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(max-width:800px){.grid,.role{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero"><h1>🎯 BANCA <span>ATIVA</span></h1><div class="subtitle">Sorteio para apresentações, perguntas e participação em sala.</div><div class="pills"><span class="pill red">🔥 TODO MUNDO PODE SER CHAMADO</span><span class="pill yellow">⚠️ PRESTE ATENÇÃO</span><span class="pill">👀 NINGUÉM ESCAPA</span></div></section>
+<div class="grid">
+<section class="card"><h2 class="mode-title">👥 Turma</h2><div class="hint">Cole um nome por linha. A lista fica salva neste navegador.</div><br><label for="names">Nomes dos alunos</label><textarea id="names" placeholder="Ana&#10;Bruno&#10;Carlos&#10;Daniela"></textarea><div class="actions"><button class="ghost" onclick="loadNames()">Carregar nomes</button><button class="ghost" onclick="clearAll()">Limpar</button></div><div class="hint" id="count">0 alunos cadastrados</div></section>
+<section class="card"><h2 class="mode-title">🎮 O que vamos sortear?</h2><div class="hint">Use a mesma turma para escolher uma pessoa ou montar a banca ativa.</div>
+<div class="actions"><button class="yellow" onclick="drawOne()">🎤 SORTEAR 1 PESSOA</button><button class="primary" onclick="drawPanel()">🎯 BANCA ATIVA</button></div>
+<div class="presenter"><small>🎤 APRESENTADOR ATUAL — usado só na Banca Ativa</small><select id="presenter"><option value="">Carregue os nomes primeiro</option></select><strong id="presenterBig">—</strong></div></section>
+</div>
+<section class="card results" id="results"><h2 class="mode-title">🔥 Equipe ativa desta apresentação</h2><div id="rolesBox"></div></section>
+</div>
+<div id="suspense"><div class="sbox"><div class="emoji" id="semoji">👀</div><div class="stitle" id="stitle">ATENÇÃO...</div><div class="count" id="countdown">3</div><div class="ssub" id="ssub">Quem será chamado?</div></div></div>
+<div id="winner"><div><div class="winner-label">🎤 A PESSOA SORTEADA É...</div><div class="winner-name" id="winnerName">—</div><div class="winner-buttons"><button class="yellow" onclick="drawOne()">🎲 SORTEAR OUTRA</button><button class="ghost" onclick="closeWinner()">✓ FECHAR</button></div></div></div>
+<script>
+const roles=[
+{name:"🕵️ DETETIVE",task:"Procure <b>uma limitação, fragilidade ou algo que precisa ser melhor explicado</b>. Ao final, faça uma pergunta objetiva."},
+{name:"📊 ANALISTA",task:"Observe <b>dados, método, amostragem, gráficos ou análise</b>. Faça uma pergunta sobre como o resultado foi obtido ou interpretado."},
+{name:"🔗 CONECTOR",task:"Encontre <b>uma conexão com outra pesquisa, disciplina, problema real ou apresentação</b> e explique essa ligação."},
+{name:"💡 APLICADOR",task:"Pense em <b>onde esse conhecimento pode ser usado na prática</b> e proponha uma aplicação concreta."},
+{name:"❓ CURIOSO",task:"Identifique <b>uma dúvida que ficou aberta</b> e faça uma pergunta que aprofunde o tema."},
+{name:"🧠 SINTETIZADOR",task:"Ao final, diga em <b>uma frase</b> qual foi a principal mensagem que você entendeu."}
+];
+let students=[],history={};
+const namesEl=document.getElementById('names'),presenterEl=document.getElementById('presenter');
+function loadNames(){students=[...new Set(namesEl.value.split(/\n+/).map(x=>x.trim()).filter(Boolean))];presenterEl.innerHTML='';students.forEach(n=>{let o=document.createElement('option');o.value=n;o.textContent=n;presenterEl.appendChild(o);history[n]??={}});if(!students.length)presenterEl.innerHTML='<option value="">Nenhum aluno</option>';updatePresenter();document.getElementById('count').textContent=students.length+' aluno(s) cadastrado(s)';localStorage.setItem('banca_ativa_names',namesEl.value)}
+function updatePresenter(){document.getElementById('presenterBig').textContent=presenterEl.value||'—'} presenterEl.addEventListener('change',updatePresenter);
+function clearAll(){if(!confirm('Limpar a lista?'))return;namesEl.value='';students=[];presenterEl.innerHTML='<option value="">Carregue os nomes primeiro</option>';updatePresenter();document.getElementById('count').textContent='0 alunos cadastrados';localStorage.removeItem('banca_ativa_names')}
+function suspense(done){const ov=document.getElementById('suspense');ov.style.display='flex';const seq=[['3','👀','ATENÇÃO...','Quem será chamado?'],['2','😈','NINGUÉM ESCAPA','Todo mundo no jogo...'],['1','🔥','PREPARE-SE','Vai aparecer agora!'],['🎲','⚡','SORTEANDO...','Decidido!']];let i=0;function step(){let x=seq[i];countdown.textContent=x[0];semoji.textContent=x[1];stitle.textContent=x[2];ssub.textContent=x[3];i++;if(i<seq.length)setTimeout(step,700);else setTimeout(()=>{ov.style.display='none';done()},750)}step()}
+function drawOne(){if(!students.length)loadNames();if(!students.length){alert('Cadastre os nomes primeiro.');return} suspense(()=>{const picked=students[Math.floor(Math.random()*students.length)];document.getElementById('winnerName').textContent=picked;document.getElementById('winner').style.display='flex'})}
+function closeWinner(){document.getElementById('winner').style.display='none'}
+function score(n,r){const total=Object.values(history[n]||{}).reduce((a,b)=>a+b,0);return total*10+((history[n]||{})[r]||0)*25+Math.random()*5}
+function drawPanel(){if(!students.length)loadNames();if(students.length<7){alert('Para usar 6 funções, cadastre pelo menos 7 alunos.');return}const p=presenterEl.value;if(!p){alert('Escolha o apresentador.');return}const avail=students.filter(n=>n!==p),chosen=[],assign=[];roles.forEach(r=>{const cand=avail.filter(n=>!chosen.includes(n)).sort((a,b)=>score(a,r.name)-score(b,r.name));const pick=cand[0];chosen.push(pick);assign.push({student:pick,role:r})});suspense(()=>{assign.forEach(a=>history[a.student][a.role.name]=(history[a.student][a.role.name]||0)+1);render(assign)})}
+function render(assign){const box=document.getElementById('rolesBox');box.innerHTML='';document.getElementById('results').style.display='block';assign.forEach((a,i)=>setTimeout(()=>{let d=document.createElement('div');d.className='role';d.innerHTML='<div><div class="who">'+esc(a.student)+'</div><div class="badge">'+a.role.name+'</div></div><div class="task">'+a.role.task+'</div>';box.appendChild(d)},i*350));document.getElementById('results').scrollIntoView({behavior:'smooth'})}
+function esc(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+const saved=localStorage.getItem('banca_ativa_names');if(saved){namesEl.value=saved;loadNames()}
+</script>
+</body></html>
