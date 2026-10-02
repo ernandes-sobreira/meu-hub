@@ -279,7 +279,7 @@
 
   
     .meta-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px}
-    .tag-domain,.tag-status{
+    .tag-domain,.tag-status,.tag-register{
       display:inline-flex;align-items:center;gap:6px;
       padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900;
       border:1px solid rgba(17,24,39,.10);background:#f8fafc;color:#334155
@@ -287,6 +287,7 @@
     .tag-status.ok{background:#ecfdf3;color:#087a3d;border-color:#b7efcc}
     .tag-status.warn{background:#fff8e1;color:#8a5a00;border-color:#ffe29a}
     .tag-status.bad{background:#fff0f1;color:#b42318;border-color:#ffc8cd}
+    .tag-register{background:#fff7d6;color:#7a5600;border-color:#f4d46a}
     .validation{
       display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:12px
     }
@@ -352,6 +353,11 @@
         <option value="needs-fix">Precisa ajuste web</option>
         <option value="functional-pending">Teste funcional pendente</option>
       </select>
+      <select id="hubRegistered">
+        <option value="">Todos os registros</option>
+        <option value="registered">🏅 Com registro de software</option>
+        <option value="unregistered">Sem registro confirmado</option>
+      </select>
       <div class="tool-note" id="filterNote">Digite para encontrar rapidamente qualquer ferramenta.</div>
     </div>
     <div class="validation-legend">
@@ -375,6 +381,7 @@
       const cat = $("hubCategory")?.value || "";
       const domain = $("hubDomain")?.value || "";
       const val = $("hubValidation")?.value || "";
+      const reg = $("hubRegistered")?.value || "";
       const filtered = {
         ...HUB_DATA,
         links: (HUB_DATA.links||[]).filter(l=>{
@@ -385,7 +392,8 @@
             (val==="structure-ok" && v.structure===true) ||
             (val==="needs-fix" && v.structure===false) ||
             (val==="functional-pending" && v.structure===true && v.functional!==true);
-          return (!q || hay.includes(q)) && (!cat || l.catId===cat) && (!domain || l.domain===domain) && valOk;
+          const regOk = !reg || (reg==="registered" && l.registered===true) || (reg==="unregistered" && l.registered!==true);
+          return (!q || hay.includes(q)) && (!cat || l.catId===cat) && (!domain || l.domain===domain) && valOk && regOk;
         })
       };
       renderSections(filtered);
@@ -534,6 +542,12 @@
           st.className = "tag-status " + (v.functional===true ? "ok" : (v.structure===false ? "bad" : "warn"));
           st.textContent = v.functional===true ? "✅ Testado" : (v.structure===false ? "⚠️ Precisa ajuste" : "🧪 Validação pendente");
           meta.appendChild(st);
+          if(l.registered===true){
+            const rg=document.createElement("span");
+            rg.className="tag-register";
+            rg.textContent="🏅 Programa registrado";
+            meta.appendChild(rg);
+          }
           body.appendChild(meta);
 
           const vr = document.createElement("div");
@@ -656,6 +670,7 @@
         domainSel.addEventListener("change", applyFilters);
       }
       $("hubValidation")?.addEventListener("change", applyFilters);
+      $("hubRegistered")?.addEventListener("change", applyFilters);
       $("hubSearch")?.addEventListener("input", applyFilters);
 
       renderCounts(data);
