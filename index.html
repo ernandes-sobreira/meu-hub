@@ -238,6 +238,45 @@
       font-weight:900;
       z-index:999;
     }
+  
+    .hub-tools{
+      display:grid;
+      grid-template-columns: minmax(220px,1fr) minmax(190px,320px);
+      gap:12px;
+      margin:18px 0;
+      padding:14px;
+      border-radius:18px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(17,24,39,.10);
+      box-shadow:0 14px 34px rgba(17,24,39,.08);
+      position:sticky;
+      top:10px;
+      z-index:20;
+      backdrop-filter:blur(12px);
+    }
+    .hub-tools input,.hub-tools select{
+      width:100%;
+      border:1px solid rgba(17,24,39,.14);
+      background:#fff;
+      color:#111827;
+      border-radius:14px;
+      padding:13px 14px;
+      font-size:15px;
+      font-weight:750;
+      outline:none;
+    }
+    .hub-tools input:focus,.hub-tools select:focus{
+      border-color:var(--blue);
+      box-shadow:0 0 0 4px rgba(0,194,255,.12);
+    }
+    .hub-tools .tool-note{
+      grid-column:1/-1;
+      font-size:12px;
+      color:#667085;
+      font-weight:700;
+    }
+    @media(max-width:720px){.hub-tools{grid-template-columns:1fr;top:6px}}
+
   </style>
 </head>
 
@@ -275,6 +314,15 @@
       </aside>
     </header>
 
+
+    <div class="hub-tools">
+      <input id="hubSearch" type="search" placeholder="🔎 Buscar app, tema ou palavra-chave..." autocomplete="off">
+      <select id="hubCategory">
+        <option value="">Todas as categorias</option>
+      </select>
+      <div class="tool-note" id="filterNote">Digite para encontrar rapidamente qualquer ferramenta.</div>
+    </div>
+
     <div id="sections"></div>
   </div>
 
@@ -283,6 +331,27 @@
   <script>
     const $ = (id)=>document.getElementById(id);
     const GRADS = ["g-red","g-green","g-blue","g-purple","g-yellow","g-mix"];
+    let HUB_DATA = null;
+
+    function applyFilters(){
+      if(!HUB_DATA) return;
+      const q = String($("hubSearch")?.value || "").trim().toLowerCase();
+      const cat = $("hubCategory")?.value || "";
+      const filtered = {
+        ...HUB_DATA,
+        links: (HUB_DATA.links||[]).filter(l=>{
+          const hay = [l.title,l.desc,l.repo,l.catId].filter(Boolean).join(" ").toLowerCase();
+          return (!q || hay.includes(q)) && (!cat || l.catId===cat);
+        })
+      };
+      renderSections(filtered);
+      const note = $("filterNote");
+      if(note){
+        const total=(HUB_DATA.links||[]).length;
+        const shown=(filtered.links||[]).length;
+        note.textContent = (q||cat) ? `Mostrando ${shown} de ${total} ferramentas.` : `${total} ferramentas organizadas no Hub.`;
+      }
+    }
 
     function toast(msg){
       const t = $("toast");
@@ -488,8 +557,23 @@
         chips.appendChild(s);
       });
 
+      HUB_DATA = data;
+
+      const catSel = $("hubCategory");
+      if(catSel){
+        catSel.innerHTML = '<option value="">Todas as categorias</option>';
+        (data.categories||[]).forEach(c=>{
+          const o=document.createElement("option");
+          o.value=c.id;
+          o.textContent=c.name;
+          catSel.appendChild(o);
+        });
+        catSel.addEventListener("change", applyFilters);
+      }
+      $("hubSearch")?.addEventListener("input", applyFilters);
+
       renderCounts(data);
-      renderSections(data);
+      applyFilters();
     }
 
     init().catch(err=>{
