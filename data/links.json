@@ -33,6 +33,11 @@
       "desc": "Calculadoras, modelagem, estatística, análise de dados e ferramentas quantitativas."
     },
     {
+      "id": "co2-ch4-analises",
+      "name": "🌫️ Análises de CO₂ & CH₄",
+      "desc": "Ferramentas para análise de dados de dióxido de carbono e metano."
+    },
+    {
       "id": "estatistica-disciplina",
       "name": "📚 Estatística — Disciplina",
       "desc": "Ambientes, roteiros e materiais desenvolvidos especificamente para acompanhar as aulas de Estatística e Modelagem."
@@ -910,23 +915,6 @@
       "registered": false
     },
     {
-      "title": "Estatistica",
-      "catId": "analise",
-      "domain": "Estatística & Dados",
-      "url": "https://ernandes-sobreira.github.io/estatistica/",
-      "repo": "estatistica",
-      "desc": "Projeto Estatistica.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "BARÃO-PANTANAL",
       "catId": "construcao",
       "domain": "Pantanal & Ambiente",
@@ -1484,40 +1472,6 @@
       "registered": false
     },
     {
-      "title": "Flux Calc",
-      "catId": "analise",
-      "domain": "Carbono & GEE",
-      "url": "https://ernandes-sobreira.github.io/flux-calc/",
-      "repo": "flux-calc",
-      "desc": "Projeto Flux Calc.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
-      "title": "Carbon Flux",
-      "catId": "sistemas",
-      "domain": "Carbono & GEE",
-      "url": "https://ernandes-sobreira.github.io/carbon-flux/",
-      "repo": "carbon-flux",
-      "desc": "Plataforma de análise de carbono com dados do equipamento Los Gatos.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Bioclima",
       "catId": "sistemas",
       "domain": "Clima",
@@ -1775,6 +1729,40 @@
         "functional": null,
         "status": "externo",
         "note": "Ferramenta externa; não faz parte dos repositórios GitHub auditados."
+      },
+      "registered": false
+    },
+    {
+      "title": "Flux Calc",
+      "catId": "co2-ch4-analises",
+      "domain": "Carbono & GEE",
+      "url": "https://ernandes-sobreira.github.io/flux-calc/",
+      "repo": "flux-calc",
+      "desc": "Ferramenta para análise e cálculo de dados de fluxos de CO₂ e CH₄.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Agrupado com Carbon Flux por finalidade: análise de dados de CO₂ e CH₄."
+      },
+      "registered": false
+    },
+    {
+      "title": "Carbon Flux",
+      "catId": "co2-ch4-analises",
+      "domain": "Carbono & GEE",
+      "url": "https://ernandes-sobreira.github.io/carbon-flux/",
+      "repo": "carbon-flux",
+      "desc": "Plataforma para análise de dados de carbono, incluindo medições de CO₂ e CH₄.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Agrupado com Flux Calc por finalidade: análise de dados de CO₂ e CH₄."
       },
       "registered": false
     }
