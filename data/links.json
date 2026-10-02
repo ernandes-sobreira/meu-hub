@@ -275,23 +275,6 @@
       "registered": false
     },
     {
-      "title": "Quiz",
-      "catId": "jogos",
-      "domain": "Geral",
-      "url": "https://ernandes-sobreira.github.io/quiz/",
-      "repo": "quiz",
-      "desc": "Projeto Quiz.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Quiz Brasil2024",
       "catId": "jogos",
       "domain": "Geral",
@@ -602,19 +585,19 @@
       "registered": false
     },
     {
-      "title": "Jogo Científico Integrador",
-      "catId": "jogos",
+      "title": "Science Hub",
+      "catId": "construcao",
       "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/science-hub/",
       "repo": "science-hub",
-      "desc": "Jogo científico integrador com teoria, Sankey e quiz sobre ecossistemas e carbono.",
+      "desc": "Projeto científico/educacional ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -625,23 +608,6 @@
       "url": "https://github.com/ernandes-sobreira/pantanal-quiz",
       "repo": "pantanal-quiz",
       "desc": "Projeto Pantanal Quiz.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "ajuste",
-        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      },
-      "registered": false
-    },
-    {
-      "title": "Pantanal Quiz V2",
-      "catId": "jogos",
-      "domain": "Pantanal & Ambiente",
-      "url": "https://github.com/ernandes-sobreira/pantanal-quiz.v2",
-      "repo": "pantanal-quiz.v2",
-      "desc": "Projeto Pantanal Quiz V2.",
       "validation": {
         "repo": true,
         "structure": false,
@@ -701,19 +667,19 @@
       }
     },
     {
-      "title": "Carbono Em Jogo",
-      "catId": "jogos",
+      "title": "Carbono em Jogo",
+      "catId": "construcao",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
       "repo": "carbono-em-jogo",
-      "desc": "Projeto Carbono Em Jogo.",
+      "desc": "Jogo educativo sobre carbono ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -957,18 +923,18 @@
     },
     {
       "title": "BARÃO-PANTANAL",
-      "catId": "jogos",
+      "catId": "construcao",
       "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/climpa-pantanal/",
       "repo": "climpa-pantanal",
-      "desc": "Jogo/experiência interativa com dados ambientais de Barão de Melgaço, Pantanal.",
+      "desc": "Projeto sobre Barão de Melgaço e ambiente pantaneiro ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Classificação revisada manualmente pelo autor: tratar como jogo, não como sistema/painel."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -1107,20 +1073,21 @@
     },
     {
       "title": "CO2 Play",
-      "catId": "jogos",
+      "catId": "construcao",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/CO2-play/",
       "repo": "CO2-play",
-      "desc": "Projeto CO2 Play.",
+      "desc": "Sistema relacionado a CO₂ e carbono ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
-      "registered": false
+      "registered": false,
+      "toolType": "sistema"
     },
     {
       "title": "Scientific Evolution",
@@ -1705,19 +1672,19 @@
       "registered": false
     },
     {
-      "title": "Saga Da Pesquisa",
-      "catId": "jogos",
-      "domain": "Geral",
+      "title": "Saga da Pesquisa",
+      "catId": "construcao",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/saga-da-pesquisa/",
       "repo": "saga-da-pesquisa",
-      "desc": "Projeto Saga Da Pesquisa.",
+      "desc": "Experiência educacional gamificada sobre pesquisa científica ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
