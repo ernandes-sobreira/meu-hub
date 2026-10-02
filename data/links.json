@@ -459,7 +459,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007005-8",
+        "registeredTitle": "Painel Dengue v3",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Cardio Br",
@@ -476,7 +483,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007006-6",
+        "registeredTitle": "Cardio BR",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Dengue Taxon",
@@ -561,7 +575,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007007-4",
+        "registeredTitle": "Cota Rio Paraguai",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Roleta Cientifica",
@@ -646,7 +667,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026006998-0",
+        "registeredTitle": "Mata Dengue",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Chuva Dengue",
@@ -663,7 +691,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026006999-8",
+        "registeredTitle": "Chuva-Dengue",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Carbono Em Jogo",
@@ -969,7 +1004,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007147-0",
+        "registeredTitle": "Clima Cáceres",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Clima Cuiabá",
@@ -1003,7 +1045,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007009-0",
+        "registeredTitle": "Guru de Banca",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Dado E Deveres",
@@ -1156,7 +1205,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007001-5",
+        "registeredTitle": "Dossie Estatistico",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Auxiliar De Modelagem",
@@ -1258,7 +1314,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007002-3",
+        "registeredTitle": "Estação Clima UNEMAT",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "CEUA Project Console — Cinzas, Carbono & Biodiversidade",
@@ -1581,7 +1644,14 @@
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
-      "registered": false
+      "registered": true,
+      "registration": {
+        "authority": "INPI",
+        "process": "BR512026007008-2",
+        "registeredTitle": "Expedição Pantaneira",
+        "issued": "01/09/2026",
+        "holder": "UNIVERSIDADE DO ESTADO DE MATO GROSSO"
+      }
     },
     {
       "title": "Projetos Unemat",
@@ -1739,5 +1809,10 @@
   "registrationLegend": {
     "registered": "Programa de computador com registro confirmado por certificado.",
     "pending": "Aguardando conferência documental."
+  },
+  "registrationSummary": {
+    "total": 10,
+    "authority": "Instituto Nacional da Propriedade Industrial (INPI)",
+    "verifiedFrom": "Certificados enviados pela AGINOV/UNEMAT em 09/09/2026"
   }
 }
