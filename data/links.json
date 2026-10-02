@@ -754,19 +754,19 @@
       }
     },
     {
-      "title": "Cuiabá Heat",
+      "title": "Cuiabá Heat — Limiar Térmico + IDT/THI",
       "catId": "sistemas",
       "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/cuiaba-heat/",
       "repo": "cuiaba-heat",
-      "desc": "Sistema/painel sobre calor urbano e ambiente térmico em Cuiabá.",
+      "desc": "Painel climático de Cuiabá com limiar térmico, IDT/THI, gráficos, tabelas e análises estatísticas.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "note": "Projeto principal recomendado para Cuiabá. Estrutura e funcionalidades identificadas no código; teste externo completo ainda pendente."
       }
     },
     {
@@ -978,19 +978,19 @@
       }
     },
     {
-      "title": "Clima Cuiaba",
-      "catId": "sistemas",
+      "title": "Clima Cuiabá",
+      "catId": "avaliacao",
       "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/clima-cuiaba/",
       "repo": "clima-cuiaba",
-      "desc": "Projeto Clima Cuiaba.",
+      "desc": "Versão em avaliação. O index.html atual está vazio; decidir se será descontinuada, reconstruída ou incorporada ao Cuiabá Heat.",
       "validation": {
         "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "structure": false,
+        "page": false,
+        "functional": false,
+        "status": "avaliacao",
+        "note": "index.html atual vazio. Manter fora da vitrine principal até decisão."
       }
     },
     {
