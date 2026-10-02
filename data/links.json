@@ -323,7 +323,7 @@
     },
     {
       "title": "Climogramas Br",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/climogramas-br/",
       "repo": "climogramas-br",
@@ -333,8 +333,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
@@ -787,7 +787,7 @@
     },
     {
       "title": "Co2 Pantanal",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/co2-pantanal/",
       "repo": "co2-pantanal",
@@ -797,8 +797,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
@@ -1107,7 +1107,7 @@
     },
     {
       "title": "Carbon Where",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbon-where/",
       "repo": "carbon-where",
@@ -1117,8 +1117,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
