@@ -3,884 +3,1693 @@
     "name": "Ernandes Sobreira",
     "bio": "Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara\nMestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)\nProfessor visitante da Universidade do Estado de Mato Grosso (UNEMAT)\nAtuo integrando ensino, pesquisa, extensão e inovação — criando plataformas e jogos educativos para organizar dados ambientais e de saúde e transformar informação em ação.",
     "chips": [
-      "Ensino",
-      "Pesquisa",
-      "Extensão",
-      "Inovação",
-      "Pantanal",
-      "Clima",
-      "Saúde",
-      "Dados",
+      "Sistemas",
       "Jogos",
-      "Apps"
+      "Clima",
+      "Água",
+      "Pantanal",
+      "Saúde",
+      "Carbono",
+      "Estatística",
+      "Ensino",
+      "Gestão"
     ],
     "photo": "assets/profile.jpg"
   },
   "categories": [
     {
-      "id": "clima",
-      "name": "🌦️ Clima & Hidrologia",
-      "desc": "Climogramas, estações, temperatura, chuva, rios e monitoramento hidroclimático."
-    },
-    {
-      "id": "pantanal",
-      "name": "🐆 Pantanal & Ambiente",
-      "desc": "Pantanal, água, biodiversidade, microplásticos, cinzas, som ambiental e território."
-    },
-    {
-      "id": "carbono",
-      "name": "🌿 Carbono & GEE",
-      "desc": "CO₂, fluxos de carbono, gases de efeito estufa e ferramentas associadas."
-    },
-    {
-      "id": "saude",
-      "name": "❤️ Saúde & Bem-estar",
-      "desc": "Saúde ambiental e humana, dengue, exames, hidratação, alimentação e bem-estar."
+      "id": "sistemas",
+      "name": "🖥️ Sistemas & Painéis",
+      "desc": "Plataformas para consultar, registrar, monitorar ou analisar dados ambientais, climáticos, de saúde e científicos."
     },
     {
       "id": "jogos",
       "name": "🎮 Jogos & Dinâmicas",
-      "desc": "Jogos educativos, quizzes, roletas, sorteios e experiências para sala de aula."
+      "desc": "Jogos educativos, quizzes, roletas, sorteios, gamificação e experiências interativas."
     },
     {
-      "id": "dados",
-      "name": "📊 Estatística, Dados & Modelagem",
-      "desc": "Estatística, modelagem, análise de dados, calculadoras e laboratórios quantitativos."
+      "id": "analise",
+      "name": "📊 Estatística & Ferramentas de Análise",
+      "desc": "Calculadoras, modelagem, estatística, análise de dados e ferramentas quantitativas."
     },
     {
       "id": "ensino",
-      "name": "🎓 Ensino & Pesquisa",
-      "desc": "Ferramentas para aulas, TCC, bancas, pesquisa científica, projetos e formação."
+      "name": "🎓 Ensino, Pesquisa & Formação",
+      "desc": "TCC, bancas, pesquisa científica, cursos, materiais didáticos e apoio à formação."
     },
     {
       "id": "gestao",
-      "name": "🏛️ Gestão Acadêmica & UNEMAT",
-      "desc": "PPGCA, PROFGUA, diárias, atas, calendário, projetos institucionais e gestão."
+      "name": "🏛️ Gestão Acadêmica & Projetos",
+      "desc": "PPGCA, PROFGUA, projetos, diárias, atas, calendário e gestão institucional."
     },
     {
-      "id": "util",
-      "name": "🧰 Utilidades & Vida",
-      "desc": "Ferramentas práticas para rotina, organização pessoal, viagens e uso cotidiano."
+      "id": "pessoal",
+      "name": "🧰 Utilidades & Sistemas Pessoais",
+      "desc": "Organização pessoal, viagens, finanças, saúde cotidiana e ferramentas práticas."
     },
     {
       "id": "hub",
       "name": "🗂️ Hubs, Portfólios & Arquivo",
-      "desc": "Hubs, páginas pessoais, versões históricas, testes e repositórios de apoio."
+      "desc": "Hubs, páginas pessoais, protótipos, versões históricas, repositórios vazios ou não-web."
     }
   ],
+  "validationLegend": {
+    "repo": "Repositório localizado",
+    "structure": "Estrutura web verificada",
+    "page": "Página publicada testada",
+    "functional": "Funções principais testadas"
+  },
   "links": [
     {
       "title": "Ernandes Sobreira",
       "catId": "hub",
+      "domain": "Geral",
       "url": "https://github.com/ernandes-sobreira/Ernandes.sobreira",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Ernandes Sobreira.",
-      "source": "github",
-      "repo": "Ernandes.sobreira"
+      "repo": "Ernandes.sobreira",
+      "desc": "Projeto Ernandes Sobreira.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "ajuste",
+        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+      }
     },
     {
       "title": "Teste",
       "catId": "hub",
+      "domain": "Geral",
       "url": "https://github.com/ernandes-sobreira/Teste",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Teste.",
-      "source": "github",
-      "repo": "Teste"
+      "repo": "Teste",
+      "desc": "Projeto Teste.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "ajuste",
+        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+      }
     },
     {
       "title": "Website",
       "catId": "hub",
-      "url": "https://github.com/ernandes-sobreira/website",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Website.",
-      "source": "github",
-      "repo": "website"
+      "domain": "Geral",
+      "url": "https://ernandes-sobreira.github.io/website/",
+      "repo": "website",
+      "desc": "Projeto Website.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Mudancas Climaticas",
-      "catId": "clima",
+      "catId": "hub",
+      "domain": "Clima",
       "url": "https://github.com/ernandes-sobreira/mudancas-climaticas",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Mudancas Climaticas.",
-      "source": "github",
-      "repo": "mudancas-climaticas"
+      "repo": "mudancas-climaticas",
+      "desc": "Projeto Mudancas Climaticas.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "arquivo",
+        "note": "Repositório vazio ou sem app web publicável."
+      }
     },
     {
       "title": "MAPAINTERATIVO",
-      "catId": "clima",
+      "catId": "hub",
+      "domain": "Geral",
       "url": "https://github.com/ernandes-sobreira/MAPAINTERATIVO",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: MAPAINTERATIVO.",
-      "source": "github",
-      "repo": "MAPAINTERATIVO"
+      "repo": "MAPAINTERATIVO",
+      "desc": "Projeto MAPAINTERATIVO.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "arquivo",
+        "note": "Repositório vazio ou sem app web publicável."
+      }
     },
     {
       "title": "Meu Mapa",
-      "catId": "clima",
+      "catId": "sistemas",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/meu-mapa/",
-      "desc": "App/projeto Meu Mapa.",
-      "source": "github",
-      "repo": "meu-mapa"
+      "repo": "meu-mapa",
+      "desc": "Projeto Meu Mapa.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Meu Mundo",
       "catId": "hub",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/meu-mundo/",
-      "desc": "App/projeto Meu Mundo.",
-      "source": "github",
-      "repo": "meu-mundo"
+      "repo": "meu-mundo",
+      "desc": "Projeto Meu Mundo.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Meu Saude",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/meu-saude/",
-      "desc": "App/projeto Meu Saude.",
-      "source": "github",
-      "repo": "meu-saude"
+      "repo": "meu-saude",
+      "desc": "Sistema pessoal voltado à organização de informações de saúde.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Eco³",
+      "title": "Eco3",
       "catId": "ensino",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/eco3/",
-      "desc": "Ecology, Collaboration, Open Education Group.",
-      "source": "github",
-      "repo": "eco3"
+      "repo": "eco3",
+      "desc": "Projeto Eco3.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Sorteando",
-      "catId": "jogos",
+      "catId": "pessoal",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/sorteando/",
-      "desc": "App simples para sorteios.",
-      "source": "github",
-      "repo": "sorteando"
+      "repo": "sorteando",
+      "desc": "Projeto Sorteando.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Guardi S Da Sa De",
-      "catId": "saude",
+      "catId": "hub",
+      "domain": "Saúde",
       "url": "https://github.com/ernandes-sobreira/guardi-s-da-sa-de",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Guardi S Da Sa De.",
-      "source": "github",
-      "repo": "guardi-s-da-sa-de"
+      "repo": "guardi-s-da-sa-de",
+      "desc": "Projeto Guardi S Da Sa De.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "arquivo",
+        "note": "Repositório vazio ou sem app web publicável."
+      }
     },
     {
       "title": "Guardia Da Saude",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/guardia-da-saude/",
-      "desc": "App/projeto Guardia Da Saude.",
-      "source": "github",
-      "repo": "guardia-da-saude"
+      "repo": "guardia-da-saude",
+      "desc": "Sistema educacional e de vigilância em saúde ambiental.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Quiz",
       "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/quiz/",
-      "desc": "App/projeto Quiz.",
-      "source": "github",
-      "repo": "quiz"
+      "repo": "quiz",
+      "desc": "Projeto Quiz.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Quiz Brasil 2024",
+      "title": "Quiz Brasil2024",
       "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/quiz-brasil2024/",
-      "desc": "Quiz educativo com perguntas sobre o Brasil.",
-      "source": "github",
-      "repo": "quiz-brasil2024"
+      "repo": "quiz-brasil2024",
+      "desc": "Projeto Quiz Brasil2024.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Carbon",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbon/",
-      "desc": "Hub/página relacionada a carbono (experimentos e recursos).",
-      "source": "github",
-      "repo": "carbon"
+      "repo": "carbon",
+      "desc": "Projeto Carbon.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Professor",
+      "title": "Professor ",
       "catId": "ensino",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/professor-/",
-      "desc": "Ferramentas e apoio para organização e rotina docente.",
-      "source": "github",
-      "repo": "professor-"
+      "repo": "professor-",
+      "desc": "Projeto Professor .",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Climogramas Br",
-      "catId": "clima",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/climogramas-br/",
-      "desc": "App/projeto Climogramas Br.",
-      "source": "github",
-      "repo": "climogramas-br"
+      "repo": "climogramas-br",
+      "desc": "Projeto Climogramas Br.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Painel Dengue",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/painel-dengue/",
-      "desc": "App/projeto Painel Dengue.",
-      "source": "github",
-      "repo": "painel-dengue"
+      "repo": "painel-dengue",
+      "desc": "Projeto Painel Dengue.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Painel Dengue V2",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/painel-dengue.v2/",
-      "desc": "App/projeto Painel Dengue V2.",
-      "source": "github",
-      "repo": "painel-dengue.v2"
+      "repo": "painel-dengue.v2",
+      "desc": "Projeto Painel Dengue V2.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Tá com fome de quê?",
-      "catId": "util",
+      "title": "Ta Com Fome De Que",
+      "catId": "pessoal",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/ta.com.fome.de.que/",
-      "desc": "Ferramenta leve para decidir ideias rapidamente.",
-      "source": "github",
-      "repo": "ta.com.fome.de.que"
+      "repo": "ta.com.fome.de.que",
+      "desc": "Projeto Ta Com Fome De Que.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Saude Plena",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/saude-plena/",
-      "desc": "App/projeto Saude Plena.",
-      "source": "github",
-      "repo": "saude-plena"
+      "repo": "saude-plena",
+      "desc": "Sistema/painel voltado à saúde.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Microplast Counter",
-      "catId": "pantanal",
-      "url": "https://ernandes-sobreira.github.io/microplast-counter/",
-      "desc": "App/projeto Microplast Counter.",
-      "source": "github",
-      "repo": "microplast-counter"
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://github.com/ernandes-sobreira/microplast-counter",
+      "repo": "microplast-counter",
+      "desc": "Projeto Microplast Counter.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "ajuste",
+        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+      }
     },
     {
-      "title": "Climogramas BR (v2)",
-      "catId": "clima",
+      "title": "Climogramas Br V2",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/climogramas-br.v2/",
-      "desc": "Climogramas interativos de temperatura e chuva por município.",
-      "source": "github",
-      "repo": "climogramas-br.v2"
+      "repo": "climogramas-br.v2",
+      "desc": "Projeto Climogramas Br V2.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Painel Dengue (v3)",
-      "catId": "saude",
+      "title": "Painel Dengue V3",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/painel-dengue.v3/",
-      "desc": "Monitoramento e organização de informações sobre dengue.",
-      "source": "github",
-      "repo": "painel-dengue.v3"
+      "repo": "painel-dengue.v3",
+      "desc": "Projeto Painel Dengue V3.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Cardio BR",
-      "catId": "saude",
+      "title": "Cardio Br",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/cardio-br/",
-      "desc": "Painel/visualizações sobre saúde cardiovascular.",
-      "source": "github",
-      "repo": "cardio-br"
+      "repo": "cardio-br",
+      "desc": "Projeto Cardio Br.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Dengue Taxon",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/dengue-taxon/",
-      "desc": "Conteúdo e navegação sobre vetores e classificação (taxonomia).",
-      "source": "github",
-      "repo": "dengue-taxon"
+      "repo": "dengue-taxon",
+      "desc": "Projeto Dengue Taxon.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Curso Oratoria",
       "catId": "ensino",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/curso-oratoria/",
-      "desc": "App/projeto Curso Oratoria.",
-      "source": "github",
-      "repo": "curso-oratoria"
+      "repo": "curso-oratoria",
+      "desc": "Projeto Curso Oratoria.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Pantanal Knowledge Hub",
-      "catId": "pantanal",
+      "catId": "hub",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/Pantanal-Knowledge-Hub/",
-      "desc": "App/projeto Pantanal Knowledge Hub.",
-      "source": "github",
-      "repo": "Pantanal-Knowledge-Hub"
+      "repo": "Pantanal-Knowledge-Hub",
+      "desc": "Projeto Pantanal Knowledge Hub.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Há Sorte em Ciência",
+      "title": "Ha Sorte Em Ciencia",
       "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/ha-sorte-em-ciencia/",
-      "desc": "Jogo interativo com perguntas e desafios de ciência.",
-      "source": "github",
-      "repo": "ha-sorte-em-ciencia"
+      "repo": "ha-sorte-em-ciencia",
+      "desc": "Projeto Ha Sorte Em Ciencia.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Cota do Rio Paraguai",
-      "catId": "clima",
+      "title": "Cota Rio Paraguai",
+      "catId": "sistemas",
+      "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/cota-rio-paraguai/",
-      "desc": "Painel para acompanhar níveis/cotas do Rio Paraguai.",
-      "source": "github",
-      "repo": "cota-rio-paraguai"
+      "repo": "cota-rio-paraguai",
+      "desc": "Projeto Cota Rio Paraguai.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Roleta Científica",
+      "title": "Roleta Cientifica",
       "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/roleta-cientifica/",
-      "desc": "Roleta interativa de temas e perguntas científicas.",
-      "source": "github",
-      "repo": "roleta-cientifica"
+      "repo": "roleta-cientifica",
+      "desc": "Projeto Roleta Cientifica.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Science Hub",
-      "catId": "ensino",
+      "title": "Jogo Científico Integrador",
+      "catId": "jogos",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/science-hub/",
-      "desc": "App/projeto Science Hub.",
-      "source": "github",
-      "repo": "science-hub"
+      "repo": "science-hub",
+      "desc": "Jogo científico integrador com teoria, Sankey e quiz sobre ecossistemas e carbono.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Pantanal Quiz",
       "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/pantanal-quiz/",
-      "desc": "App/projeto Pantanal Quiz.",
-      "source": "github",
-      "repo": "pantanal-quiz"
+      "domain": "Pantanal & Ambiente",
+      "url": "https://github.com/ernandes-sobreira/pantanal-quiz",
+      "repo": "pantanal-quiz",
+      "desc": "Projeto Pantanal Quiz.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "ajuste",
+        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+      }
     },
     {
       "title": "Pantanal Quiz V2",
       "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/pantanal-quiz.v2/",
-      "desc": "App/projeto Pantanal Quiz V2.",
-      "source": "github",
-      "repo": "pantanal-quiz.v2"
+      "domain": "Pantanal & Ambiente",
+      "url": "https://github.com/ernandes-sobreira/pantanal-quiz.v2",
+      "repo": "pantanal-quiz.v2",
+      "desc": "Projeto Pantanal Quiz V2.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "ajuste",
+        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+      }
     },
     {
       "title": "Mata Dengue",
-      "catId": "saude",
+      "catId": "jogos",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/mata-dengue/",
-      "desc": "Jogo educativo: combate ao mosquito e conscientização.",
-      "source": "github",
-      "repo": "mata-dengue"
+      "repo": "mata-dengue",
+      "desc": "Projeto Mata Dengue.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Chuva & Dengue",
-      "catId": "saude",
+      "title": "Chuva Dengue",
+      "catId": "jogos",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/chuva-dengue/",
-      "desc": "Jogo/experiência: relação entre chuva e dinâmica da dengue.",
-      "source": "github",
-      "repo": "chuva-dengue"
+      "repo": "chuva-dengue",
+      "desc": "Projeto Chuva Dengue.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Carbono em Jogo",
-      "catId": "carbono",
+      "title": "Carbono Em Jogo",
+      "catId": "jogos",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
-      "desc": "Jogo educativo sobre ciclo do carbono e fluxos.",
-      "source": "github",
-      "repo": "carbono-em-jogo"
+      "repo": "carbono-em-jogo",
+      "desc": "Projeto Carbono Em Jogo.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Respira Carbono",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/respira-carbono/",
-      "desc": "App/projeto Respira Carbono.",
-      "source": "github",
-      "repo": "respira-carbono"
+      "repo": "respira-carbono",
+      "desc": "Projeto Respira Carbono.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Lab de Perguntas (TCC)",
+      "title": "Lab De Perguntas Tcc",
       "catId": "ensino",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/lab-de-perguntas-tcc/",
-      "desc": "Ajuda a construir perguntas e estruturas de TCC/pesquisa.",
-      "source": "github",
-      "repo": "lab-de-perguntas-tcc"
+      "repo": "lab-de-perguntas-tcc",
+      "desc": "Projeto Lab De Perguntas Tcc.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Diario Das Aguas",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Água & Hidrologia",
       "url": "https://github.com/ernandes-sobreira/diario-das-aguas",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Diario Das Aguas.",
-      "source": "github",
-      "repo": "diario-das-aguas"
+      "repo": "diario-das-aguas",
+      "desc": "Projeto Diario Das Aguas.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "arquivo",
+        "note": "Repositório vazio ou sem app web publicável."
+      }
     },
     {
-      "title": "Diario Das Aguasv2",
-      "catId": "pantanal",
+      "title": "Diário das Águas v2",
+      "catId": "sistemas",
+      "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/diario-das-aguasv2/",
-      "desc": "App/projeto Diario Das Aguasv2.",
-      "source": "github",
-      "repo": "diario-das-aguasv2"
+      "repo": "diario-das-aguasv2",
+      "desc": "Versão anterior do sistema Diário das Águas.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Diario Das Aguasv3",
-      "catId": "pantanal",
+      "title": "Diário das Águas v3",
+      "catId": "sistemas",
+      "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/diario-das-aguasv3/",
-      "desc": "App/projeto Diario Das Aguasv3.",
-      "source": "github",
-      "repo": "diario-das-aguasv3"
+      "repo": "diario-das-aguasv3",
+      "desc": "Sistema para registro e avaliação de informações relacionadas à água.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Meu Exame",
-      "catId": "saude",
+      "catId": "sistemas",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/meu-exame/",
-      "desc": "Organizador de exames: histórico e acompanhamento de valores.",
-      "source": "github",
-      "repo": "meu-exame"
+      "repo": "meu-exame",
+      "desc": "Projeto Meu Exame.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Cuiaba Heat",
-      "catId": "hub",
+      "title": "Cuiabá Heat",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/cuiaba-heat/",
-      "desc": "App/projeto Cuiaba Heat.",
-      "source": "github",
-      "repo": "cuiaba-heat"
+      "repo": "cuiaba-heat",
+      "desc": "Sistema/painel sobre calor urbano e ambiente térmico em Cuiabá.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Carbon Pantanal",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbon-pantanal/",
-      "desc": "App/projeto Carbon Pantanal.",
-      "source": "github",
-      "repo": "carbon-pantanal"
+      "repo": "carbon-pantanal",
+      "desc": "Projeto Carbon Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Co2 Pantanal",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/co2-pantanal/",
-      "desc": "App/projeto Co2 Pantanal.",
-      "source": "github",
-      "repo": "co2-pantanal"
+      "repo": "co2-pantanal",
+      "desc": "Projeto Co2 Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Pantanal Pelo Clima",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/pantanal-pelo-clima/",
-      "desc": "App/projeto Pantanal Pelo Clima.",
-      "source": "github",
-      "repo": "pantanal-pelo-clima"
+      "repo": "pantanal-pelo-clima",
+      "desc": "Projeto Pantanal Pelo Clima.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Meu Repositorio",
       "catId": "hub",
-      "url": "https://github.com/ernandes-sobreira/meu-repositorio",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Meu Repositorio.",
-      "source": "github",
-      "repo": "meu-repositorio"
+      "domain": "Geral",
+      "url": "https://ernandes-sobreira.github.io/meu-repositorio/",
+      "repo": "meu-repositorio",
+      "desc": "Projeto Meu Repositorio.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Meu Hub",
       "catId": "hub",
-      "url": "https://github.com/ernandes-sobreira/meu-hub",
-      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Meu Hub.",
-      "source": "github",
-      "repo": "meu-hub"
+      "domain": "Geral",
+      "url": "https://ernandes-sobreira.github.io/meu-hub/",
+      "repo": "meu-hub",
+      "desc": "Projeto Meu Hub.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Integração de Projetos",
-      "catId": "ensino",
+      "title": "Projetos",
+      "catId": "gestao",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/projetos/",
-      "desc": "Ferramentas de apoio para organização de projetos.",
-      "source": "github",
-      "repo": "projetos"
+      "repo": "projetos",
+      "desc": "Projeto Projetos.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Partiu viajar",
-      "catId": "util",
+      "title": "Partiu Holanda Brasil",
+      "catId": "pessoal",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/partiu-holanda-brasil/",
-      "desc": "Checklist de viagens.",
-      "source": "github",
-      "repo": "partiu-holanda-brasil"
+      "repo": "partiu-holanda-brasil",
+      "desc": "Projeto Partiu Holanda Brasil.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Já bebeu água hoje?",
-      "catId": "saude",
+      "title": "Ja Bebeu Agua Hoje",
+      "catId": "pessoal",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/ja-bebeu-agua-hoje/",
-      "desc": "App para beber água e monitorar a hidratação.",
-      "source": "github",
-      "repo": "ja-bebeu-agua-hoje"
+      "repo": "ja-bebeu-agua-hoje",
+      "desc": "Projeto Ja Bebeu Agua Hoje.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Sem Diverticulose",
-      "catId": "saude",
+      "catId": "pessoal",
+      "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/sem-diverticulose/",
-      "desc": "App/projeto Sem Diverticulose.",
-      "source": "github",
-      "repo": "sem-diverticulose"
+      "repo": "sem-diverticulose",
+      "desc": "Projeto Sem Diverticulose.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Estatistica",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/estatistica/",
-      "desc": "App/projeto Estatistica.",
-      "source": "github",
-      "repo": "estatistica"
+      "repo": "estatistica",
+      "desc": "Projeto Estatistica.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Climpa Pantanal",
-      "catId": "pantanal",
+      "title": "Barão-Pantanal — Análise Ambiental",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/climpa-pantanal/",
-      "desc": "App/projeto Climpa Pantanal.",
-      "source": "github",
-      "repo": "climpa-pantanal"
+      "repo": "climpa-pantanal",
+      "desc": "Plataforma de análise ambiental e estatística para Barão de Melgaço, Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Clima do Pantanal",
-      "catId": "clima",
+      "title": "Clima Pantanal",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/clima-pantanal/",
-      "desc": "Painel demonstrativo de variáveis climáticas do Pantanal, tanto planície quanto planalto.",
-      "source": "github",
-      "repo": "clima-pantanal"
+      "repo": "clima-pantanal",
+      "desc": "Projeto Clima Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Clima de Cáceres",
-      "catId": "clima",
+      "title": "Clima Caceres",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/clima-caceres/",
-      "desc": "Painel demonstrativo de variáveis climáticas de Cáceres.",
-      "source": "github",
-      "repo": "clima-caceres"
+      "repo": "clima-caceres",
+      "desc": "Projeto Clima Caceres.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Clima de Cuiabá",
-      "catId": "clima",
+      "title": "Clima Cuiaba",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/clima-cuiaba/",
-      "desc": "Painel demonstrativo de variáveis climáticas de Cuiabá",
-      "source": "github",
-      "repo": "clima-cuiaba"
+      "repo": "clima-cuiaba",
+      "desc": "Projeto Clima Cuiaba.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Guru de Banca",
+      "title": "Guru De Banca",
       "catId": "ensino",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/guru-de-banca/",
-      "desc": "Ferramentas de apoio para alunos que vão passar por bancas avaliadoras.",
-      "source": "github",
-      "repo": "guru-de-banca"
+      "repo": "guru-de-banca",
+      "desc": "Projeto Guru De Banca.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Deveres dos Universitários",
+      "title": "Dado E Deveres",
       "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/dado-e-deveres/",
-      "desc": "Jogo interativo para estabelecer as tarefas dos universitários.",
-      "source": "github",
-      "repo": "dado-e-deveres"
+      "repo": "dado-e-deveres",
+      "desc": "Projeto Dado E Deveres.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Beach-App",
-      "catId": "jogos",
+      "title": "Beach App",
+      "catId": "pessoal",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/beach-app/",
-      "desc": "Sisteminha pra fazer sorteios no beach tenis.",
-      "source": "github",
-      "repo": "beach-app"
+      "repo": "beach-app",
+      "desc": "Projeto Beach App.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Pay Me Back",
-      "catId": "util",
+      "catId": "pessoal",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/pay-me-back/",
-      "desc": "App/projeto Pay Me Back.",
-      "source": "github",
-      "repo": "pay-me-back"
+      "repo": "pay-me-back",
+      "desc": "Projeto Pay Me Back.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "CO2 Play",
-      "catId": "carbono",
+      "catId": "jogos",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/CO2-play/",
-      "desc": "App/projeto CO2 Play.",
-      "source": "github",
-      "repo": "CO2-play"
+      "repo": "CO2-play",
+      "desc": "Projeto CO2 Play.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Scientific Evolution",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/scientific-evolution/",
-      "desc": "App/projeto Scientific Evolution.",
-      "source": "github",
-      "repo": "scientific-evolution"
+      "repo": "scientific-evolution",
+      "desc": "Projeto Scientific Evolution.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Ghg Checklist",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/ghg-checklist/",
-      "desc": "App/projeto Ghg Checklist.",
-      "source": "github",
-      "repo": "ghg-checklist"
+      "repo": "ghg-checklist",
+      "desc": "Projeto Ghg Checklist.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Carbon Where",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbon-where/",
-      "desc": "App/projeto Carbon Where.",
-      "source": "github",
-      "repo": "carbon-where"
+      "repo": "carbon-where",
+      "desc": "Projeto Carbon Where.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Ash Pantanal",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/ash-pantanal/",
-      "desc": "App/projeto Ash Pantanal.",
-      "source": "github",
-      "repo": "ash-pantanal"
+      "repo": "ash-pantanal",
+      "desc": "Projeto Ash Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Dossie Estatistico",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/dossie-estatistico/",
-      "desc": "App/projeto Dossie Estatistico.",
-      "source": "github",
-      "repo": "dossie-estatistico"
+      "repo": "dossie-estatistico",
+      "desc": "Projeto Dossie Estatistico.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Auxiliar De Modelagem",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/auxiliar-de-modelagem/",
-      "desc": "App/projeto Auxiliar De Modelagem.",
-      "source": "github",
-      "repo": "auxiliar-de-modelagem"
+      "repo": "auxiliar-de-modelagem",
+      "desc": "Projeto Auxiliar De Modelagem.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Calendario Ppgca",
       "catId": "gestao",
+      "domain": "Gestão Acadêmica",
       "url": "https://ernandes-sobreira.github.io/calendario-ppgca/",
-      "desc": "App/projeto Calendario Ppgca.",
-      "source": "github",
-      "repo": "calendario-ppgca"
+      "repo": "calendario-ppgca",
+      "desc": "Projeto Calendario Ppgca.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Diaria Profagua",
       "catId": "gestao",
+      "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/diaria-profagua/",
-      "desc": "App/projeto Diaria Profagua.",
-      "source": "github",
-      "repo": "diaria-profagua"
+      "repo": "diaria-profagua",
+      "desc": "Projeto Diaria Profagua.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Radar ConcursosProfessor",
-      "catId": "ensino",
+      "catId": "gestao",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/Radar-ConcursosProfessor/",
-      "desc": "App/projeto Radar ConcursosProfessor.",
-      "source": "github",
-      "repo": "Radar-ConcursosProfessor"
+      "repo": "Radar-ConcursosProfessor",
+      "desc": "Projeto Radar ConcursosProfessor.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Atas Ppgca Unemat",
       "catId": "gestao",
+      "domain": "Gestão Acadêmica",
       "url": "https://ernandes-sobreira.github.io/atas-ppgca-unemat/",
-      "desc": "App/projeto Atas Ppgca Unemat.",
-      "source": "github",
-      "repo": "atas-ppgca-unemat"
+      "repo": "atas-ppgca-unemat",
+      "desc": "Projeto Atas Ppgca Unemat.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Estacao Clima Unemat",
-      "catId": "clima",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/estacao-clima-unemat/",
-      "desc": "App/projeto Estacao Clima Unemat.",
-      "source": "github",
-      "repo": "estacao-clima-unemat"
+      "repo": "estacao-clima-unemat",
+      "desc": "Projeto Estacao Clima Unemat.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Cinzas Project",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/cinzas-project/",
-      "desc": "App/projeto Cinzas Project.",
-      "source": "github",
-      "repo": "cinzas-project"
+      "repo": "cinzas-project",
+      "desc": "Projeto Cinzas Project.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Medidas De Tendencia Central",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/medidas-de-tendencia-central/",
-      "desc": "App/projeto Medidas De Tendencia Central.",
-      "source": "github",
-      "repo": "medidas-de-tendencia-central"
+      "repo": "medidas-de-tendencia-central",
+      "desc": "Projeto Medidas De Tendencia Central.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Diarias Profagua",
       "catId": "gestao",
+      "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/diarias-profagua/",
-      "desc": "App/projeto Diarias Profagua.",
-      "source": "github",
-      "repo": "diarias-profagua"
+      "repo": "diarias-profagua",
+      "desc": "Projeto Diarias Profagua.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Biolab",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/biolab/",
-      "desc": "App/projeto Biolab.",
-      "source": "github",
-      "repo": "biolab"
+      "repo": "biolab",
+      "desc": "Projeto Biolab.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Projeto Estruturante Profagua",
       "catId": "gestao",
+      "domain": "Água & Hidrologia",
       "url": "https://ernandes-sobreira.github.io/projeto.estruturante-profagua/",
-      "desc": "App/projeto Projeto Estruturante Profagua.",
-      "source": "github",
-      "repo": "projeto.estruturante-profagua"
+      "repo": "projeto.estruturante-profagua",
+      "desc": "Projeto Projeto Estruturante Profagua.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Som Ambiental",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/som-ambiental/",
-      "desc": "App/projeto Som Ambiental.",
-      "source": "github",
-      "repo": "som-ambiental"
+      "repo": "som-ambiental",
+      "desc": "Plataforma de coleta e análise de ruído ambiental integrada a atividades estatísticas.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Sopa Web",
-      "catId": "dados",
+      "title": "SOPA Web",
+      "catId": "sistemas",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/sopa-web/",
-      "desc": "App/projeto Sopa Web.",
-      "source": "github",
-      "repo": "sopa-web"
+      "repo": "sopa-web",
+      "desc": "Sistema web acadêmico/educacional com perfis, projetos e área de aluno.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Luminosidade Estatistica",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/luminosidade-estatistica/",
-      "desc": "App/projeto Luminosidade Estatistica.",
-      "source": "github",
-      "repo": "luminosidade-estatistica"
+      "repo": "luminosidade-estatistica",
+      "desc": "Projeto Luminosidade Estatistica.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Nutri Pantanal",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/nutri-pantanal/",
-      "desc": "App/projeto Nutri Pantanal.",
-      "source": "github",
-      "repo": "nutri-pantanal"
+      "repo": "nutri-pantanal",
+      "desc": "Projeto Nutri Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Temp Local",
-      "catId": "clima",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/temp-local/",
-      "desc": "App/projeto Temp Local.",
-      "source": "github",
-      "repo": "temp-local"
+      "repo": "temp-local",
+      "desc": "Projeto Temp Local.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Estatistica Viva",
-      "catId": "dados",
+      "catId": "analise",
+      "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/estatistica-viva/",
-      "desc": "App/projeto Estatistica Viva.",
-      "source": "github",
-      "repo": "estatistica-viva"
+      "repo": "estatistica-viva",
+      "desc": "Projeto Estatistica Viva.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Flux Calc",
-      "catId": "carbono",
+      "catId": "analise",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/flux-calc/",
-      "desc": "App/projeto Flux Calc.",
-      "source": "github",
-      "repo": "flux-calc"
+      "repo": "flux-calc",
+      "desc": "Projeto Flux Calc.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Carbon Flux",
-      "catId": "carbono",
+      "catId": "sistemas",
+      "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbon-flux/",
-      "desc": "App/projeto Carbon Flux.",
-      "source": "github",
-      "repo": "carbon-flux"
+      "repo": "carbon-flux",
+      "desc": "Plataforma de análise de carbono com dados do equipamento Los Gatos.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Bioclima",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/bioclima/",
-      "desc": "App/projeto Bioclima.",
-      "source": "github",
-      "repo": "bioclima"
+      "repo": "bioclima",
+      "desc": "Plataforma para exploração de dados bioclimáticos.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "FishRep",
-      "catId": "pantanal",
+      "title": "FishRep — Reprodução de Peixes",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/FishRep/",
-      "desc": "App/projeto FishRep.",
-      "source": "github",
-      "repo": "FishRep"
+      "repo": "FishRep",
+      "desc": "Plataforma de análise de reprodução de peixes.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Transforma Acoes",
       "catId": "gestao",
+      "domain": "Gestão Acadêmica",
       "url": "https://ernandes-sobreira.github.io/transforma-acoes/",
-      "desc": "App/projeto Transforma Acoes.",
-      "source": "github",
-      "repo": "transforma-acoes"
+      "repo": "transforma-acoes",
+      "desc": "Projeto Transforma Acoes.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Pantanal Contexto",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/pantanal-contexto/",
-      "desc": "App/projeto Pantanal Contexto.",
-      "source": "github",
-      "repo": "pantanal-contexto"
+      "repo": "pantanal-contexto",
+      "desc": "Projeto Pantanal Contexto.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Expedicoes Pantaneiras",
-      "catId": "hub",
+      "title": "Expedições Pantaneiras",
+      "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/expedicoes-pantaneiras/",
-      "desc": "App/projeto Expedicoes Pantaneiras.",
-      "source": "github",
-      "repo": "expedicoes-pantaneiras"
+      "repo": "expedicoes-pantaneiras",
+      "desc": "Jogo/experiência interativa ambientada no Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
-      "title": "Expedicao Pantaneira",
-      "catId": "pantanal",
+      "title": "Expedição Pantaneira",
+      "catId": "jogos",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/expedicao-pantaneira/",
-      "desc": "App/projeto Expedicao Pantaneira.",
-      "source": "github",
-      "repo": "expedicao-pantaneira"
+      "repo": "expedicao-pantaneira",
+      "desc": "Jogo/experiência interativa sobre expedição no Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Projetos Unemat",
       "catId": "gestao",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/projetos-unemat/",
-      "desc": "App/projeto Projetos Unemat.",
-      "source": "github",
-      "repo": "projetos-unemat"
+      "repo": "projetos-unemat",
+      "desc": "Sistema para organização, visualização e análise de projetos e programas da UNEMAT.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Ana Lu",
-      "catId": "ensino",
+      "catId": "pessoal",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/ana-lu/",
-      "desc": "App/projeto Ana Lu.",
-      "source": "github",
-      "repo": "ana-lu"
+      "repo": "ana-lu",
+      "desc": "Projeto Ana Lu.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Fit Family",
-      "catId": "saude",
-      "url": "https://ernandes-sobreira.github.io/fit-family/",
-      "desc": "App/projeto Fit Family.",
-      "source": "github",
-      "repo": "fit-family"
+      "catId": "pessoal",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/fit-family",
+      "repo": "fit-family",
+      "desc": "Projeto Fit Family.",
+      "validation": {
+        "repo": true,
+        "structure": false,
+        "page": null,
+        "functional": null,
+        "status": "ajuste",
+        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
+      }
     },
     {
       "title": "Saga Da Pesquisa",
       "catId": "jogos",
+      "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/saga-da-pesquisa/",
-      "desc": "App/projeto Saga Da Pesquisa.",
-      "source": "github",
-      "repo": "saga-da-pesquisa"
+      "repo": "saga-da-pesquisa",
+      "desc": "Projeto Saga Da Pesquisa.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Carta Cop Pantanal",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/carta-cop-pantanal/",
-      "desc": "App/projeto Carta Cop Pantanal.",
-      "source": "github",
-      "repo": "carta-cop-pantanal"
+      "repo": "carta-cop-pantanal",
+      "desc": "Projeto Carta Cop Pantanal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Cinzas Pantanal V1",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/cinzas-pantanal-v1/",
-      "desc": "App/projeto Cinzas Pantanal V1.",
-      "source": "github",
-      "repo": "cinzas-pantanal-v1"
+      "repo": "cinzas-pantanal-v1",
+      "desc": "Projeto Cinzas Pantanal V1.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Pantanal Acao",
-      "catId": "pantanal",
+      "catId": "sistemas",
+      "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/pantanal-acao/",
-      "desc": "App/projeto Pantanal Acao.",
-      "source": "github",
-      "repo": "pantanal-acao"
+      "repo": "pantanal-acao",
+      "desc": "Projeto Pantanal Acao.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+      }
     },
     {
       "title": "Banca Ativa — Sorteio em Sala",
       "catId": "jogos",
+      "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/meu-hub/banca-ativa.html",
-      "desc": "Sorteie uma pessoa para apresentar ou monte uma banca ativa com funções de participação.",
-      "source": "hub"
+      "repo": "meu-hub/banca-ativa.html",
+      "desc": "Sorteio individual ou de banca ativa com funções para participação em apresentações.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Arquivo criado e estrutura verificada; teste externo da publicação pendente."
+      }
     },
     {
       "title": "Análise de Projetos",
       "catId": "ensino",
       "url": "https://script.google.com/macros/s/AKfycbyXJr1LRqzJmHjV60TDKE9nuV-oQXmneQwconqIdE7GBDyPEK2chJQpd2Ykpb0uBx2i/exec",
-      "desc": "Ferramentas de apoio para organização de ideias para a construção e execução de projetos."
+      "desc": "Ferramentas de apoio para organização de ideias para a construção e execução de projetos.",
+      "domain": "Ensino & Pesquisa",
+      "validation": {
+        "repo": false,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "externo",
+        "note": "Ferramenta externa; não faz parte dos repositórios GitHub auditados."
+      }
     }
   ]
 }
