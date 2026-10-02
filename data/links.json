@@ -8,218 +8,879 @@
       "Extensão",
       "Inovação",
       "Pantanal",
+      "Clima",
       "Saúde",
-      "Dados & Apps"
+      "Dados",
+      "Jogos",
+      "Apps"
     ],
     "photo": "assets/profile.jpg"
   },
   "categories": [
     {
       "id": "clima",
-      "name": "Clima & Hidrologia",
-      "desc": "Clima, chuva, cotas e painéis ambientais."
+      "name": "🌦️ Clima & Hidrologia",
+      "desc": "Climogramas, estações, temperatura, chuva, rios e monitoramento hidroclimático."
+    },
+    {
+      "id": "pantanal",
+      "name": "🐆 Pantanal & Ambiente",
+      "desc": "Pantanal, água, biodiversidade, microplásticos, cinzas, som ambiental e território."
+    },
+    {
+      "id": "carbono",
+      "name": "🌿 Carbono & GEE",
+      "desc": "CO₂, fluxos de carbono, gases de efeito estufa e ferramentas associadas."
     },
     {
       "id": "saude",
-      "name": "Saúde",
-      "desc": "Saúde ambiental e humana: painéis e ferramentas."
+      "name": "❤️ Saúde & Bem-estar",
+      "desc": "Saúde ambiental e humana, dengue, exames, hidratação, alimentação e bem-estar."
     },
     {
       "id": "jogos",
-      "name": "Jogos",
-      "desc": "Jogos educativos, quizzes e experiências interativas."
+      "name": "🎮 Jogos & Dinâmicas",
+      "desc": "Jogos educativos, quizzes, roletas, sorteios e experiências para sala de aula."
+    },
+    {
+      "id": "dados",
+      "name": "📊 Estatística, Dados & Modelagem",
+      "desc": "Estatística, modelagem, análise de dados, calculadoras e laboratórios quantitativos."
     },
     {
       "id": "ensino",
-      "name": "Ensino",
-      "desc": "Ferramentas didáticas e apoio à orientação."
+      "name": "🎓 Ensino & Pesquisa",
+      "desc": "Ferramentas para aulas, TCC, bancas, pesquisa científica, projetos e formação."
+    },
+    {
+      "id": "gestao",
+      "name": "🏛️ Gestão Acadêmica & UNEMAT",
+      "desc": "PPGCA, PROFGUA, diárias, atas, calendário, projetos institucionais e gestão."
     },
     {
       "id": "util",
-      "name": "Utilidades",
-      "desc": "Ferramentas leves do dia a dia."
+      "name": "🧰 Utilidades & Vida",
+      "desc": "Ferramentas práticas para rotina, organização pessoal, viagens e uso cotidiano."
+    },
+    {
+      "id": "hub",
+      "name": "🗂️ Hubs, Portfólios & Arquivo",
+      "desc": "Hubs, páginas pessoais, versões históricas, testes e repositórios de apoio."
     }
   ],
   "links": [
     {
-      "title": "Climogramas BR (v2)",
-      "catId": "clima",
-      "url": "https://ernandes-sobreira.github.io/climogramas-br.v2/",
-      "desc": "Climogramas interativos de temperatura e chuva por município."
+      "title": "Ernandes Sobreira",
+      "catId": "hub",
+      "url": "https://github.com/ernandes-sobreira/Ernandes.sobreira",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Ernandes Sobreira.",
+      "source": "github",
+      "repo": "Ernandes.sobreira"
     },
     {
-      "title": "Cota do Rio Paraguai",
-      "catId": "clima",
-      "url": "https://ernandes-sobreira.github.io/cota-rio-paraguai/",
-      "desc": "Painel para acompanhar níveis/cotas do Rio Paraguai."
+      "title": "Teste",
+      "catId": "hub",
+      "url": "https://github.com/ernandes-sobreira/Teste",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Teste.",
+      "source": "github",
+      "repo": "Teste"
     },
     {
-      "title": "Clima de Cáceres",
-      "catId": "clima",
-      "url": "https://ernandes-sobreira.github.io/clima-caceres/",
-      "desc": "Painel demonstrativo de variáveis climáticas de Cáceres."
+      "title": "Website",
+      "catId": "hub",
+      "url": "https://github.com/ernandes-sobreira/website",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Website.",
+      "source": "github",
+      "repo": "website"
     },
     {
-      "title": "Clima do Pantanal",
+      "title": "Mudancas Climaticas",
       "catId": "clima",
-      "url": "https://ernandes-sobreira.github.io/clima-pantanal/",
-      "desc": "Painel demonstrativo de variáveis climáticas do Pantanal, tanto planície quanto planalto."
+      "url": "https://github.com/ernandes-sobreira/mudancas-climaticas",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Mudancas Climaticas.",
+      "source": "github",
+      "repo": "mudancas-climaticas"
     },
     {
-      "title": "Carbon",
+      "title": "MAPAINTERATIVO",
       "catId": "clima",
-      "url": "https://ernandes-sobreira.github.io/carbon/",
-      "desc": "Hub/página relacionada a carbono (experimentos e recursos)."
+      "url": "https://github.com/ernandes-sobreira/MAPAINTERATIVO",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: MAPAINTERATIVO.",
+      "source": "github",
+      "repo": "MAPAINTERATIVO"
     },
     {
-      "title": "Clima de Cuiabá",
+      "title": "Meu Mapa",
       "catId": "clima",
-      "url": "https://ernandes-sobreira.github.io/clima-cuiaba/",
-      "desc": "Painel demonstrativo de variáveis climáticas de Cuiabá"
+      "url": "https://ernandes-sobreira.github.io/meu-mapa/",
+      "desc": "App/projeto Meu Mapa.",
+      "source": "github",
+      "repo": "meu-mapa"
     },
     {
-      "title": "Meu Exame",
+      "title": "Meu Mundo",
+      "catId": "hub",
+      "url": "https://ernandes-sobreira.github.io/meu-mundo/",
+      "desc": "App/projeto Meu Mundo.",
+      "source": "github",
+      "repo": "meu-mundo"
+    },
+    {
+      "title": "Meu Saude",
       "catId": "saude",
-      "url": "https://ernandes-sobreira.github.io/meu-exame/",
-      "desc": "Organizador de exames: histórico e acompanhamento de valores."
+      "url": "https://ernandes-sobreira.github.io/meu-saude/",
+      "desc": "App/projeto Meu Saude.",
+      "source": "github",
+      "repo": "meu-saude"
     },
     {
-      "title": "Guardiã da Saúde",
+      "title": "Eco³",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/eco3/",
+      "desc": "Ecology, Collaboration, Open Education Group.",
+      "source": "github",
+      "repo": "eco3"
+    },
+    {
+      "title": "Sorteando",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/sorteando/",
+      "desc": "App simples para sorteios.",
+      "source": "github",
+      "repo": "sorteando"
+    },
+    {
+      "title": "Guardi S Da Sa De",
       "catId": "saude",
-      "url": "https://ernandes-sobreira.github.io/guardia-da-saude/index.html",
-      "desc": "Educação e vigilância em saúde ambiental (interativo)."
+      "url": "https://github.com/ernandes-sobreira/guardi-s-da-sa-de",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Guardi S Da Sa De.",
+      "source": "github",
+      "repo": "guardi-s-da-sa-de"
     },
     {
-      "title": "Cardio BR",
+      "title": "Guardia Da Saude",
       "catId": "saude",
-      "url": "https://ernandes-sobreira.github.io/cardio-br/",
-      "desc": "Painel/visualizações sobre saúde cardiovascular."
+      "url": "https://ernandes-sobreira.github.io/guardia-da-saude/",
+      "desc": "App/projeto Guardia Da Saude.",
+      "source": "github",
+      "repo": "guardia-da-saude"
     },
     {
-      "title": "Painel Dengue (v3)",
-      "catId": "saude",
-      "url": "https://ernandes-sobreira.github.io/painel-dengue.v3/",
-      "desc": "Monitoramento e organização de informações sobre dengue."
-    },
-    {
-      "title": "Dengue Taxon",
-      "catId": "saude",
-      "url": "https://ernandes-sobreira.github.io/dengue-taxon/",
-      "desc": "Conteúdo e navegação sobre vetores e classificação (taxonomia)."
-    },
-    {
-      "title": "Mata Dengue",
+      "title": "Quiz",
       "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/mata-dengue/",
-      "desc": "Jogo educativo: combate ao mosquito e conscientização."
-    },
-    {
-      "title": "Chuva & Dengue",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/chuva-dengue/",
-      "desc": "Jogo/experiência: relação entre chuva e dinâmica da dengue."
-    },
-    {
-      "title": "Carbono em Jogo",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
-      "desc": "Jogo educativo sobre ciclo do carbono e fluxos."
-    },
-    {
-      "title": "Roleta Científica",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/roleta-cientifica/",
-      "desc": "Roleta interativa de temas e perguntas científicas."
-    },
-    {
-      "title": "Há Sorte em Ciência",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/ha-sorte-em-ciencia/",
-      "desc": "Jogo interativo com perguntas e desafios de ciência."
-    },
-    {
-      "title": "Deveres dos Universitários",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/dado-e-deveres/",
-      "desc": "Jogo interativo para estabelecer as tarefas dos universitários."
+      "url": "https://ernandes-sobreira.github.io/quiz/",
+      "desc": "App/projeto Quiz.",
+      "source": "github",
+      "repo": "quiz"
     },
     {
       "title": "Quiz Brasil 2024",
       "catId": "jogos",
       "url": "https://ernandes-sobreira.github.io/quiz-brasil2024/",
-      "desc": "Quiz educativo com perguntas sobre o Brasil."
+      "desc": "Quiz educativo com perguntas sobre o Brasil.",
+      "source": "github",
+      "repo": "quiz-brasil2024"
     },
     {
-      "title": "Banca Ativa — Sorteio em Sala",
-      "catId": "jogos",
-      "url": "https://ernandes-sobreira.github.io/meu-hub/banca-ativa.html",
-      "desc": "Sorteie uma pessoa para apresentar ou monte uma banca ativa com funções de participação."
-    },
-    {
-      "title": "Lab de Perguntas (TCC)",
-      "catId": "ensino",
-      "url": "https://ernandes-sobreira.github.io/lab-de-perguntas-tcc/",
-      "desc": "Ajuda a construir perguntas e estruturas de TCC/pesquisa."
+      "title": "Carbon",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/carbon/",
+      "desc": "Hub/página relacionada a carbono (experimentos e recursos).",
+      "source": "github",
+      "repo": "carbon"
     },
     {
       "title": "Professor",
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/professor-/",
-      "desc": "Ferramentas e apoio para organização e rotina docente."
+      "desc": "Ferramentas e apoio para organização e rotina docente.",
+      "source": "github",
+      "repo": "professor-"
+    },
+    {
+      "title": "Climogramas Br",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/climogramas-br/",
+      "desc": "App/projeto Climogramas Br.",
+      "source": "github",
+      "repo": "climogramas-br"
+    },
+    {
+      "title": "Painel Dengue",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/painel-dengue/",
+      "desc": "App/projeto Painel Dengue.",
+      "source": "github",
+      "repo": "painel-dengue"
+    },
+    {
+      "title": "Painel Dengue V2",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/painel-dengue.v2/",
+      "desc": "App/projeto Painel Dengue V2.",
+      "source": "github",
+      "repo": "painel-dengue.v2"
+    },
+    {
+      "title": "Tá com fome de quê?",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/ta.com.fome.de.que/",
+      "desc": "Ferramenta leve para decidir ideias rapidamente.",
+      "source": "github",
+      "repo": "ta.com.fome.de.que"
+    },
+    {
+      "title": "Saude Plena",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/saude-plena/",
+      "desc": "App/projeto Saude Plena.",
+      "source": "github",
+      "repo": "saude-plena"
+    },
+    {
+      "title": "Microplast Counter",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/microplast-counter/",
+      "desc": "App/projeto Microplast Counter.",
+      "source": "github",
+      "repo": "microplast-counter"
+    },
+    {
+      "title": "Climogramas BR (v2)",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/climogramas-br.v2/",
+      "desc": "Climogramas interativos de temperatura e chuva por município.",
+      "source": "github",
+      "repo": "climogramas-br.v2"
+    },
+    {
+      "title": "Painel Dengue (v3)",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/painel-dengue.v3/",
+      "desc": "Monitoramento e organização de informações sobre dengue.",
+      "source": "github",
+      "repo": "painel-dengue.v3"
+    },
+    {
+      "title": "Cardio BR",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/cardio-br/",
+      "desc": "Painel/visualizações sobre saúde cardiovascular.",
+      "source": "github",
+      "repo": "cardio-br"
+    },
+    {
+      "title": "Dengue Taxon",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/dengue-taxon/",
+      "desc": "Conteúdo e navegação sobre vetores e classificação (taxonomia).",
+      "source": "github",
+      "repo": "dengue-taxon"
+    },
+    {
+      "title": "Curso Oratoria",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/curso-oratoria/",
+      "desc": "App/projeto Curso Oratoria.",
+      "source": "github",
+      "repo": "curso-oratoria"
+    },
+    {
+      "title": "Pantanal Knowledge Hub",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/Pantanal-Knowledge-Hub/",
+      "desc": "App/projeto Pantanal Knowledge Hub.",
+      "source": "github",
+      "repo": "Pantanal-Knowledge-Hub"
+    },
+    {
+      "title": "Há Sorte em Ciência",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/ha-sorte-em-ciencia/",
+      "desc": "Jogo interativo com perguntas e desafios de ciência.",
+      "source": "github",
+      "repo": "ha-sorte-em-ciencia"
+    },
+    {
+      "title": "Cota do Rio Paraguai",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/cota-rio-paraguai/",
+      "desc": "Painel para acompanhar níveis/cotas do Rio Paraguai.",
+      "source": "github",
+      "repo": "cota-rio-paraguai"
+    },
+    {
+      "title": "Roleta Científica",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/roleta-cientifica/",
+      "desc": "Roleta interativa de temas e perguntas científicas.",
+      "source": "github",
+      "repo": "roleta-cientifica"
+    },
+    {
+      "title": "Science Hub",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/science-hub/",
+      "desc": "App/projeto Science Hub.",
+      "source": "github",
+      "repo": "science-hub"
+    },
+    {
+      "title": "Pantanal Quiz",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/pantanal-quiz/",
+      "desc": "App/projeto Pantanal Quiz.",
+      "source": "github",
+      "repo": "pantanal-quiz"
+    },
+    {
+      "title": "Pantanal Quiz V2",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/pantanal-quiz.v2/",
+      "desc": "App/projeto Pantanal Quiz V2.",
+      "source": "github",
+      "repo": "pantanal-quiz.v2"
+    },
+    {
+      "title": "Mata Dengue",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/mata-dengue/",
+      "desc": "Jogo educativo: combate ao mosquito e conscientização.",
+      "source": "github",
+      "repo": "mata-dengue"
+    },
+    {
+      "title": "Chuva & Dengue",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/chuva-dengue/",
+      "desc": "Jogo/experiência: relação entre chuva e dinâmica da dengue.",
+      "source": "github",
+      "repo": "chuva-dengue"
+    },
+    {
+      "title": "Carbono em Jogo",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/carbono-em-jogo/",
+      "desc": "Jogo educativo sobre ciclo do carbono e fluxos.",
+      "source": "github",
+      "repo": "carbono-em-jogo"
+    },
+    {
+      "title": "Respira Carbono",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/respira-carbono/",
+      "desc": "App/projeto Respira Carbono.",
+      "source": "github",
+      "repo": "respira-carbono"
+    },
+    {
+      "title": "Lab de Perguntas (TCC)",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/lab-de-perguntas-tcc/",
+      "desc": "Ajuda a construir perguntas e estruturas de TCC/pesquisa.",
+      "source": "github",
+      "repo": "lab-de-perguntas-tcc"
+    },
+    {
+      "title": "Diario Das Aguas",
+      "catId": "pantanal",
+      "url": "https://github.com/ernandes-sobreira/diario-das-aguas",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Diario Das Aguas.",
+      "source": "github",
+      "repo": "diario-das-aguas"
+    },
+    {
+      "title": "Diario Das Aguasv2",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/diario-das-aguasv2/",
+      "desc": "App/projeto Diario Das Aguasv2.",
+      "source": "github",
+      "repo": "diario-das-aguasv2"
+    },
+    {
+      "title": "Diario Das Aguasv3",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/diario-das-aguasv3/",
+      "desc": "App/projeto Diario Das Aguasv3.",
+      "source": "github",
+      "repo": "diario-das-aguasv3"
+    },
+    {
+      "title": "Meu Exame",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/meu-exame/",
+      "desc": "Organizador de exames: histórico e acompanhamento de valores.",
+      "source": "github",
+      "repo": "meu-exame"
+    },
+    {
+      "title": "Cuiaba Heat",
+      "catId": "hub",
+      "url": "https://ernandes-sobreira.github.io/cuiaba-heat/",
+      "desc": "App/projeto Cuiaba Heat.",
+      "source": "github",
+      "repo": "cuiaba-heat"
+    },
+    {
+      "title": "Carbon Pantanal",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/carbon-pantanal/",
+      "desc": "App/projeto Carbon Pantanal.",
+      "source": "github",
+      "repo": "carbon-pantanal"
+    },
+    {
+      "title": "Co2 Pantanal",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/co2-pantanal/",
+      "desc": "App/projeto Co2 Pantanal.",
+      "source": "github",
+      "repo": "co2-pantanal"
+    },
+    {
+      "title": "Pantanal Pelo Clima",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/pantanal-pelo-clima/",
+      "desc": "App/projeto Pantanal Pelo Clima.",
+      "source": "github",
+      "repo": "pantanal-pelo-clima"
+    },
+    {
+      "title": "Meu Repositorio",
+      "catId": "hub",
+      "url": "https://github.com/ernandes-sobreira/meu-repositorio",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Meu Repositorio.",
+      "source": "github",
+      "repo": "meu-repositorio"
+    },
+    {
+      "title": "Meu Hub",
+      "catId": "hub",
+      "url": "https://github.com/ernandes-sobreira/meu-hub",
+      "desc": "Repositório de apoio, arquivo, teste ou versão sem app publicado: Meu Hub.",
+      "source": "github",
+      "repo": "meu-hub"
     },
     {
       "title": "Integração de Projetos",
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/projetos/",
-      "desc": "Ferramentas de apoio para organização de projetos."
+      "desc": "Ferramentas de apoio para organização de projetos.",
+      "source": "github",
+      "repo": "projetos"
+    },
+    {
+      "title": "Partiu viajar",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/partiu-holanda-brasil/",
+      "desc": "Checklist de viagens.",
+      "source": "github",
+      "repo": "partiu-holanda-brasil"
+    },
+    {
+      "title": "Já bebeu água hoje?",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/ja-bebeu-agua-hoje/",
+      "desc": "App para beber água e monitorar a hidratação.",
+      "source": "github",
+      "repo": "ja-bebeu-agua-hoje"
+    },
+    {
+      "title": "Sem Diverticulose",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/sem-diverticulose/",
+      "desc": "App/projeto Sem Diverticulose.",
+      "source": "github",
+      "repo": "sem-diverticulose"
+    },
+    {
+      "title": "Estatistica",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/estatistica/",
+      "desc": "App/projeto Estatistica.",
+      "source": "github",
+      "repo": "estatistica"
+    },
+    {
+      "title": "Climpa Pantanal",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/climpa-pantanal/",
+      "desc": "App/projeto Climpa Pantanal.",
+      "source": "github",
+      "repo": "climpa-pantanal"
+    },
+    {
+      "title": "Clima do Pantanal",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/clima-pantanal/",
+      "desc": "Painel demonstrativo de variáveis climáticas do Pantanal, tanto planície quanto planalto.",
+      "source": "github",
+      "repo": "clima-pantanal"
+    },
+    {
+      "title": "Clima de Cáceres",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/clima-caceres/",
+      "desc": "Painel demonstrativo de variáveis climáticas de Cáceres.",
+      "source": "github",
+      "repo": "clima-caceres"
+    },
+    {
+      "title": "Clima de Cuiabá",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/clima-cuiaba/",
+      "desc": "Painel demonstrativo de variáveis climáticas de Cuiabá",
+      "source": "github",
+      "repo": "clima-cuiaba"
     },
     {
       "title": "Guru de Banca",
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/guru-de-banca/",
-      "desc": "Ferramentas de apoio para alunos que vão passar por bancas avaliadoras."
+      "desc": "Ferramentas de apoio para alunos que vão passar por bancas avaliadoras.",
+      "source": "github",
+      "repo": "guru-de-banca"
+    },
+    {
+      "title": "Deveres dos Universitários",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/dado-e-deveres/",
+      "desc": "Jogo interativo para estabelecer as tarefas dos universitários.",
+      "source": "github",
+      "repo": "dado-e-deveres"
+    },
+    {
+      "title": "Beach-App",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/beach-app/",
+      "desc": "Sisteminha pra fazer sorteios no beach tenis.",
+      "source": "github",
+      "repo": "beach-app"
+    },
+    {
+      "title": "Pay Me Back",
+      "catId": "util",
+      "url": "https://ernandes-sobreira.github.io/pay-me-back/",
+      "desc": "App/projeto Pay Me Back.",
+      "source": "github",
+      "repo": "pay-me-back"
+    },
+    {
+      "title": "CO2 Play",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/CO2-play/",
+      "desc": "App/projeto CO2 Play.",
+      "source": "github",
+      "repo": "CO2-play"
+    },
+    {
+      "title": "Scientific Evolution",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/scientific-evolution/",
+      "desc": "App/projeto Scientific Evolution.",
+      "source": "github",
+      "repo": "scientific-evolution"
+    },
+    {
+      "title": "Ghg Checklist",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/ghg-checklist/",
+      "desc": "App/projeto Ghg Checklist.",
+      "source": "github",
+      "repo": "ghg-checklist"
+    },
+    {
+      "title": "Carbon Where",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/carbon-where/",
+      "desc": "App/projeto Carbon Where.",
+      "source": "github",
+      "repo": "carbon-where"
+    },
+    {
+      "title": "Ash Pantanal",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/ash-pantanal/",
+      "desc": "App/projeto Ash Pantanal.",
+      "source": "github",
+      "repo": "ash-pantanal"
+    },
+    {
+      "title": "Dossie Estatistico",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/dossie-estatistico/",
+      "desc": "App/projeto Dossie Estatistico.",
+      "source": "github",
+      "repo": "dossie-estatistico"
+    },
+    {
+      "title": "Auxiliar De Modelagem",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/auxiliar-de-modelagem/",
+      "desc": "App/projeto Auxiliar De Modelagem.",
+      "source": "github",
+      "repo": "auxiliar-de-modelagem"
+    },
+    {
+      "title": "Calendario Ppgca",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/calendario-ppgca/",
+      "desc": "App/projeto Calendario Ppgca.",
+      "source": "github",
+      "repo": "calendario-ppgca"
+    },
+    {
+      "title": "Diaria Profagua",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/diaria-profagua/",
+      "desc": "App/projeto Diaria Profagua.",
+      "source": "github",
+      "repo": "diaria-profagua"
+    },
+    {
+      "title": "Radar ConcursosProfessor",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/Radar-ConcursosProfessor/",
+      "desc": "App/projeto Radar ConcursosProfessor.",
+      "source": "github",
+      "repo": "Radar-ConcursosProfessor"
+    },
+    {
+      "title": "Atas Ppgca Unemat",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/atas-ppgca-unemat/",
+      "desc": "App/projeto Atas Ppgca Unemat.",
+      "source": "github",
+      "repo": "atas-ppgca-unemat"
+    },
+    {
+      "title": "Estacao Clima Unemat",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/estacao-clima-unemat/",
+      "desc": "App/projeto Estacao Clima Unemat.",
+      "source": "github",
+      "repo": "estacao-clima-unemat"
+    },
+    {
+      "title": "Cinzas Project",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/cinzas-project/",
+      "desc": "App/projeto Cinzas Project.",
+      "source": "github",
+      "repo": "cinzas-project"
+    },
+    {
+      "title": "Medidas De Tendencia Central",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/medidas-de-tendencia-central/",
+      "desc": "App/projeto Medidas De Tendencia Central.",
+      "source": "github",
+      "repo": "medidas-de-tendencia-central"
+    },
+    {
+      "title": "Diarias Profagua",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/diarias-profagua/",
+      "desc": "App/projeto Diarias Profagua.",
+      "source": "github",
+      "repo": "diarias-profagua"
+    },
+    {
+      "title": "Biolab",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/biolab/",
+      "desc": "App/projeto Biolab.",
+      "source": "github",
+      "repo": "biolab"
+    },
+    {
+      "title": "Projeto Estruturante Profagua",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/projeto.estruturante-profagua/",
+      "desc": "App/projeto Projeto Estruturante Profagua.",
+      "source": "github",
+      "repo": "projeto.estruturante-profagua"
+    },
+    {
+      "title": "Som Ambiental",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/som-ambiental/",
+      "desc": "App/projeto Som Ambiental.",
+      "source": "github",
+      "repo": "som-ambiental"
+    },
+    {
+      "title": "Sopa Web",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/sopa-web/",
+      "desc": "App/projeto Sopa Web.",
+      "source": "github",
+      "repo": "sopa-web"
+    },
+    {
+      "title": "Luminosidade Estatistica",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/luminosidade-estatistica/",
+      "desc": "App/projeto Luminosidade Estatistica.",
+      "source": "github",
+      "repo": "luminosidade-estatistica"
+    },
+    {
+      "title": "Nutri Pantanal",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/nutri-pantanal/",
+      "desc": "App/projeto Nutri Pantanal.",
+      "source": "github",
+      "repo": "nutri-pantanal"
+    },
+    {
+      "title": "Temp Local",
+      "catId": "clima",
+      "url": "https://ernandes-sobreira.github.io/temp-local/",
+      "desc": "App/projeto Temp Local.",
+      "source": "github",
+      "repo": "temp-local"
+    },
+    {
+      "title": "Estatistica Viva",
+      "catId": "dados",
+      "url": "https://ernandes-sobreira.github.io/estatistica-viva/",
+      "desc": "App/projeto Estatistica Viva.",
+      "source": "github",
+      "repo": "estatistica-viva"
+    },
+    {
+      "title": "Flux Calc",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/flux-calc/",
+      "desc": "App/projeto Flux Calc.",
+      "source": "github",
+      "repo": "flux-calc"
+    },
+    {
+      "title": "Carbon Flux",
+      "catId": "carbono",
+      "url": "https://ernandes-sobreira.github.io/carbon-flux/",
+      "desc": "App/projeto Carbon Flux.",
+      "source": "github",
+      "repo": "carbon-flux"
+    },
+    {
+      "title": "Bioclima",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/bioclima/",
+      "desc": "App/projeto Bioclima.",
+      "source": "github",
+      "repo": "bioclima"
+    },
+    {
+      "title": "FishRep",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/FishRep/",
+      "desc": "App/projeto FishRep.",
+      "source": "github",
+      "repo": "FishRep"
+    },
+    {
+      "title": "Transforma Acoes",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/transforma-acoes/",
+      "desc": "App/projeto Transforma Acoes.",
+      "source": "github",
+      "repo": "transforma-acoes"
+    },
+    {
+      "title": "Pantanal Contexto",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/pantanal-contexto/",
+      "desc": "App/projeto Pantanal Contexto.",
+      "source": "github",
+      "repo": "pantanal-contexto"
+    },
+    {
+      "title": "Expedicoes Pantaneiras",
+      "catId": "hub",
+      "url": "https://ernandes-sobreira.github.io/expedicoes-pantaneiras/",
+      "desc": "App/projeto Expedicoes Pantaneiras.",
+      "source": "github",
+      "repo": "expedicoes-pantaneiras"
+    },
+    {
+      "title": "Expedicao Pantaneira",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/expedicao-pantaneira/",
+      "desc": "App/projeto Expedicao Pantaneira.",
+      "source": "github",
+      "repo": "expedicao-pantaneira"
+    },
+    {
+      "title": "Projetos Unemat",
+      "catId": "gestao",
+      "url": "https://ernandes-sobreira.github.io/projetos-unemat/",
+      "desc": "App/projeto Projetos Unemat.",
+      "source": "github",
+      "repo": "projetos-unemat"
+    },
+    {
+      "title": "Ana Lu",
+      "catId": "ensino",
+      "url": "https://ernandes-sobreira.github.io/ana-lu/",
+      "desc": "App/projeto Ana Lu.",
+      "source": "github",
+      "repo": "ana-lu"
+    },
+    {
+      "title": "Fit Family",
+      "catId": "saude",
+      "url": "https://ernandes-sobreira.github.io/fit-family/",
+      "desc": "App/projeto Fit Family.",
+      "source": "github",
+      "repo": "fit-family"
+    },
+    {
+      "title": "Saga Da Pesquisa",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/saga-da-pesquisa/",
+      "desc": "App/projeto Saga Da Pesquisa.",
+      "source": "github",
+      "repo": "saga-da-pesquisa"
+    },
+    {
+      "title": "Carta Cop Pantanal",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/carta-cop-pantanal/",
+      "desc": "App/projeto Carta Cop Pantanal.",
+      "source": "github",
+      "repo": "carta-cop-pantanal"
+    },
+    {
+      "title": "Cinzas Pantanal V1",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/cinzas-pantanal-v1/",
+      "desc": "App/projeto Cinzas Pantanal V1.",
+      "source": "github",
+      "repo": "cinzas-pantanal-v1"
+    },
+    {
+      "title": "Pantanal Acao",
+      "catId": "pantanal",
+      "url": "https://ernandes-sobreira.github.io/pantanal-acao/",
+      "desc": "App/projeto Pantanal Acao.",
+      "source": "github",
+      "repo": "pantanal-acao"
+    },
+    {
+      "title": "Banca Ativa — Sorteio em Sala",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/meu-hub/banca-ativa.html",
+      "desc": "Sorteie uma pessoa para apresentar ou monte uma banca ativa com funções de participação.",
+      "source": "hub"
     },
     {
       "title": "Análise de Projetos",
       "catId": "ensino",
       "url": "https://script.google.com/macros/s/AKfycbyXJr1LRqzJmHjV60TDKE9nuV-oQXmneQwconqIdE7GBDyPEK2chJQpd2Ykpb0uBx2i/exec",
       "desc": "Ferramentas de apoio para organização de ideias para a construção e execução de projetos."
-    },
-    {
-      "title": "Eco³",
-      "catId": "ensino",
-      "url": "https://ernandes-sobreira.github.io/eco3/",
-      "desc": "Ecology, Collaboration, Open Education Group."
-    },
-    {
-      "title": "Tá com fome de quê?",
-      "catId": "util",
-      "url": "https://ernandes-sobreira.github.io/ta.com.fome.de.que/",
-      "desc": "Ferramenta leve para decidir ideias rapidamente."
-    },
-    {
-      "title": "Sorteando",
-      "catId": "util",
-      "url": "https://ernandes-sobreira.github.io/sorteando/",
-      "desc": "App simples para sorteios."
-    },
-    {
-      "title": "Já bebeu água hoje?",
-      "catId": "util",
-      "url": "https://ernandes-sobreira.github.io/ja-bebeu-agua-hoje/",
-      "desc": "App para beber água e monitorar a hidratação."
-    },
-    {
-      "title": "Partiu viajar",
-      "catId": "util",
-      "url": "https://ernandes-sobreira.github.io/partiu-holanda-brasil/",
-      "desc": "Checklist de viagens."
-    },
-    {
-      "title": "Beach-App",
-      "catId": "util",
-      "url": "https://ernandes-sobreira.github.io/beach-app/",
-      "desc": "Sisteminha pra fazer sorteios no beach tenis."
     }
   ]
 }
