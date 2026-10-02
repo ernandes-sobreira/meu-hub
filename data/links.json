@@ -33,6 +33,11 @@
       "desc": "Calculadoras, modelagem, estatística, análise de dados e ferramentas quantitativas."
     },
     {
+      "id": "estatistica-disciplina",
+      "name": "📚 Estatística — Disciplina",
+      "desc": "Ambientes, roteiros e materiais desenvolvidos especificamente para acompanhar as aulas de Estatística e Modelagem."
+    },
+    {
       "id": "ensino",
       "name": "🎓 Ensino, Pesquisa & Formação",
       "desc": "TCC, bancas, pesquisa científica, cursos, materiais didáticos e apoio à formação."
@@ -1182,21 +1187,22 @@
       }
     },
     {
-      "title": "Auxiliar De Modelagem",
-      "catId": "analise",
+      "title": "Estatística e Modelagem — Apoio à Disciplina",
+      "catId": "estatistica-disciplina",
       "domain": "Estatística & Dados",
       "url": "https://ernandes-sobreira.github.io/auxiliar-de-modelagem/",
       "repo": "auxiliar-de-modelagem",
-      "desc": "Projeto Auxiliar De Modelagem.",
+      "desc": "Ambiente didático para os alunos de Estatística e Modelagem, organizado por semanas e conteúdos aplicados à Biologia, Ecologia e Saúde.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "note": "Classificação revisada a partir do conteúdo real do app: material didático específico da disciplina, não ferramenta estatística genérica."
       },
-      "registered": false
+      "registered": false,
+      "audience": "Alunos da disciplina de Estatística e Modelagem"
     },
     {
       "title": "Calendario Ppgca",
