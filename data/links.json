@@ -51,6 +51,11 @@
       "id": "hub",
       "name": "🗂️ Hubs, Portfólios & Arquivo",
       "desc": "Hubs, páginas pessoais, protótipos, versões históricas, repositórios vazios ou não-web."
+    },
+    {
+      "id": "avaliacao",
+      "name": "🧪 Em avaliação",
+      "desc": "Projetos temporariamente fora da vitrine principal enquanto passam por revisão, testes ou ajustes."
     }
   ],
   "validationLegend": {
@@ -285,19 +290,19 @@
       }
     },
     {
-      "title": "Carbon",
-      "catId": "sistemas",
+      "title": "Carbono Quiz — Fases",
+      "catId": "jogos",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/carbon/",
       "repo": "carbon",
-      "desc": "Projeto Carbon.",
+      "desc": "Jogo educativo em fases sobre carbono, ciclo do carbono e processos relacionados.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "note": "Classificação revisada manualmente: é um jogo educativo. README precisa ser atualizado para refletir o conteúdo real."
       }
     },
     {
@@ -925,19 +930,19 @@
       }
     },
     {
-      "title": "Barão-Pantanal — Análise Ambiental",
-      "catId": "sistemas",
+      "title": "BARÃO-PANTANAL",
+      "catId": "jogos",
       "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/climpa-pantanal/",
       "repo": "climpa-pantanal",
-      "desc": "Plataforma de análise ambiental e estatística para Barão de Melgaço, Pantanal.",
+      "desc": "Jogo/experiência interativa com dados ambientais de Barão de Melgaço, Pantanal.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "note": "Classificação revisada manualmente pelo autor: tratar como jogo, não como sistema/painel."
       }
     },
     {
@@ -1245,19 +1250,19 @@
       }
     },
     {
-      "title": "Cinzas Project",
-      "catId": "sistemas",
+      "title": "CEUA Project Console — Cinzas, Carbono & Biodiversidade",
+      "catId": "avaliacao",
       "domain": "Pantanal & Ambiente",
       "url": "https://ernandes-sobreira.github.io/cinzas-project/",
       "repo": "cinzas-project",
-      "desc": "Projeto Cinzas Project.",
+      "desc": "Projeto em avaliação sobre cinzas, carbono e biodiversidade no Pantanal.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido para Em avaliação; manter fora da vitrine principal até revisão funcional e documental."
       }
     },
     {
