@@ -365,6 +365,16 @@
       Verde = verificado; amarelo = pendente; vermelho = problema detectado.
     </div>
 
+    <section class="section" id="registeredSection" style="display:none" data-theme="registrados">
+      <div class="sectionHead">
+        <div>
+          <h3>🏅 Programas registrados no INPI</h3>
+          <p>Softwares com registro de programa de computador confirmado por certificado oficial.</p>
+        </div>
+      </div>
+      <div class="grid" id="registeredGrid"></div>
+    </section>
+
     <div id="sections"></div>
   </div>
 
@@ -470,6 +480,112 @@
       });
     }
 
+    function makeCard(l, categoryName, gi=0, idx=0){
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const grad = GRADS[(gi + idx) % GRADS.length];
+
+      const bar = document.createElement("div");
+      bar.className = "bar " + grad;
+
+      const body = document.createElement("div");
+      body.className = "body";
+
+      const kicker = document.createElement("div");
+      kicker.className = "kicker";
+      kicker.textContent = categoryName || "Categoria";
+
+      const title = document.createElement("div");
+      title.className = "title";
+      title.textContent = l.title || "(Sem título)";
+
+      const desc = document.createElement("div");
+      desc.className = "desc";
+      desc.textContent = l.desc || "Sem descrição.";
+
+      body.appendChild(kicker);
+      body.appendChild(title);
+      body.appendChild(desc);
+
+      const meta = document.createElement("div");
+      meta.className = "meta-row";
+      const domain = document.createElement("span");
+      domain.className = "tag-domain";
+      domain.textContent = l.domain || "Geral";
+      meta.appendChild(domain);
+
+      const v = l.validation || {};
+      const st = document.createElement("span");
+      st.className = "tag-status " + (v.functional===true ? "ok" : (v.structure===false ? "bad" : "warn"));
+      st.textContent = v.functional===true ? "✅ Testado" : (v.structure===false ? "⚠️ Precisa ajuste" : "🧪 Validação pendente");
+      meta.appendChild(st);
+
+      if(l.registered===true){
+        const rg=document.createElement("span");
+        rg.className="tag-register";
+        rg.textContent="🏅 Programa registrado";
+        rg.title = l.registration?.process ? `${l.registration.registeredTitle || l.title} • ${l.registration.process}` : "Registro confirmado";
+        meta.appendChild(rg);
+      }
+      body.appendChild(meta);
+
+      const vr = document.createElement("div");
+      vr.className = "validation";
+      const steps = [
+        ["① Repo", v.repo],
+        ["② Estrutura", v.structure],
+        ["③ Página", v.page],
+        ["④ Funcional", v.functional]
+      ];
+      steps.forEach(([label,state])=>{
+        const s=document.createElement("div");
+        s.className="vstep " + (state===true ? "done" : (state===false ? "fail" : "pending"));
+        s.textContent=label;
+        s.title = state===true ? "Verificado" : (state===false ? "Problema detectado" : "Ainda não testado");
+        vr.appendChild(s);
+      });
+      body.appendChild(vr);
+
+      const actions = document.createElement("div");
+      actions.className = "actions";
+      const go = document.createElement("button");
+      go.className = "go " + grad;
+      go.innerHTML = `Abrir <span style="opacity:.9">↗</span>`;
+      go.onclick = ()=> window.open(l.url, "_blank", "noopener,noreferrer");
+
+      const copy = document.createElement("button");
+      copy.className = "copy";
+      copy.textContent = "Copiar";
+      copy.onclick = async ()=>{
+        try{
+          await navigator.clipboard.writeText(l.url);
+          toast("Link copiado!");
+        }catch{
+          toast("Não consegui copiar.");
+        }
+      };
+      actions.appendChild(go);
+      actions.appendChild(copy);
+
+      card.appendChild(bar);
+      card.appendChild(body);
+      card.appendChild(actions);
+      return card;
+    }
+
+    function renderRegistered(data){
+      const sec=$("registeredSection");
+      const grid=$("registeredGrid");
+      if(!sec || !grid) return;
+      const list=(data.links||[]).filter(x=>x.registered===true);
+      grid.innerHTML="";
+      if(!list.length){ sec.style.display="none"; return; }
+      sec.style.display="";
+      list.sort((a,b)=>(a.title||"").localeCompare((b.title||""),"pt-BR"));
+      list.forEach((l,i)=> grid.appendChild(makeCard(l,"Registro INPI",0,i)));
+    }
+
     function renderSections(data){
       const sections = $("sections");
       sections.innerHTML = "";
@@ -503,98 +619,7 @@
 
         g.links.forEach((l, idx)=>{
           shown++;
-          const card = document.createElement("div");
-          card.className = "card";
-
-          const grad = GRADS[(gi + idx) % GRADS.length];
-
-          const bar = document.createElement("div");
-          bar.className = "bar " + grad;
-
-          const body = document.createElement("div");
-          body.className = "body";
-
-          const kicker = document.createElement("div");
-          kicker.className = "kicker";
-          kicker.textContent = g.cat?.name || "Categoria";
-
-          const title = document.createElement("div");
-          title.className = "title";
-          title.textContent = l.title || "(Sem título)";
-
-          const desc = document.createElement("div");
-          desc.className = "desc";
-          desc.textContent = l.desc || "Sem descrição.";
-
-          body.appendChild(kicker);
-          body.appendChild(title);
-          body.appendChild(desc);
-
-          const meta = document.createElement("div");
-          meta.className = "meta-row";
-          const domain = document.createElement("span");
-          domain.className = "tag-domain";
-          domain.textContent = l.domain || "Geral";
-          meta.appendChild(domain);
-
-          const v = l.validation || {};
-          const st = document.createElement("span");
-          st.className = "tag-status " + (v.functional===true ? "ok" : (v.structure===false ? "bad" : "warn"));
-          st.textContent = v.functional===true ? "✅ Testado" : (v.structure===false ? "⚠️ Precisa ajuste" : "🧪 Validação pendente");
-          meta.appendChild(st);
-          if(l.registered===true){
-            const rg=document.createElement("span");
-            rg.className="tag-register";
-            rg.textContent="🏅 Programa registrado";
-            meta.appendChild(rg);
-          }
-          body.appendChild(meta);
-
-          const vr = document.createElement("div");
-          vr.className = "validation";
-          const steps = [
-            ["① Repo", v.repo],
-            ["② Estrutura", v.structure],
-            ["③ Página", v.page],
-            ["④ Funcional", v.functional]
-          ];
-          steps.forEach(([label,state])=>{
-            const s=document.createElement("div");
-            s.className="vstep " + (state===true ? "done" : (state===false ? "fail" : "pending"));
-            s.textContent=label;
-            s.title = state===true ? "Verificado" : (state===false ? "Problema detectado" : "Ainda não testado");
-            vr.appendChild(s);
-          });
-          body.appendChild(vr);
-
-          const actions = document.createElement("div");
-          actions.className = "actions";
-
-          const go = document.createElement("button");
-          go.className = "go " + grad;
-          go.innerHTML = `Abrir <span style="opacity:.9">↗</span>`;
-          go.onclick = ()=> window.open(l.url, "_blank", "noopener,noreferrer");
-
-          const copy = document.createElement("button");
-          copy.className = "copy";
-          copy.textContent = "Copiar";
-          copy.onclick = async ()=>{
-            try{
-              await navigator.clipboard.writeText(l.url);
-              toast("Link copiado!");
-            }catch{
-              toast("Não consegui copiar.");
-            }
-          };
-
-          actions.appendChild(go);
-          actions.appendChild(copy);
-
-          card.appendChild(bar);
-          card.appendChild(body);
-          card.appendChild(actions);
-
-          grid.appendChild(card);
+          grid.appendChild(makeCard(l, g.cat?.name || "Categoria", gi, idx));
         });
 
         sec.appendChild(head);
@@ -674,6 +699,7 @@
       $("hubSearch")?.addEventListener("input", applyFilters);
 
       renderCounts(data);
+      renderRegistered(data);
       applyFilters();
     }
 
