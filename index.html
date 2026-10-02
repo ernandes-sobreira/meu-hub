@@ -277,6 +277,33 @@
     }
     @media(max-width:720px){.hub-tools{grid-template-columns:1fr;top:6px}}
 
+  
+    .meta-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px}
+    .tag-domain,.tag-status{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900;
+      border:1px solid rgba(17,24,39,.10);background:#f8fafc;color:#334155
+    }
+    .tag-status.ok{background:#ecfdf3;color:#087a3d;border-color:#b7efcc}
+    .tag-status.warn{background:#fff8e1;color:#8a5a00;border-color:#ffe29a}
+    .tag-status.bad{background:#fff0f1;color:#b42318;border-color:#ffc8cd}
+    .validation{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:12px
+    }
+    .vstep{
+      min-height:42px;border-radius:10px;padding:7px 6px;text-align:center;
+      font-size:10px;font-weight:900;line-height:1.1;
+      border:1px solid rgba(17,24,39,.10);background:#f3f4f6;color:#94a3b8
+    }
+    .vstep.done{background:#eafaf0;color:#087a3d;border-color:#b7efcc}
+    .vstep.pending{background:#fff8e1;color:#8a5a00;border-color:#ffe29a}
+    .vstep.fail{background:#fff0f1;color:#b42318;border-color:#ffc8cd}
+    .validation-legend{
+      margin:10px 0 18px;padding:12px 14px;border-radius:14px;
+      background:#111827;color:#fff;font-size:12px;line-height:1.5
+    }
+    .validation-legend b{color:#ffd54a}
+
   </style>
 </head>
 
@@ -317,10 +344,19 @@
 
     <div class="hub-tools">
       <input id="hubSearch" type="search" placeholder="🔎 Buscar app, tema ou palavra-chave..." autocomplete="off">
-      <select id="hubCategory">
-        <option value="">Todas as categorias</option>
+      <select id="hubCategory"><option value="">Todos os tipos</option></select>
+      <select id="hubDomain"><option value="">Todas as áreas</option></select>
+      <select id="hubValidation">
+        <option value="">Todos os estados</option>
+        <option value="structure-ok">Estrutura web verificada</option>
+        <option value="needs-fix">Precisa ajuste web</option>
+        <option value="functional-pending">Teste funcional pendente</option>
       </select>
       <div class="tool-note" id="filterNote">Digite para encontrar rapidamente qualquer ferramenta.</div>
+    </div>
+    <div class="validation-legend">
+      <b>Régua de validação:</b> ① repositório localizado → ② estrutura web verificada → ③ página publicada testada → ④ funções principais testadas.
+      Verde = verificado; amarelo = pendente; vermelho = problema detectado.
     </div>
 
     <div id="sections"></div>
@@ -337,11 +373,19 @@
       if(!HUB_DATA) return;
       const q = String($("hubSearch")?.value || "").trim().toLowerCase();
       const cat = $("hubCategory")?.value || "";
+      const domain = $("hubDomain")?.value || "";
+      const val = $("hubValidation")?.value || "";
       const filtered = {
         ...HUB_DATA,
         links: (HUB_DATA.links||[]).filter(l=>{
-          const hay = [l.title,l.desc,l.repo,l.catId].filter(Boolean).join(" ").toLowerCase();
-          return (!q || hay.includes(q)) && (!cat || l.catId===cat);
+          const hay = [l.title,l.desc,l.repo,l.catId,l.domain].filter(Boolean).join(" ").toLowerCase();
+          const v=l.validation||{};
+          const valOk =
+            !val ||
+            (val==="structure-ok" && v.structure===true) ||
+            (val==="needs-fix" && v.structure===false) ||
+            (val==="functional-pending" && v.structure===true && v.functional!==true);
+          return (!q || hay.includes(q)) && (!cat || l.catId===cat) && (!domain || l.domain===domain) && valOk;
         })
       };
       renderSections(filtered);
@@ -478,6 +522,37 @@
           body.appendChild(title);
           body.appendChild(desc);
 
+          const meta = document.createElement("div");
+          meta.className = "meta-row";
+          const domain = document.createElement("span");
+          domain.className = "tag-domain";
+          domain.textContent = l.domain || "Geral";
+          meta.appendChild(domain);
+
+          const v = l.validation || {};
+          const st = document.createElement("span");
+          st.className = "tag-status " + (v.functional===true ? "ok" : (v.structure===false ? "bad" : "warn"));
+          st.textContent = v.functional===true ? "✅ Testado" : (v.structure===false ? "⚠️ Precisa ajuste" : "🧪 Validação pendente");
+          meta.appendChild(st);
+          body.appendChild(meta);
+
+          const vr = document.createElement("div");
+          vr.className = "validation";
+          const steps = [
+            ["① Repo", v.repo],
+            ["② Estrutura", v.structure],
+            ["③ Página", v.page],
+            ["④ Funcional", v.functional]
+          ];
+          steps.forEach(([label,state])=>{
+            const s=document.createElement("div");
+            s.className="vstep " + (state===true ? "done" : (state===false ? "fail" : "pending"));
+            s.textContent=label;
+            s.title = state===true ? "Verificado" : (state===false ? "Problema detectado" : "Ainda não testado");
+            vr.appendChild(s);
+          });
+          body.appendChild(vr);
+
           const actions = document.createElement("div");
           actions.className = "actions";
 
@@ -561,7 +636,7 @@
 
       const catSel = $("hubCategory");
       if(catSel){
-        catSel.innerHTML = '<option value="">Todas as categorias</option>';
+        catSel.innerHTML = '<option value="">Todos os tipos</option>';
         (data.categories||[]).forEach(c=>{
           const o=document.createElement("option");
           o.value=c.id;
@@ -570,6 +645,17 @@
         });
         catSel.addEventListener("change", applyFilters);
       }
+
+      const domainSel = $("hubDomain");
+      if(domainSel){
+        const domains=[...new Set((data.links||[]).map(x=>x.domain).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+        domainSel.innerHTML='<option value="">Todas as áreas</option>';
+        domains.forEach(d=>{
+          const o=document.createElement("option"); o.value=d; o.textContent=d; domainSel.appendChild(o);
+        });
+        domainSel.addEventListener("change", applyFilters);
+      }
+      $("hubValidation")?.addEventListener("change", applyFilters);
       $("hubSearch")?.addEventListener("input", applyFilters);
 
       renderCounts(data);
