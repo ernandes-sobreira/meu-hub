@@ -243,18 +243,18 @@
     },
     {
       "title": "Guardia Da Saude",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/guardia-da-saude/",
       "repo": "guardia-da-saude",
-      "desc": "Sistema educacional e de vigilância em saúde ambiental.",
+      "desc": "Sistema de saúde ambiental em avaliação; revisar estrutura, conteúdo e navegação antes de voltar à vitrine principal.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
@@ -467,18 +467,18 @@
     },
     {
       "title": "Dengue Taxon",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/dengue-taxon/",
       "repo": "dengue-taxon",
-      "desc": "Projeto Dengue Taxon.",
+      "desc": "Projeto em avaliação. A versão atual foi considerada simples demais e precisa revisão de conteúdo, experiência e apresentação.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
@@ -690,67 +690,19 @@
       }
     },
     {
-      "title": "Diario Das Aguas",
-      "catId": "sistemas",
-      "domain": "Água & Hidrologia",
-      "url": "https://github.com/ernandes-sobreira/diario-das-aguas",
-      "repo": "diario-das-aguas",
-      "desc": "Projeto Diario Das Aguas.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "arquivo",
-        "note": "Repositório vazio ou sem app web publicável."
-      }
-    },
-    {
-      "title": "Diário das Águas v2",
-      "catId": "sistemas",
-      "domain": "Água & Hidrologia",
-      "url": "https://ernandes-sobreira.github.io/diario-das-aguasv2/",
-      "repo": "diario-das-aguasv2",
-      "desc": "Versão anterior do sistema Diário das Águas.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
-    },
-    {
-      "title": "Diário das Águas v3",
-      "catId": "sistemas",
-      "domain": "Água & Hidrologia",
-      "url": "https://ernandes-sobreira.github.io/diario-das-aguasv3/",
-      "repo": "diario-das-aguasv3",
-      "desc": "Sistema para registro e avaliação de informações relacionadas à água.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      }
-    },
-    {
       "title": "Meu Exame",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Saúde",
       "url": "https://ernandes-sobreira.github.io/meu-exame/",
       "repo": "meu-exame",
-      "desc": "Projeto Meu Exame.",
+      "desc": "Sistema de organização e acompanhamento de exames em avaliação.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
@@ -1091,18 +1043,18 @@
     },
     {
       "title": "Ghg Checklist",
-      "catId": "sistemas",
+      "catId": "avaliacao",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/ghg-checklist/",
       "repo": "ghg-checklist",
-      "desc": "Projeto Ghg Checklist.",
+      "desc": "Ferramenta de checklist de gases de efeito estufa em avaliação.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "avaliacao",
+        "note": "Movido manualmente para Em avaliação pelo autor; manter fora da vitrine principal até revisão."
       }
     },
     {
