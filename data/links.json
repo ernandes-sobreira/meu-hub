@@ -81,74 +81,6 @@
   },
   "links": [
     {
-      "title": "Teste",
-      "catId": "hub",
-      "domain": "Geral",
-      "url": "https://github.com/ernandes-sobreira/Teste",
-      "repo": "Teste",
-      "desc": "Projeto Teste.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "ajuste",
-        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      },
-      "registered": false
-    },
-    {
-      "title": "Website",
-      "catId": "hub",
-      "domain": "Geral",
-      "url": "https://ernandes-sobreira.github.io/website/",
-      "repo": "website",
-      "desc": "Projeto Website.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
-      "title": "Mudancas Climaticas",
-      "catId": "hub",
-      "domain": "Clima",
-      "url": "https://github.com/ernandes-sobreira/mudancas-climaticas",
-      "repo": "mudancas-climaticas",
-      "desc": "Projeto Mudancas Climaticas.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "arquivo",
-        "note": "Repositório vazio ou sem app web publicável."
-      },
-      "registered": false
-    },
-    {
-      "title": "MAPAINTERATIVO",
-      "catId": "hub",
-      "domain": "Geral",
-      "url": "https://github.com/ernandes-sobreira/MAPAINTERATIVO",
-      "repo": "MAPAINTERATIVO",
-      "desc": "Projeto MAPAINTERATIVO.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "arquivo",
-        "note": "Repositório vazio ou sem app web publicável."
-      },
-      "registered": false
-    },
-    {
       "title": "Meu Mapa",
       "catId": "sistemas",
       "domain": "Geral",
@@ -167,7 +99,7 @@
     },
     {
       "title": "Meu Mundo",
-      "catId": "hub",
+      "catId": "construcao",
       "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/meu-mundo/",
       "repo": "meu-mundo",
@@ -177,8 +109,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -486,23 +418,6 @@
       "registered": false
     },
     {
-      "title": "Pantanal Knowledge Hub",
-      "catId": "hub",
-      "domain": "Pantanal & Ambiente",
-      "url": "https://ernandes-sobreira.github.io/Pantanal-Knowledge-Hub/",
-      "repo": "Pantanal-Knowledge-Hub",
-      "desc": "Projeto Pantanal Knowledge Hub.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Ha Sorte Em Ciencia",
       "catId": "jogos",
       "domain": "Geral",
@@ -775,23 +690,6 @@
         "functional": null,
         "status": "construcao",
         "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
-      },
-      "registered": false
-    },
-    {
-      "title": "Meu Repositorio",
-      "catId": "hub",
-      "domain": "Geral",
-      "url": "https://ernandes-sobreira.github.io/meu-repositorio/",
-      "repo": "meu-repositorio",
-      "desc": "Projeto Meu Repositorio.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
       "registered": false
     },
