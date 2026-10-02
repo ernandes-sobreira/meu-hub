@@ -218,7 +218,7 @@
     },
     {
       "title": "Eco3",
-      "catId": "ensino",
+      "catId": "construcao",
       "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/eco3/",
       "repo": "eco3",
@@ -228,8 +228,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -320,7 +320,7 @@
     },
     {
       "title": "Professor ",
-      "catId": "ensino",
+      "catId": "construcao",
       "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/professor-/",
       "repo": "professor-",
@@ -330,8 +330,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -504,7 +504,7 @@
     },
     {
       "title": "Curso Oratoria",
-      "catId": "ensino",
+      "catId": "construcao",
       "domain": "Ensino & Pesquisa",
       "url": "https://ernandes-sobreira.github.io/curso-oratoria/",
       "repo": "curso-oratoria",
@@ -514,8 +514,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -1193,23 +1193,6 @@
       "audience": "Alunos da disciplina de Estatística e Modelagem"
     },
     {
-      "title": "Calendario Ppgca",
-      "catId": "gestao",
-      "domain": "Gestão Acadêmica",
-      "url": "https://ernandes-sobreira.github.io/calendario-ppgca/",
-      "repo": "calendario-ppgca",
-      "desc": "Projeto Calendario Ppgca.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Diaria Profagua",
       "catId": "gestao",
       "domain": "Água & Hidrologia",
@@ -1298,23 +1281,6 @@
         "functional": null,
         "status": "avaliacao",
         "note": "Movido para Em avaliação; manter fora da vitrine principal até revisão funcional e documental."
-      },
-      "registered": false
-    },
-    {
-      "title": "Medidas De Tendencia Central",
-      "catId": "analise",
-      "domain": "Estatística & Dados",
-      "url": "https://ernandes-sobreira.github.io/medidas-de-tendencia-central/",
-      "repo": "medidas-de-tendencia-central",
-      "desc": "Projeto Medidas De Tendencia Central.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
       },
       "registered": false
     },
