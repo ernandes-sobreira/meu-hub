@@ -81,23 +81,6 @@
   },
   "links": [
     {
-      "title": "Ernandes Sobreira",
-      "catId": "hub",
-      "domain": "Geral",
-      "url": "https://github.com/ernandes-sobreira/Ernandes.sobreira",
-      "repo": "Ernandes.sobreira",
-      "desc": "Projeto Ernandes Sobreira.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "ajuste",
-        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
-      },
-      "registered": false
-    },
-    {
       "title": "Teste",
       "catId": "hub",
       "domain": "Geral",
@@ -235,7 +218,7 @@
     },
     {
       "title": "Sorteando",
-      "catId": "pessoal",
+      "catId": "construcao",
       "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/sorteando/",
       "repo": "sorteando",
@@ -245,25 +228,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
-      "title": "Guardi S Da Sa De",
-      "catId": "hub",
-      "domain": "Saúde",
-      "url": "https://github.com/ernandes-sobreira/guardi-s-da-sa-de",
-      "repo": "guardi-s-da-sa-de",
-      "desc": "Projeto Guardi S Da Sa De.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "arquivo",
-        "note": "Repositório vazio ou sem app web publicável."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -371,7 +337,7 @@
     },
     {
       "title": "Ta Com Fome De Que",
-      "catId": "pessoal",
+      "catId": "construcao",
       "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/ta.com.fome.de.que/",
       "repo": "ta.com.fome.de.que",
@@ -381,8 +347,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -848,7 +814,7 @@
     },
     {
       "title": "Partiu Holanda Brasil",
-      "catId": "pessoal",
+      "catId": "construcao",
       "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/partiu-holanda-brasil/",
       "repo": "partiu-holanda-brasil",
@@ -858,8 +824,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -1014,25 +980,8 @@
       "registered": false
     },
     {
-      "title": "Beach App",
-      "catId": "pessoal",
-      "domain": "Geral",
-      "url": "https://ernandes-sobreira.github.io/beach-app/",
-      "repo": "beach-app",
-      "desc": "Projeto Beach App.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
       "title": "Pay Me Back",
-      "catId": "pessoal",
+      "catId": "construcao",
       "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/pay-me-back/",
       "repo": "pay-me-back",
@@ -1042,8 +991,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -1174,23 +1123,6 @@
       },
       "registered": false,
       "audience": "Alunos da disciplina de Estatística e Modelagem"
-    },
-    {
-      "title": "Radar ConcursosProfessor",
-      "catId": "gestao",
-      "domain": "Ensino & Pesquisa",
-      "url": "https://ernandes-sobreira.github.io/Radar-ConcursosProfessor/",
-      "repo": "Radar-ConcursosProfessor",
-      "desc": "Projeto Radar ConcursosProfessor.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
     },
     {
       "title": "Atas Ppgca Unemat",
@@ -1439,7 +1371,7 @@
     },
     {
       "title": "Transforma Acoes",
-      "catId": "gestao",
+      "catId": "construcao",
       "domain": "Gestão Acadêmica",
       "url": "https://ernandes-sobreira.github.io/transforma-acoes/",
       "repo": "transforma-acoes",
@@ -1449,8 +1381,8 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       },
       "registered": false
     },
@@ -1526,40 +1458,6 @@
         "functional": null,
         "status": "pendente",
         "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
-      "title": "Ana Lu",
-      "catId": "pessoal",
-      "domain": "Geral",
-      "url": "https://ernandes-sobreira.github.io/ana-lu/",
-      "repo": "ana-lu",
-      "desc": "Projeto Ana Lu.",
-      "validation": {
-        "repo": true,
-        "structure": true,
-        "page": null,
-        "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
-      },
-      "registered": false
-    },
-    {
-      "title": "Fit Family",
-      "catId": "pessoal",
-      "domain": "Geral",
-      "url": "https://github.com/ernandes-sobreira/fit-family",
-      "repo": "fit-family",
-      "desc": "Projeto Fit Family.",
-      "validation": {
-        "repo": true,
-        "structure": false,
-        "page": null,
-        "functional": null,
-        "status": "ajuste",
-        "note": "Repositório localizado, mas sem index.html na raiz; precisa revisão antes de ser tratado como app web."
       },
       "registered": false
     },
