@@ -2,15 +2,43 @@
   "profile": {
     "name": "Ernandes Sobreira",
     "bio": "Cacerense • Biólogo • Pai do Davi e da Sara • Marido da Bárbara\nMestre em Ecologia e Conservação da Biodiversidade • Doutor em Ciência (Radboud University)\nProfessor visitante da Universidade do Estado de Mato Grosso (UNEMAT)\nAtuo integrando ensino, pesquisa, extensão e inovação — criando plataformas e jogos educativos para organizar dados ambientais e de saúde e transformar informação em ação.",
-    "chips": ["Ensino", "Pesquisa", "Extensão", "Inovação", "Pantanal", "Saúde", "Dados & Apps"],
+    "chips": [
+      "Ensino",
+      "Pesquisa",
+      "Extensão",
+      "Inovação",
+      "Pantanal",
+      "Saúde",
+      "Dados & Apps"
+    ],
     "photo": "assets/profile.jpg"
   },
   "categories": [
-    { "id": "clima", "name": "Clima & Hidrologia", "desc": "Clima, chuva, cotas e painéis ambientais." },
-    { "id": "saude", "name": "Saúde", "desc": "Saúde ambiental e humana: painéis e ferramentas." },
-    { "id": "jogos", "name": "Jogos", "desc": "Jogos educativos, quizzes e experiências interativas." },
-    { "id": "ensino", "name": "Ensino", "desc": "Ferramentas didáticas e apoio à orientação." },
-    { "id": "util", "name": "Utilidades", "desc": "Ferramentas leves do dia a dia." }
+    {
+      "id": "clima",
+      "name": "Clima & Hidrologia",
+      "desc": "Clima, chuva, cotas e painéis ambientais."
+    },
+    {
+      "id": "saude",
+      "name": "Saúde",
+      "desc": "Saúde ambiental e humana: painéis e ferramentas."
+    },
+    {
+      "id": "jogos",
+      "name": "Jogos",
+      "desc": "Jogos educativos, quizzes e experiências interativas."
+    },
+    {
+      "id": "ensino",
+      "name": "Ensino",
+      "desc": "Ferramentas didáticas e apoio à orientação."
+    },
+    {
+      "id": "util",
+      "name": "Utilidades",
+      "desc": "Ferramentas leves do dia a dia."
+    }
   ],
   "links": [
     {
@@ -31,7 +59,6 @@
       "url": "https://ernandes-sobreira.github.io/clima-caceres/",
       "desc": "Painel demonstrativo de variáveis climáticas de Cáceres."
     },
-    
     {
       "title": "Clima do Pantanal",
       "catId": "clima",
@@ -45,12 +72,11 @@
       "desc": "Hub/página relacionada a carbono (experimentos e recursos)."
     },
     {
-    "title": "Clima de Cuiabá",
+      "title": "Clima de Cuiabá",
       "catId": "clima",
       "url": "https://ernandes-sobreira.github.io/clima-cuiaba/",
       "desc": "Painel demonstrativo de variáveis climáticas de Cuiabá"
     },
-
     {
       "title": "Meu Exame",
       "catId": "saude",
@@ -81,7 +107,6 @@
       "url": "https://ernandes-sobreira.github.io/dengue-taxon/",
       "desc": "Conteúdo e navegação sobre vetores e classificação (taxonomia)."
     },
-
     {
       "title": "Mata Dengue",
       "catId": "jogos",
@@ -124,7 +149,12 @@
       "url": "https://ernandes-sobreira.github.io/quiz-brasil2024/",
       "desc": "Quiz educativo com perguntas sobre o Brasil."
     },
-
+    {
+      "title": "Banca Ativa — Sorteio em Sala",
+      "catId": "jogos",
+      "url": "https://ernandes-sobreira.github.io/meu-hub/banca-ativa.html",
+      "desc": "Sorteie uma pessoa para apresentar ou monte uma banca ativa com funções de participação."
+    },
     {
       "title": "Lab de Perguntas (TCC)",
       "catId": "ensino",
@@ -132,12 +162,12 @@
       "desc": "Ajuda a construir perguntas e estruturas de TCC/pesquisa."
     },
     {
-      "title": "Professor", 
+      "title": "Professor",
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/professor-/",
       "desc": "Ferramentas e apoio para organização e rotina docente."
     },
-     {
+    {
       "title": "Integração de Projetos",
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/projetos/",
@@ -149,20 +179,18 @@
       "url": "https://ernandes-sobreira.github.io/guru-de-banca/",
       "desc": "Ferramentas de apoio para alunos que vão passar por bancas avaliadoras."
     },
- {
+    {
       "title": "Análise de Projetos",
       "catId": "ensino",
       "url": "https://script.google.com/macros/s/AKfycbyXJr1LRqzJmHjV60TDKE9nuV-oQXmneQwconqIdE7GBDyPEK2chJQpd2Ykpb0uBx2i/exec",
       "desc": "Ferramentas de apoio para organização de ideias para a construção e execução de projetos."
     },
-
     {
       "title": "Eco³",
       "catId": "ensino",
       "url": "https://ernandes-sobreira.github.io/eco3/",
       "desc": "Ecology, Collaboration, Open Education Group."
     },
-
     {
       "title": "Tá com fome de quê?",
       "catId": "util",
@@ -175,19 +203,19 @@
       "url": "https://ernandes-sobreira.github.io/sorteando/",
       "desc": "App simples para sorteios."
     },
-    { 
+    {
       "title": "Já bebeu água hoje?",
       "catId": "util",
       "url": "https://ernandes-sobreira.github.io/ja-bebeu-agua-hoje/",
       "desc": "App para beber água e monitorar a hidratação."
     },
-     { 
+    {
       "title": "Partiu viajar",
       "catId": "util",
       "url": "https://ernandes-sobreira.github.io/partiu-holanda-brasil/",
       "desc": "Checklist de viagens."
     },
-    { 
+    {
       "title": "Beach-App",
       "catId": "util",
       "url": "https://ernandes-sobreira.github.io/beach-app/",
