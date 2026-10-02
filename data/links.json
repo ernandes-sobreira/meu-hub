@@ -648,18 +648,18 @@
     },
     {
       "title": "Respira Carbono",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Carbono & GEE",
       "url": "https://ernandes-sobreira.github.io/respira-carbono/",
       "repo": "respira-carbono",
-      "desc": "Projeto Respira Carbono.",
+      "desc": "Projeto educacional sobre carbono e respiração ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -1288,18 +1288,18 @@
     },
     {
       "title": "SOPA Web",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Geral",
       "url": "https://ernandes-sobreira.github.io/sopa-web/",
       "repo": "sopa-web",
-      "desc": "Sistema web acadêmico/educacional com perfis, projetos e área de aluno.",
+      "desc": "Sistema web acadêmico/educacional ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
@@ -1336,18 +1336,18 @@
     },
     {
       "title": "Temp Local",
-      "catId": "sistemas",
+      "catId": "construcao",
       "domain": "Clima",
       "url": "https://ernandes-sobreira.github.io/temp-local/",
       "repo": "temp-local",
-      "desc": "Projeto Temp Local.",
+      "desc": "Ferramenta de temperatura local ainda em construção.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "construcao",
+        "note": "Movido manualmente para Ainda em construção pelo autor; manter fora da vitrine principal até conclusão."
       }
     },
     {
