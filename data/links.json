@@ -3279,6 +3279,23 @@
         "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
       },
       "registered": false
+    },
+    {
+      "title": "FishBook — Ciência Cidadã dos Peixes",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/FishBook/",
+      "repo": "FishBook",
+      "desc": "Plataforma de ciência cidadã para registro e acompanhamento de peixes, com mapa e participação de usuários.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído como candidato para auditoria e possível registro de programa de computador."
+      },
+      "registered": false
     }
   ],
   "registrationLegend": {
