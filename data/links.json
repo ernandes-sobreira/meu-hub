@@ -1493,6 +1493,92 @@
         "note": "Agrupado com Flux Calc por finalidade: análise de dados de CO₂ e CH₄."
       },
       "registered": false
+    },
+    {
+      "title": "Carbonautas",
+      "catId": "sistemas",
+      "domain": "Ensino & Pesquisa",
+      "url": "https://ernandes-sobreira.github.io/carbonautas/",
+      "repo": "carbonautas",
+      "desc": "Plataforma para acompanhamento de bolsistas, projetos, cronogramas, ações, arquivos e colaboração acadêmica.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Repositório e estrutura web verificados; página e funções principais ainda precisam de validação no Hub."
+      },
+      "registered": false
+    },
+    {
+      "title": "IPS Brasil",
+      "catId": "sistemas",
+      "domain": "Estatística & Dados",
+      "url": "https://ernandes-sobreira.github.io/IPS-BRASIL/",
+      "repo": "IPS-BRASIL",
+      "desc": "Painel interativo de indicadores para explorar, comparar e analisar dados municipais do Brasil.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Repositório e estrutura web verificados; página e funções principais ainda precisam de validação no Hub."
+      },
+      "registered": false
+    },
+    {
+      "title": "Justa MT",
+      "catId": "sistemas",
+      "domain": "Clima",
+      "url": "https://ernandes-sobreira.github.io/justa-MT/",
+      "repo": "justa-MT",
+      "desc": "Plataforma de justiça climática com indicadores sociais, ambientais e territoriais de Mato Grosso.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Estrutura principal do Justa MT verificada no repositório."
+      },
+      "registered": false
+    },
+    {
+      "title": "Justa + TEA Brasil",
+      "catId": "sistemas",
+      "domain": "Saúde",
+      "url": "https://ernandes-sobreira.github.io/justa-MT/tea-brasil/",
+      "repo": "justa-MT/tea-brasil",
+      "sourceRepo": "justa-MT",
+      "desc": "Módulo nacional dedicado a TEA, contexto social, ambiente, saneamento e diagnóstico municipal.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Aplicação independente localizada em tea-brasil dentro do repositório justa-MT."
+      },
+      "registered": false
+    },
+    {
+      "title": "PeriDreno",
+      "catId": "sistemas",
+      "domain": "Saúde",
+      "url": "https://ernandes-sobreira.github.io/periDreno-/",
+      "repo": "periDreno-",
+      "desc": "Sistema PeriDreno para registro, acompanhamento e organização de informações clínicas e de cuidado.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "pendente",
+        "note": "Repositório e estrutura web verificados; página e funções principais ainda precisam de validação no Hub."
+      },
+      "registered": false
     }
   ],
   "registrationLegend": {
