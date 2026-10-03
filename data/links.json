@@ -3296,6 +3296,1286 @@
         "note": "Incluído como candidato para auditoria e possível registro de programa de computador."
       },
       "registered": false
+    },
+    {
+      "title": "Arrasta Estufa",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-07-arrasta-estufa.html",
+      "repo": "jogos-ambientais/arrasta-estufa",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-07-arrasta-estufa.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Caça Carbono",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-08-caca-carbono.html",
+      "repo": "jogos-ambientais/caca-carbono",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-08-caca-carbono.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Guardiao Do Pantanal",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-09-guardiao-do-pantanal.html",
+      "repo": "jogos-ambientais/guardiao-do-pantanal",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-09-guardiao-do-pantanal.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bio Verdade",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-10-bio-verdade.html",
+      "repo": "jogos-ambientais/bio-verdade",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-10-bio-verdade.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Biomas Brasileiros",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-10-biomas-brasileiros.html",
+      "repo": "jogos-ambientais/biomas-brasileiros",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-10-biomas-brasileiros.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Roda d'Água",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-11-roda-dagua.html",
+      "repo": "jogos-ambientais/roda-dagua",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-11-roda-dagua.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Rota Da Agua",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-11-rota-da-agua.html",
+      "repo": "jogos-ambientais/rota-da-agua",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-11-rota-da-agua.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Missão Floresta",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-12-missao-floresta.html",
+      "repo": "jogos-ambientais/missao-floresta",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-12-missao-floresta.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Missão Refloresta",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-12-missao-refloresta.html",
+      "repo": "jogos-ambientais/missao-refloresta",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-12-missao-refloresta.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Refloresta",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-12-refloresta.html",
+      "repo": "jogos-ambientais/refloresta",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-12-refloresta.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Brigada Pantanal",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-13-brigada-pantanal.html",
+      "repo": "jogos-ambientais/brigada-pantanal",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-13-brigada-pantanal.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Controle De Chamas",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-13-controle-de-chamas.html",
+      "repo": "jogos-ambientais/controle-de-chamas",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-13-controle-de-chamas.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pantanal Em Chamas",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-13-pantanal-em-chamas.html",
+      "repo": "jogos-ambientais/pantanal-em-chamas",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-13-pantanal-em-chamas.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pantanal Fogo",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-13-pantanal-fogo.html",
+      "repo": "jogos-ambientais/pantanal-fogo",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-13-pantanal-fogo.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Sentinela Do Fogo",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-13-sentinela-do-fogo.html",
+      "repo": "jogos-ambientais/sentinela-do-fogo",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-13-sentinela-do-fogo.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bio Amazônia",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-14-bio-amazonia.html",
+      "repo": "jogos-ambientais/bio-amazonia",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-14-bio-amazonia.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pares Da Energia Limpa",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-14-pares-da-energia-limpa.html",
+      "repo": "jogos-ambientais/pares-da-energia-limpa",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-14-pares-da-energia-limpa.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Lab Do Cerrado",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-15-lab-do-cerrado.html",
+      "repo": "jogos-ambientais/lab-do-cerrado",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-15-lab-do-cerrado.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Mare Limpa",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-15-mare-limpa.html",
+      "repo": "jogos-ambientais/mare-limpa",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-15-mare-limpa.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Resgate Azul",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-15-resgate-azul.html",
+      "repo": "jogos-ambientais/resgate-azul",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-15-resgate-azul.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Caça Teia Trofica",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-16-caca-teia-trofica.html",
+      "repo": "jogos-ambientais/caca-teia-trofica",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-16-caca-teia-trofica.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Energia No Horizonte",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-16-energia-no-horizonte.html",
+      "repo": "jogos-ambientais/energia-no-horizonte",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-16-energia-no-horizonte.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Missão Extincao Zero",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-17-missao-extincao-zero.html",
+      "repo": "jogos-ambientais/missao-extincao-zero",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-17-missao-extincao-zero.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Mosaico Caatinga",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-17-mosaico-caatinga.html",
+      "repo": "jogos-ambientais/mosaico-caatinga",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-17-mosaico-caatinga.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Cronista Da Mata",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-18-cronista-da-mata.html",
+      "repo": "jogos-ambientais/cronista-da-mata",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-18-cronista-da-mata.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Terra Firme",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-18-terra-firme.html",
+      "repo": "jogos-ambientais/terra-firme",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-18-terra-firme.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Conta Do Pantanal",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-19-conta-do-pantanal.html",
+      "repo": "jogos-ambientais/conta-do-pantanal",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-19-conta-do-pantanal.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pegada Em Ordem",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-19-pegada-em-ordem.html",
+      "repo": "jogos-ambientais/pegada-em-ordem",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-19-pegada-em-ordem.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Lixo Zero Quiz",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-20-lixo-zero-quiz.html",
+      "repo": "jogos-ambientais/lixo-zero-quiz",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-20-lixo-zero-quiz.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Palavras Vivas",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-20-palavras-vivas.html",
+      "repo": "jogos-ambientais/palavras-vivas",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-20-palavras-vivas.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Amazon Quest",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-21-amazon-quest.html",
+      "repo": "jogos-ambientais/amazon-quest",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-21-amazon-quest.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bacia Viva",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-21-bacia-viva.html",
+      "repo": "jogos-ambientais/bacia-viva",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-21-bacia-viva.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Justica Climatica",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-22-justica-climatica.html",
+      "repo": "jogos-ambientais/justica-climatica",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-22-justica-climatica.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Respira Cidade",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-22-respira-cidade.html",
+      "repo": "jogos-ambientais/respira-cidade",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-22-respira-cidade.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Galeria Pantanal",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-23-galeria-pantanal.html",
+      "repo": "jogos-ambientais/galeria-pantanal",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-23-galeria-pantanal.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Missão pH",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-23-missao-ph.html",
+      "repo": "jogos-ambientais/missao-ph",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-23-missao-ph.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Caça Polen",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-24-caca-polen.html",
+      "repo": "jogos-ambientais/caca-polen",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-24-caca-polen.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Tamanduazinho",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-24-tamanduazinho.html",
+      "repo": "jogos-ambientais/tamanduazinho",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-24-tamanduazinho.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Abelha Mensageira",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-25-abelha-mensageira.html",
+      "repo": "jogos-ambientais/abelha-mensageira",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-25-abelha-mensageira.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Mare De Decisoes",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-25-mare-de-decisoes.html",
+      "repo": "jogos-ambientais/mare-de-decisoes",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-25-mare-de-decisoes.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Guardiao Do Ozônio",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-26-guardiao-do-ozonio.html",
+      "repo": "jogos-ambientais/guardiao-do-ozonio",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-26-guardiao-do-ozonio.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Canoa Do Pantanal",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-27-canoa-do-pantanal.html",
+      "repo": "jogos-ambientais/canoa-do-pantanal",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-27-canoa-do-pantanal.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Corrida Caatinga",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-28-corrida-caatinga.html",
+      "repo": "jogos-ambientais/corrida-caatinga",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-28-corrida-caatinga.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pinguim No Gelo",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-29-pinguim-no-gelo.html",
+      "repo": "jogos-ambientais/pinguim-no-gelo",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-29-pinguim-no-gelo.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Floresta Defensora",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-06-30-floresta-defensora.html",
+      "repo": "jogos-ambientais/floresta-defensora",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-06-30-floresta-defensora.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Vagalume Da Mata",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-01-vagalume-da-mata.html",
+      "repo": "jogos-ambientais/vagalume-da-mata",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-01-vagalume-da-mata.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Sementes Do Cerrado",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-02-sementes-do-cerrado.html",
+      "repo": "jogos-ambientais/sementes-do-cerrado",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-02-sementes-do-cerrado.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Cacador De Plástico",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-03-cacador-de-plastico.html",
+      "repo": "jogos-ambientais/cacador-de-plastico",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-03-cacador-de-plastico.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Watt Quiz",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-14-watt-quiz.html",
+      "repo": "jogos-ambientais/watt-quiz",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-14-watt-quiz.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Memória Trofica",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-16-memoria-trofica.html",
+      "repo": "jogos-ambientais/memoria-trofica",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-16-memoria-trofica.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Alerta Vermelho",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-17-alerta-vermelho.html",
+      "repo": "jogos-ambientais/alerta-vermelho",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-17-alerta-vermelho.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Rota Das Aguas",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-21-rota-das-aguas.html",
+      "repo": "jogos-ambientais/rota-das-aguas",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-21-rota-das-aguas.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Radar Do Ar",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-22-radar-do-ar.html",
+      "repo": "jogos-ambientais/radar-do-ar",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-22-radar-do-ar.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Mare Ácida",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-23-mare-acida.html",
+      "repo": "jogos-ambientais/mare-acida",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-23-mare-acida.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Escudo De Ozônio",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-27-escudo-de-ozonio.html",
+      "repo": "jogos-ambientais/escudo-de-ozonio",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-27-escudo-de-ozonio.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Semeando Verdades",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-28-semeando-verdades.html",
+      "repo": "jogos-ambientais/semeando-verdades",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-28-semeando-verdades.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Sumidouro Vivo",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-07-31-sumidouro-vivo.html",
+      "repo": "jogos-ambientais/sumidouro-vivo",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-07-31-sumidouro-vivo.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Espécies Invasoras",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-01-especies-invasoras.html",
+      "repo": "jogos-ambientais/especies-invasoras",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-08-01-especies-invasoras.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Guardiões Da Mata",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-02-guardioes-da-mata.html",
+      "repo": "jogos-ambientais/guardioes-da-mata",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-08-02-guardioes-da-mata.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Caça Amazônia",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-03-caca-amazonia.html",
+      "repo": "jogos-ambientais/caca-amazonia",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-08-03-caca-amazonia.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Missão Circular",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-04-missao-circular.html",
+      "repo": "jogos-ambientais/missao-circular",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-08-04-missao-circular.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Termometro Da Verdade",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-05-termometro-da-verdade.html",
+      "repo": "jogos-ambientais/termometro-da-verdade",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-08-05-termometro-da-verdade.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Orbita Do Carbono",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-07-orbita-do-carbono.html",
+      "repo": "jogos-ambientais/orbita-do-carbono",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "2026-08-07-orbita-do-carbono.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
+    },
+    {
+      "title": "Memória Hídrica",
+      "catId": "avaliacao",
+      "domain": "Pantanal & Ambiente",
+      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/memoria-hidrica.html",
+      "repo": "jogos-ambientais/memoria-hidrica",
+      "sourceRepo": "jogos-ambientais",
+      "sourcePath": "memoria-hidrica.html",
+      "toolType": "jogo",
+      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "validation": {
+        "repo": true,
+        "structure": true,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+      },
+      "registered": false
     }
   ],
   "registrationLegend": {
