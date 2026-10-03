@@ -1579,6 +1579,1706 @@
         "note": "Repositório e estrutura web verificados; página e funções principais ainda precisam de validação no Hub."
       },
       "registered": false
+    },
+    {
+      "title": "Dourado Hidrovia",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/dourado-hidrovia",
+      "repo": "dourado-hidrovia",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Radar Do Projeto",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/radar-do-projeto",
+      "repo": "radar-do-projeto",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Decide Crida",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/decide-crida",
+      "repo": "decide-crida",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Carboninho",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/carboninho",
+      "repo": "carboninho",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Planta Facil",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/planta-facil",
+      "repo": "planta-facil",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Dossie Estatistico V2",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/dossie-estatistico.v2",
+      "repo": "dossie-estatistico.v2",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Noc Paciente",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/noc-paciente",
+      "repo": "noc-paciente",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Semabio Foto",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/semabio.foto",
+      "repo": "semabio.foto",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bubble Boom",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/bubble-boom",
+      "repo": "bubble-boom",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Vacina",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/vacina",
+      "repo": "vacina",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Carbon Drive",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/carbon-drive",
+      "repo": "carbon-drive",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Hidrovia Rio Paraguai",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/hidrovia-rio-paraguai",
+      "repo": "hidrovia-rio-paraguai",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Arremesso Pantaneiro",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/arremesso-pantaneiro",
+      "repo": "arremesso-pantaneiro",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Julho Amarela",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/julho-amarela",
+      "repo": "julho-amarela",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Sala Bibliometrica",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/sala-bibliometrica",
+      "repo": "sala-bibliometrica",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Aqua Campo",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/aqua-campo",
+      "repo": "aqua-campo",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Sementes Restaura",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/sementes-restaura",
+      "repo": "sementes-restaura",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Carbon Stat",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/carbon-stat",
+      "repo": "carbon-stat",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Mudanca Climatica RMVRC Formulario",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/mudanca-climatica-RMVRC-formulario",
+      "repo": "mudanca-climatica-RMVRC-formulario",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Aquanet Profagua",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/aquanet-profagua",
+      "repo": "aquanet-profagua",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Cpfverde Cac",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/cpfverde-cac",
+      "repo": "cpfverde-cac",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Agua Vs Fogo",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/agua-vs-fogo",
+      "repo": "agua-vs-fogo",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Clima Quiz",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/clima-quiz",
+      "repo": "clima-quiz",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Flashmap",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/flashmap",
+      "repo": "flashmap",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Financeiro Clinica Medica",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/financeiro-clinica-medica",
+      "repo": "financeiro-clinica-medica",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Saude Ambiente Regional Caceres",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/saude-ambiente-regional-caceres",
+      "repo": "saude-ambiente-regional-caceres",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Modelagem 2026 2",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/modelagem-2026-2",
+      "repo": "modelagem-2026-2",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Faisca",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/faisca",
+      "repo": "faisca",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "BiblioPoll",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/BiblioPoll",
+      "repo": "BiblioPoll",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Exames Ernandes",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/exames-ernandes",
+      "repo": "exames-ernandes",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pantanal Quiz V3",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/pantanal-quiz.v3",
+      "repo": "pantanal-quiz.v3",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Resgate",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/resgate",
+      "repo": "resgate",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Agua",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/agua",
+      "repo": "agua",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Zsee Mt",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/zsee-mt",
+      "repo": "zsee-mt",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Gepos",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/gepos",
+      "repo": "gepos",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Country Action",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/country-action",
+      "repo": "country-action",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Conta Gotas Do Planeta",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/conta-gotas-do-planeta",
+      "repo": "conta-gotas-do-planeta",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bussola Politica",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/bussola-politica",
+      "repo": "bussola-politica",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Stat Lab",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/stat-lab",
+      "repo": "stat-lab",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Teste1",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/teste1",
+      "repo": "teste1",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Carbopong",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/carbopong",
+      "repo": "carbopong",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Cpfverde Cac Feira Ciencias",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/cpfverde-cac-feira-ciencias",
+      "repo": "cpfverde-cac-feira-ciencias",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Familia Top",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/familia-top",
+      "repo": "familia-top",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Memoria Climatica",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/memoria-climatica",
+      "repo": "memoria-climatica",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Biblio MapView",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/Biblio-MapView",
+      "repo": "Biblio-MapView",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Meu Mandarim",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/meu-mandarim",
+      "repo": "meu-mandarim",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Unemat Internacional",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/unemat-internacional",
+      "repo": "unemat-internacional",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Limno Poster",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/limno-poster",
+      "repo": "limno-poster",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Conhece Brasil",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/conhece-brasil",
+      "repo": "conhece-brasil",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Compara Brasil",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/compara-brasil",
+      "repo": "compara-brasil",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Patas Caceres",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/patas-caceres",
+      "repo": "patas-caceres",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Limno2026",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/limno2026",
+      "repo": "limno2026",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Ods Unemat",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/ods-unemat",
+      "repo": "ods-unemat",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Drive Organizer",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/drive-organizer",
+      "repo": "drive-organizer",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bibliometria",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/bibliometria",
+      "repo": "bibliometria",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Registro Aginov",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/registro-aginov",
+      "repo": "registro-aginov",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Decide Bacia",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/decide-bacia",
+      "repo": "decide-bacia",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Jogos Ambientais",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/jogos-ambientais",
+      "repo": "jogos-ambientais",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Estaleiro",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/estaleiro",
+      "repo": "estaleiro",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pantanal Biodiversity",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/pantanal-biodiversity",
+      "repo": "pantanal-biodiversity",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Clima Taiama",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/clima-taiama",
+      "repo": "clima-taiama",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Sopro",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/sopro",
+      "repo": "sopro",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pantanal Em Bloco",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/pantanal-em-bloco",
+      "repo": "pantanal-em-bloco",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Jogo Memoria Pantanal",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/jogo-memoria-pantanal",
+      "repo": "jogo-memoria-pantanal",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "IQA Facil",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/IQA-facil",
+      "repo": "IQA-facil",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Clima Health BR",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/clima-health-BR",
+      "repo": "clima-health-BR",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Decoada Game",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/decoada-game",
+      "repo": "decoada-game",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Quiz Saude Clima",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/quiz-saude-clima",
+      "repo": "quiz-saude-clima",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Easy Lattes",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/easy-lattes",
+      "repo": "easy-lattes",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Jogo Carbonauta",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/jogo-carbonauta",
+      "repo": "jogo-carbonauta",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Plataforma Climatica Pantanal",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/plataforma-climatica-pantanal",
+      "repo": "plataforma-climatica-pantanal",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Ciencia Nas Trilhas",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/ciencia-nas-trilhas",
+      "repo": "ciencia-nas-trilhas",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pescador Pantaneiro",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/pescador-pantaneiro",
+      "repo": "pescador-pantaneiro",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Livro Pantanal",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/livro-pantanal",
+      "repo": "livro-pantanal",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "NOC Saude",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/NOC-saude",
+      "repo": "NOC-saude",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Aula Em Clima",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/aula-em-clima",
+      "repo": "aula-em-clima",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "BiblioQuali",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/BiblioQuali",
+      "repo": "BiblioQuali",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Hospicio",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/hospicio",
+      "repo": "hospicio",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Quiz Taiama",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/quiz-taiama",
+      "repo": "quiz-taiama",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Turma Viva",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/turma-viva",
+      "repo": "turma-viva",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Fluxo Cam",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/fluxo-cam",
+      "repo": "fluxo-cam",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Ar Campo",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/ar-campo",
+      "repo": "ar-campo",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Noc Saude Paciente",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/noc-saude-paciente",
+      "repo": "noc-saude-paciente",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Chamas",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/chamas",
+      "repo": "chamas",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Diario Das Aguas V3",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/diario-das-aguas.v3",
+      "repo": "diario-das-aguas.v3",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Stat Lab Modulo Teste T E F",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/stat-lab-modulo-teste-t-e-f",
+      "repo": "stat-lab-modulo-teste-t-e-f",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Brasil Curioso",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/brasil-curioso",
+      "repo": "brasil-curioso",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Pantanal Kombat",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/pantanal-kombat",
+      "repo": "pantanal-kombat",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Avaliacao Estagio",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/avaliacao-estagio",
+      "repo": "avaliacao-estagio",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Piloto Pantaneiro Teste",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/piloto-pantaneiro-teste",
+      "repo": "piloto-pantaneiro-teste",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Araputanga Em Clima",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/araputanga-em-clima",
+      "repo": "araputanga-em-clima",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Resa",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/resa",
+      "repo": "resa",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Painel Araputanga",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/painel-araputanga",
+      "repo": "painel-araputanga",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Brb Trip",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/brb-trip",
+      "repo": "brb-trip",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Astrolabio",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/astrolabio",
+      "repo": "astrolabio",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Bioma Net",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/Bioma-net",
+      "repo": "Bioma-net",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Painel Caceres",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/painel-caceres",
+      "repo": "painel-caceres",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Monitor Carbon Flux",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/monitor-carbon-flux",
+      "repo": "monitor-carbon-flux",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Acordos Internacionais",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/acordos-internacionais",
+      "repo": "acordos-internacionais",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
+    },
+    {
+      "title": "Cluster7",
+      "catId": "avaliacao",
+      "domain": "Geral",
+      "url": "https://github.com/ernandes-sobreira/cluster7",
+      "repo": "cluster7",
+      "desc": "Candidato incluído para análise e classificação no Hub.",
+      "validation": {
+        "repo": true,
+        "structure": null,
+        "page": null,
+        "functional": null,
+        "status": "avaliacao",
+        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+      },
+      "registered": false
     }
   ],
   "registrationLegend": {
