@@ -3312,10 +3312,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Caça Carbono",
@@ -3332,10 +3333,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Guardiao Do Pantanal",
@@ -3392,10 +3394,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Roda d'Água",
@@ -3412,10 +3415,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Rota Da Agua",
@@ -3452,10 +3456,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Missão Refloresta",
@@ -3472,10 +3477,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Refloresta",
@@ -3492,10 +3498,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Brigada Pantanal",
@@ -3632,10 +3639,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Lab Do Cerrado",
@@ -3672,10 +3680,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Resgate Azul",
@@ -3692,10 +3701,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Caça Teia Trofica",
@@ -3712,10 +3722,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Energia No Horizonte",
@@ -3912,10 +3923,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Bacia Viva",
@@ -3932,10 +3944,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Justica Climatica",
@@ -4012,10 +4025,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Caça Polen",
@@ -4092,10 +4106,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Guardiao Do Ozônio",
@@ -4352,10 +4367,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Mare Ácida",
@@ -4412,10 +4428,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Sumidouro Vivo",
@@ -4512,10 +4529,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Termometro Da Verdade",
@@ -4552,10 +4570,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Memória Hídrica",
