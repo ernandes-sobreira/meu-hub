@@ -429,10 +429,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Cota Rio Paraguai",
@@ -470,10 +471,11 @@
         "structure": true,
         "page": null,
         "functional": null,
-        "status": "pendente",
-        "note": "Estrutura web verificada no GitHub. Teste da página publicada e das funções principais ainda pendente."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Science Hub",
