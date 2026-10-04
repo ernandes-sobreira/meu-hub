@@ -2218,13 +2218,14 @@
       "desc": "Candidato incluído para análise e classificação no Hub.",
       "validation": {
         "repo": true,
-        "structure": null,
+        "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Stat Lab",
