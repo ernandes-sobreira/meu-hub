@@ -1763,13 +1763,14 @@
       "desc": "Candidato incluído para análise e classificação no Hub.",
       "validation": {
         "repo": true,
-        "structure": null,
+        "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Hidrovia Rio Paraguai",
@@ -1780,13 +1781,14 @@
       "desc": "Candidato incluído para análise e classificação no Hub.",
       "validation": {
         "repo": true,
-        "structure": null,
+        "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Arremesso Pantaneiro",
@@ -1797,13 +1799,14 @@
       "desc": "Candidato incluído para análise e classificação no Hub.",
       "validation": {
         "repo": true,
-        "structure": null,
+        "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Julho Amarela",
@@ -2206,13 +2209,14 @@
       "desc": "Candidato incluído para análise e classificação no Hub.",
       "validation": {
         "repo": true,
-        "structure": null,
+        "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Bussola Politica",
@@ -2769,13 +2773,14 @@
       "desc": "Candidato incluído para análise e classificação no Hub.",
       "validation": {
         "repo": true,
-        "structure": null,
+        "structure": true,
         "page": null,
         "functional": null,
-        "status": "avaliacao",
-        "note": "Incluído automaticamente como candidato para análise. Classificação, estrutura, página publicada e funcionalidades ainda precisam ser revisadas."
+        "status": "pronto-unemat",
+        "note": "Aprovado pelo responsável após teste manual para compor a leva de envio à UNEMAT."
       },
-      "registered": false
+      "registered": false,
+      "readyForUnemat": true
     },
     {
       "title": "Plataforma Climatica Pantanal",
