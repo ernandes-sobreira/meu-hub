@@ -12,68 +12,131 @@
 <body>
 <header class="top"><div class="topin"><div class="brand">AGINOV · Autoria <small>Conferência dos 56 programas</small></div><div class="progress"><div class="prow"><span id="progTxt">0/9 completos</span><span id="pctTxt">0%</span></div><div class="bar"><i id="bar"></i></div></div></div></header>
 <div class="wrap">
-  <div class="notice"><b>Privacidade:</b> CPF, telefone, e-mail e percentuais digitados aqui ficam somente neste navegador. Nada é enviado para o GitHub. Quando terminar, use <b>Exportar JSON</b> e envie esse arquivo no chat para eu preencher os documentos finais.</div>
+  <div class="notice"><b>Privacidade:</b> CPF, telefone, e-mail e percentuais digitados aqui ficam somente neste navegador. Nada é enviado para o GitHub. Todos os 56 softwares podem receber novos criadores. Dados pessoais preenchidos uma vez são reaproveitados automaticamente quando a mesma pessoa aparece em outros softwares.</div>
   <div class="grid">
-    <aside class="side"><div class="sidehead"><div class="kpis"><div class="kpi"><b>56</b><span>softwares aprovados</span></div><div class="kpi"><b>9</b><span>com coautoria a conferir</span></div><div class="kpi"><b>47</b><span>autor único · 100%</span></div><div class="kpi"><b id="missingKpi">9</b><span>pendentes</span></div></div></div><div class="list" id="list"></div></aside>
+    <aside class="side"><div class="sidehead"><div class="kpis"><div class="kpi"><b>56</b><span>softwares aprovados</span></div><div class="kpi"><b id="coauthKpi">9</b><span>com 2+ criadores</span></div><div class="kpi"><b id="singleKpi">47</b><span>com 1 criador</span></div><div class="kpi"><b id="missingKpi">56</b><span>pendentes</span></div></div></div><div style="padding:10px 12px 0"><input id="search" placeholder="Buscar software..." style="width:100%;border:1px solid #d0d5dd;border-radius:9px;padding:9px 10px" oninput="renderList()"></div><div class="list" id="list"></div></aside>
     <main class="main">
-      <div class="eyebrow">Software <span id="pos">1</span> de 9</div>
+      <div class="eyebrow">Software <span id="pos">1</span> de 56</div>
       <h1 id="title"></h1><div class="repo" id="repo"></div>
       <div class="statusrow"><span class="pill" id="completePill">Pendente</span><span class="pill">Percentuais devem somar 100%</span><span class="pill">Você pode adicionar/remover criadores</span></div>
       <div class="sum" id="sumBox"><span>Total de participação informado</span><b id="sumPct">0%</b></div>
       <div class="creators" id="creators"></div>
       <div class="actions"><button class="btn secondary" onclick="addCreator()">+ Adicionar criador</button><button class="btn secondary" onclick="copySummary()">Copiar resumo deste software</button><button class="btn success" onclick="exportJSON()">Exportar JSON</button><button class="btn secondary" onclick="document.getElementById('importer').click()">Importar JSON</button><input id="importer" type="file" accept=".json,application/json" class="hidden" onchange="importJSON(this.files[0])"><button class="btn danger" onclick="clearAll()">Limpar dados locais</button></div>
       <div class="navrow"><button class="btn secondary" onclick="go(-1)">← Anterior</button><button class="btn primary" onclick="nextPending()">Próxima pendência →</button></div>
-      <div class="footbox">Campos que preciso para o <b>Anexo I</b>: nome completo, CPF, vínculo com a UNEMAT, telefone, e-mail, percentual de participação e se já possui outro programa registrado no INPI. O campo de assinatura serve só para você controlar quem já recebeu/assinou.</div>
+      <div class="footbox"><b>Como funciona:</b> qualquer um dos 56 softwares pode ter novos criadores. Ao adicionar uma pessoa a um software que estava com autor único em 100%, o percentual automático é apagado para vocês redistribuírem. CPF, vínculo, telefone, e-mail e situação no INPI são reutilizados para a mesma pessoa em todos os softwares; percentual, assinatura e observação continuam específicos de cada software.</div>
     </main>
   </div>
 </div>
 <div class="modal" id="modal"><div class="mbox"><h2>Os outros 47 softwares</h2><p>Estão tratados como autoria única de <b>Ernandes Sobreira Oliveira Junior — 100%</b>. Eles não precisam aparecer um a um nesta conferência.</p><div class="singleSummary" id="singleSummary"></div><div class="actions"><button class="btn primary" onclick="modal.classList.remove('on')">Fechar</button></div></div></div>
 <script>
-const PROGRAMS=[
- {title:'IQA-Fácil · Qualidade da Água',repo:'IQA-facil',authors:['Ernandes Sobreira Oliveira Junior','Wilkinson Lopes Lazaro','Tadeu Queiroz de Miranda']},
- {title:'FishRep',repo:'FishRep',authors:['Ernandes Sobreira Oliveira Junior','Janeide Caboclo','Claumir Muniz','Derick Campos','Leandro Pressinoti','Wilkinson Lázaro']},
- {title:'FishBook — Ciência Cidadã dos Peixes',repo:'FishBook',authors:['Ernandes Sobreira Oliveira Junior','Wilkinson Lazaro','Derick Campos','Claumir Muniz']},
- {title:'Painel Interativo · Saúde Ambiental · Cáceres-MT',repo:'painel-caceres',authors:['Ernandes Sobreira Oliveira Junior','Bárbara Ferraz Bühler']},
- {title:'ESTALEIRO — Construção de artigos científicos',repo:'estaleiro',authors:['Ernandes Sobreira Oliveira Junior','Carla Galbiati']},
- {title:'ASTROLÁBIO — Orientação do Percurso Acadêmico',repo:'astrolabio',authors:['Ernandes Sobreira Oliveira Junior','Carla Galbiati']},
- {title:'Bússola Política Brasil',repo:'bussola-politica',authors:['Ernandes Sobreira Oliveira Junior','Bárbara Ferraz Bühler']},
- {title:'Faísca — Pense com a IA, não pela IA',repo:'faisca',authors:['Ernandes Sobreira Oliveira Junior','Wilkinson Lopes Lazaro']},
- {title:'Projetos UNEMAT / HUB da Pós',repo:'projetos-unemat',authors:['Ernandes Sobreira Oliveira Junior','Letícia Zen']}
-];
-const SINGLE=['IPS Brasil','Sala Bibliométrica','Justa MT','Dourado Hidrovia','Pantanal Quiz v3 / Pulso','Saúde & Ambiente Regional Cáceres','Arrasta-Estufa','Caça-Carbono','Bioma ou Mito?','Roda d\'Água','Missão Floresta','Missão Refloresta','Refloresta','Pares da Energia Limpa','Maré Limpa: Resgate dos Oceanos','Resgate Azul','Caça-Teia Trófica','Amazon Quest','Bacia Viva','Missão pH','Maré de Decisões','Radar do Ar','Semeando Verdades','Missão Circular','Órbita do Carbono','Clima Taiamã','Podocnemis — A Invasora','Piloto do Pantanal','Brasil Curioso','DECOADA — Pantanal','SOPRO','StatLab','Roleta Científica','Há Sorte em Ciência?','Quiz Taiamã','Pantanal Kombat','Dado & Deveres','Conta-Gotas do Planeta','Arremesso Pantaneiro','Carbon Drive','Jogo Carbonauta','Hidrovia Rio Paraguai','Bubble Boom / MetanOFF','Memória Climática','GeoAgro Quiz BR','Conhece Brasil','BiblioQuali'];
-const KEY='aginov_autoria_56_v1';
-function blankAuthor(name=''){return {name,cpf:'',vinculo:'',telefone:'',email:'',percentual:'',inpi:'',assinatura:'nao-enviado',obs:''}}
-function defaultState(){return {version:1,updatedAt:new Date().toISOString(),programs:PROGRAMS.map(p=>({title:p.title,repo:p.repo,authors:p.authors.map(blankAuthor)}))}}
-let state=load(), idx=0;
-function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||'null');if(x&&x.programs)return x}catch(e){}return defaultState()}
+const BASE=[["IPS Brasil — Mapa de Indicadores","IPS-BRASIL",["Ernandes Sobreira Oliveira Junior"]],["Sala Bibliométrica","sala-bibliometrica",["Ernandes Sobreira Oliveira Junior"]],["IQA-Fácil · Qualidade da Água","IQA-facil",["Ernandes Sobreira Oliveira Junior","Wilkinson Lopes Lazaro","Tadeu Queiroz de Miranda"]],["JUSTA MT — Atlas da Justiça Climática de Mato Grosso","justa-MT",["Ernandes Sobreira Oliveira Junior"]],["FishRep","FishRep",["Ernandes Sobreira Oliveira Junior","Janeide Caboclo","Claumir Muniz","Derick Campos","Leandro Pressinoti","Wilkinson Lázaro"]],["FishBook — Ciência Cidadã dos Peixes","FishBook",["Ernandes Sobreira Oliveira Junior","Wilkinson Lazaro","Derick Campos","Claumir Muniz"]],["Dourado — Migração do Pantanal","dourado-hidrovia",["Ernandes Sobreira Oliveira Junior"]],["Pulso — o Pantanal pelo ritmo da água","pantanal-quiz.v3",["Ernandes Sobreira Oliveira Junior"]],["Saúde & Ambiente Regional Cáceres","saude-ambiente-regional-caceres",["Ernandes Sobreira Oliveira Junior"]],["Painel Interativo · Saúde Ambiental · Cáceres-MT","painel-caceres",["Ernandes Sobreira Oliveira Junior","Bárbara Ferraz Bühler"]],["Arrasta-Estufa","jogos-ambientais/arrasta-estufa",["Ernandes Sobreira Oliveira Junior"]],["Caça-Carbono","jogos-ambientais/caca-carbono",["Ernandes Sobreira Oliveira Junior"]],["Bioma ou Mito?","jogos-ambientais/biomas-brasileiros",["Ernandes Sobreira Oliveira Junior"]],["Roda d'Água","jogos-ambientais/roda-dagua",["Ernandes Sobreira Oliveira Junior"]],["Missão Floresta","jogos-ambientais/missao-floresta",["Ernandes Sobreira Oliveira Junior"]],["Missão Refloresta","jogos-ambientais/missao-refloresta",["Ernandes Sobreira Oliveira Junior"]],["Refloresta","jogos-ambientais/refloresta",["Ernandes Sobreira Oliveira Junior"]],["Pares da Energia Limpa","jogos-ambientais/pares-da-energia-limpa",["Ernandes Sobreira Oliveira Junior"]],["Maré Limpa: Resgate dos Oceanos","jogos-ambientais/mare-limpa",["Ernandes Sobreira Oliveira Junior"]],["Resgate Azul","jogos-ambientais/resgate-azul",["Ernandes Sobreira Oliveira Junior"]],["Caça-Teia Trófica","jogos-ambientais/caca-teia-trofica",["Ernandes Sobreira Oliveira Junior"]],["Amazon Quest","jogos-ambientais/amazon-quest",["Ernandes Sobreira Oliveira Junior"]],["Bacia Viva","jogos-ambientais/bacia-viva",["Ernandes Sobreira Oliveira Junior"]],["Missão pH","jogos-ambientais/missao-ph",["Ernandes Sobreira Oliveira Junior"]],["Maré de Decisões","jogos-ambientais/mare-de-decisoes",["Ernandes Sobreira Oliveira Junior"]],["Radar do Ar","jogos-ambientais/radar-do-ar",["Ernandes Sobreira Oliveira Junior"]],["Semeando Verdades","jogos-ambientais/semeando-verdades",["Ernandes Sobreira Oliveira Junior"]],["Missão Circular","jogos-ambientais/missao-circular",["Ernandes Sobreira Oliveira Junior"]],["Órbita do Carbono","jogos-ambientais/orbita-do-carbono",["Ernandes Sobreira Oliveira Junior"]],["ESTALEIRO — Construção de artigos científicos","estaleiro",["Ernandes Sobreira Oliveira Junior","Carla Galbiati"]],["ASTROLÁBIO — Orientação do Percurso Acadêmico","astrolabio",["Ernandes Sobreira Oliveira Junior","Carla Galbiati"]],["Bússola Política Brasil","bussola-politica",["Ernandes Sobreira Oliveira Junior","Bárbara Ferraz Bühler"]],["Clima Taiamã","clima-taiama",["Ernandes Sobreira Oliveira Junior"]],["Podocnemis — A Invasora","podocnemis",["Ernandes Sobreira Oliveira Junior"]],["Piloto do Pantanal","piloto-pantaneiro",["Ernandes Sobreira Oliveira Junior"]],["Brasil Curioso","brasil-curioso",["Ernandes Sobreira Oliveira Junior"]],["DECOADA — Pantanal","decoada-game",["Ernandes Sobreira Oliveira Junior"]],["SOPRO","sopro",["Ernandes Sobreira Oliveira Junior"]],["StatLab","stat-lab",["Ernandes Sobreira Oliveira Junior"]],["Faísca — Pense com a IA, não pela IA","faisca",["Ernandes Sobreira Oliveira Junior","Wilkinson Lopes Lazaro"]],["Roleta Científica","roleta-cientifica",["Ernandes Sobreira Oliveira Junior"]],["Há Sorte em Ciência?","ha-sorte-em-ciencia",["Ernandes Sobreira Oliveira Junior"]],["Quiz Taiamã","quiz-taiama",["Ernandes Sobreira Oliveira Junior"]],["Pantanal Kombat","pantanal-kombat",["Ernandes Sobreira Oliveira Junior"]],["Dado & Deveres","dado-e-deveres",["Ernandes Sobreira Oliveira Junior"]],["Projetos UNEMAT / HUB da Pós","projetos-unemat",["Ernandes Sobreira Oliveira Junior","Letícia Zen"]],["Conta-Gotas do Planeta","conta-gotas-do-planeta",["Ernandes Sobreira Oliveira Junior"]],["Arremesso Pantaneiro","arremesso-pantaneiro",["Ernandes Sobreira Oliveira Junior"]],["Carbon Drive / Curva do Consumo","carbon-drive",["Ernandes Sobreira Oliveira Junior"]],["Jogo Carbonauta","jogo-carbonauta",["Ernandes Sobreira Oliveira Junior"]],["Hidrovia Rio Paraguai","hidrovia-rio-paraguai",["Ernandes Sobreira Oliveira Junior"]],["Bubble Boom / MetanOFF — Guardiões do Metano","bubble-boom",["Ernandes Sobreira Oliveira Junior"]],["Memória Climática","memoria-climatica",["Ernandes Sobreira Oliveira Junior"]],["GeoAgro Quiz BR","quiz-brasil2024",["Ernandes Sobreira Oliveira Junior"]],["Conhece Brasil","conhece-brasil",["Ernandes Sobreira Oliveira Junior"]],["BiblioQuali","BiblioQuali",["Ernandes Sobreira Oliveira Junior"]]];
+const KEY='aginov_autoria_56_v2', OLDKEY='aginov_autoria_56_v1';
+const PF=['cpf','vinculo','telefone','email','inpi'];
+const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\s+/g,' ').trim();
+function blankAuthor(name='',single=false){return {name,cpf:'',vinculo:'',telefone:'',email:'',percentual:single?'100':'',inpi:'',assinatura:'nao-enviado',obs:''}}
+function defaultState(){return {version:2,updatedAt:new Date().toISOString(),profiles:{},programs:BASE.map(x=>({title:x[0],repo:x[1],authors:x[2].map(n=>blankAuthor(n,x[2].length===1))}))}}
+function mergeData(d){
+ const s=defaultState(), profiles={};
+ if(d&&d.profiles) Object.entries(d.profiles).forEach(([k,v])=>profiles[norm(v.name||k)]={...v});
+ (d?.programs||[]).forEach(p=>(p.authors||[]).forEach(a=>{
+   const k=norm(a.name); if(!k)return; profiles[k]=profiles[k]||{name:a.name};
+   PF.forEach(f=>{if(a[f])profiles[k][f]=a[f]});
+ }));
+ s.profiles=profiles;
+ const byRepo=new Map((d?.programs||[]).map(p=>[(p.repo||'').toLowerCase(),p]));
+ s.programs.forEach(p=>{
+   const old=byRepo.get(p.repo.toLowerCase()); if(!old)return;
+   const oldNames=new Map((old.authors||[]).map(a=>[norm(a.name),a]));
+   p.authors.forEach(a=>{const o=oldNames.get(norm(a.name));if(o)Object.assign(a,o)});
+   (old.authors||[]).forEach(o=>{if(!p.authors.some(a=>norm(a.name)===norm(o.name)))p.authors.push({...blankAuthor(),...o})});
+ });
+ applyProfiles(s);
+ return s;
+}
+function applyProfiles(s=state){
+ (s.programs||[]).forEach(p=>(p.authors||[]).forEach(a=>{
+   const pr=s.profiles?.[norm(a.name)]; if(pr)PF.forEach(f=>{if(pr[f])a[f]=pr[f]});
+ }));
+}
+function load(){
+ try{const v=JSON.parse(localStorage.getItem(KEY)||'null');if(v?.programs)return mergeData(v)}catch(e){}
+ try{const old=JSON.parse(localStorage.getItem(OLDKEY)||'null');if(old?.programs){const m=mergeData(old);localStorage.setItem(KEY,JSON.stringify(m));return m}}catch(e){}
+ return defaultState();
+}
+let state=load(),idx=0;
 function save(){state.updatedAt=new Date().toISOString();localStorage.setItem(KEY,JSON.stringify(state));updateProgress()}
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function requiredOK(a){return a.name.trim()&&a.cpf.trim()&&a.vinculo.trim()&&a.telefone.trim()&&a.email.trim()&&String(a.percentual).trim()&&a.inpi}
 function pctSum(p){return p.authors.reduce((s,a)=>s+(Number(String(a.percentual).replace(',','.'))||0),0)}
-function complete(p){return p.authors.length>1 && p.authors.every(requiredOK) && Math.abs(pctSum(p)-100)<0.001}
-function renderList(){const el=document.getElementById('list');el.innerHTML=state.programs.map((p,i)=>'<div class="item '+(i===idx?'on ':'')+(complete(p)?'done':'warn')+'" onclick="selectProg('+i+')"><span class="dot"></span><div class="itxt"><b>'+esc(p.title)+'</b><span>'+p.authors.length+' criadores · '+(complete(p)?'completo':'pendente')+'</span></div></div>').join('')+'<div class="item" onclick="modal.classList.add(\'on\')"><span class="dot" style="background:#1769e0"></span><div class="itxt"><b>Ver 47 autor único</b><span>Ernandes · 100%</span></div></div>'}
-function render(){const p=state.programs[idx];document.getElementById('pos').textContent=idx+1;document.getElementById('title').textContent=p.title;document.getElementById('repo').textContent='Repositório: ernandes-sobreira/'+p.repo;const s=pctSum(p);document.getElementById('sumPct').textContent=(Math.round(s*100)/100)+'%';document.getElementById('sumBox').className='sum '+(Math.abs(s-100)<.001?'ok':'bad');const cp=document.getElementById('completePill');cp.textContent=complete(p)?'Completo':'Pendente';cp.className='pill '+(complete(p)?'good':'attn');document.getElementById('creators').innerHTML=p.authors.map((a,j)=>creatorHTML(a,j)).join('');renderList();updateProgress()}
-function creatorHTML(a,j){return '<section class="creator"><div class="chead"><div class="num">'+(j+1)+'</div><b>Criador '+(j+1)+'</b><span class="spacer"></span>'+(state.programs[idx].authors.length>2?'<button class="remove" onclick="removeCreator('+j+')">Remover</button>':'')+'</div><div class="fields">'+
-'<div class="field full"><label>Nome completo <em>*</em></label><input value="'+esc(a.name)+'" oninput="setF('+j+',\'name\',this.value)"></div>'+
-'<div class="field"><label>CPF <em>*</em></label><input inputmode="numeric" placeholder="000.000.000-00" value="'+esc(a.cpf)+'" oninput="setF('+j+',\'cpf\',this.value)"></div>'+
-'<div class="field"><label>Percentual de participação <em>*</em></label><input type="number" min="0" max="100" step="0.01" placeholder="Ex.: 50" value="'+esc(a.percentual)+'" oninput="setF('+j+',\'percentual\',this.value)"></div>'+
-'<div class="field"><label>Vínculo com a UNEMAT <em>*</em></label><input placeholder="Ex.: Professor / Discente / Não possui" value="'+esc(a.vinculo)+'" oninput="setF('+j+',\'vinculo\',this.value)"></div>'+
-'<div class="field"><label>Telefone <em>*</em></label><input inputmode="tel" placeholder="(65) 99999-9999" value="'+esc(a.telefone)+'" oninput="setF('+j+',\'telefone\',this.value)"></div>'+
-'<div class="field"><label>E-mail <em>*</em></label><input type="email" placeholder="nome@exemplo.com" value="'+esc(a.email)+'" oninput="setF('+j+',\'email\',this.value)"></div>'+
-'<div class="field"><label>Já possui outro programa registrado no INPI? <em>*</em></label><select onchange="setF('+j+',\'inpi\',this.value)"><option value="">Selecione</option><option value="sim" '+(a.inpi==='sim'?'selected':'')+'>Sim</option><option value="nao" '+(a.inpi==='nao'?'selected':'')+'>Não</option><option value="nao-sei" '+(a.inpi==='nao-sei'?'selected':'')+'>Não sei</option></select></div>'+
-'</div><div class="sigline"><div class="field"><label>Status da assinatura</label><select onchange="setF('+j+',\'assinatura\',this.value)"><option value="nao-enviado" '+(a.assinatura==='nao-enviado'?'selected':'')+'>Ainda não enviado</option><option value="enviado" '+(a.assinatura==='enviado'?'selected':'')+'>Enviado ao coautor</option><option value="assinado" '+(a.assinatura==='assinado'?'selected':'')+'>Assinado / recebido</option></select></div><div class="field"><label>Observações</label><input placeholder="Ex.: confirmar nome civil" value="'+esc(a.obs)+'" oninput="setF('+j+',\'obs\',this.value)"></div></div></section>'}
-function setF(j,k,v){state.programs[idx].authors[j][k]=v;save();const p=state.programs[idx],s=pctSum(p);document.getElementById('sumPct').textContent=(Math.round(s*100)/100)+'%';document.getElementById('sumBox').className='sum '+(Math.abs(s-100)<.001?'ok':'bad');const cp=document.getElementById('completePill');cp.textContent=complete(p)?'Completo':'Pendente';cp.className='pill '+(complete(p)?'good':'attn');renderList()}
+function complete(p){return p.authors.length>=1&&p.authors.every(requiredOK)&&Math.abs(pctSum(p)-100)<.001}
+function renderList(){
+ const q=(document.getElementById('search')?.value||'').toLowerCase();
+ const el=document.getElementById('list');
+ el.innerHTML=state.programs.map((p,i)=>({p,i})).filter(x=>(x.p.title+' '+x.p.repo).toLowerCase().includes(q)).map(({p,i})=>
+ '<div class="item '+(i===idx?'on ':'')+(complete(p)?'done':'warn')+'" onclick="selectProg('+i+')"><span class="dot"></span><div class="itxt"><b>'+esc(p.title)+'</b><span>'+p.authors.length+' criador'+(p.authors.length===1?'':'es')+' · '+(complete(p)?'completo':'pendente')+'</span></div></div>'
+ ).join('');
+}
+function render(){
+ const p=state.programs[idx];
+ document.getElementById('pos').textContent=idx+1;
+ document.getElementById('title').textContent=p.title;
+ document.getElementById('repo').textContent='Repositório: ernandes-sobreira/'+p.repo;
+ const s=pctSum(p);
+ document.getElementById('sumPct').textContent=(Math.round(s*100)/100)+'%';
+ document.getElementById('sumBox').className='sum '+(Math.abs(s-100)<.001?'ok':'bad');
+ const cp=document.getElementById('completePill');cp.textContent=complete(p)?'Completo':'Pendente';cp.className='pill '+(complete(p)?'good':'attn');
+ document.getElementById('creators').innerHTML=p.authors.map((a,j)=>creatorHTML(a,j)).join('');
+ renderList();updateProgress();
+}
+function creatorHTML(a,j){
+ return '<section class="creator"><div class="chead"><div class="num">'+(j+1)+'</div><b>Criador '+(j+1)+'</b><span class="spacer"></span>'+(state.programs[idx].authors.length>1?'<button class="remove" onclick="removeCreator('+j+')">Remover</button>':'')+'</div><div class="fields">'+
+ '<div class="field full"><label>Nome completo <em>*</em></label><input value="'+esc(a.name)+'" onchange="setName('+j+',this.value)"></div>'+
+ '<div class="field"><label>CPF <em>*</em></label><input inputmode="numeric" placeholder="000.000.000-00" value="'+esc(a.cpf)+'" oninput="setProfile('+j+',\'cpf\',this.value)"></div>'+
+ '<div class="field"><label>Percentual de participação <em>*</em></label><input type="number" min="0" max="100" step="0.01" placeholder="Ex.: 50" value="'+esc(a.percentual)+'" oninput="setLocal('+j+',\'percentual\',this.value)"></div>'+
+ '<div class="field"><label>Vínculo com a UNEMAT <em>*</em></label><input placeholder="Ex.: Professor / Discente / Não possui" value="'+esc(a.vinculo)+'" oninput="setProfile('+j+',\'vinculo\',this.value)"></div>'+
+ '<div class="field"><label>Telefone <em>*</em></label><input inputmode="tel" placeholder="(65) 99999-9999" value="'+esc(a.telefone)+'" oninput="setProfile('+j+',\'telefone\',this.value)"></div>'+
+ '<div class="field"><label>E-mail <em>*</em></label><input type="email" placeholder="nome@exemplo.com" value="'+esc(a.email)+'" oninput="setProfile('+j+',\'email\',this.value)"></div>'+
+ '<div class="field"><label>Já possui outro programa registrado no INPI? <em>*</em></label><select onchange="setProfile('+j+',\'inpi\',this.value)"><option value="">Selecione</option><option value="sim" '+(a.inpi==='sim'?'selected':'')+'>Sim</option><option value="nao" '+(a.inpi==='nao'?'selected':'')+'>Não</option><option value="nao-sei" '+(a.inpi==='nao-sei'?'selected':'')+'>Não sei</option></select></div>'+
+ '</div><div class="sigline"><div class="field"><label>Status da assinatura</label><select onchange="setLocal('+j+',\'assinatura\',this.value)"><option value="nao-enviado" '+(a.assinatura==='nao-enviado'?'selected':'')+'>Ainda não enviado</option><option value="enviado" '+(a.assinatura==='enviado'?'selected':'')+'>Enviado ao coautor</option><option value="assinado" '+(a.assinatura==='assinado'?'selected':'')+'>Assinado / recebido</option></select></div><div class="field"><label>Observações</label><input placeholder="Ex.: confirmar nome civil" value="'+esc(a.obs)+'" oninput="setLocal('+j+',\'obs\',this.value)"></div></div></section>';
+}
+function setName(j,v){state.programs[idx].authors[j].name=v.trim();const pr=state.profiles[norm(v)];if(pr)PF.forEach(f=>{if(pr[f])state.programs[idx].authors[j][f]=pr[f]});save();render()}
+function setProfile(j,k,v){
+ const a=state.programs[idx].authors[j];a[k]=v;const nk=norm(a.name);if(nk){state.profiles[nk]=state.profiles[nk]||{name:a.name};state.profiles[nk].name=a.name;state.profiles[nk][k]=v;
+ state.programs.forEach(p=>p.authors.forEach(x=>{if(norm(x.name)===nk)x[k]=v}))}
+ save();refreshStatus();
+}
+function setLocal(j,k,v){state.programs[idx].authors[j][k]=v;save();refreshStatus()}
+function refreshStatus(){const p=state.programs[idx],s=pctSum(p);document.getElementById('sumPct').textContent=(Math.round(s*100)/100)+'%';document.getElementById('sumBox').className='sum '+(Math.abs(s-100)<.001?'ok':'bad');const cp=document.getElementById('completePill');cp.textContent=complete(p)?'Completo':'Pendente';cp.className='pill '+(complete(p)?'good':'attn');renderList()}
 function selectProg(i){idx=i;render();window.scrollTo({top:0,behavior:'smooth'})}
 function go(d){idx=(idx+d+state.programs.length)%state.programs.length;render();window.scrollTo({top:0,behavior:'smooth'})}
-function nextPending(){const n=state.programs.length;for(let k=1;k<=n;k++){const i=(idx+k)%n;if(!complete(state.programs[i])){idx=i;render();window.scrollTo({top:0,behavior:'smooth'});return}}alert('Todos os 9 casos de coautoria estão completos.')}
-function addCreator(){state.programs[idx].authors.push(blankAuthor(''));save();render()}
-function removeCreator(j){if(!confirm('Remover este criador deste software?'))return;state.programs[idx].authors.splice(j,1);save();render()}
-function updateProgress(){const done=state.programs.filter(complete).length,pct=Math.round(done/state.programs.length*100);document.getElementById('progTxt').textContent=done+'/9 completos';document.getElementById('pctTxt').textContent=pct+'%';document.getElementById('bar').style.width=pct+'%';document.getElementById('missingKpi').textContent=state.programs.length-done}
-function exportJSON(){save();const payload={schema:'aginov-autoria-56-v1',exportedAt:new Date().toISOString(),singleAuthor:{name:'Ernandes Sobreira Oliveira Junior',percentage:100,count:47},programs:state.programs};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='AGINOV_AUTORIA_56_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
-function importJSON(file){if(!file)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.programs||!Array.isArray(d.programs))throw 0;state={version:1,updatedAt:new Date().toISOString(),programs:d.programs};save();idx=0;render();alert('Dados importados.')}catch(e){alert('Arquivo JSON inválido para este sistema.')}};r.readAsText(file)}
-function clearAll(){if(!confirm('Apagar todos os dados digitados neste navegador?'))return;localStorage.removeItem(KEY);state=defaultState();idx=0;render()}
+function nextPending(){const n=state.programs.length;for(let k=1;k<=n;k++){const i=(idx+k)%n;if(!complete(state.programs[i])){idx=i;render();window.scrollTo({top:0,behavior:'smooth'});return}}alert('Todos os 56 softwares estão completos.')}
+function addCreator(){
+ const p=state.programs[idx];
+ if(p.authors.length===1&&Math.abs(pctSum(p)-100)<.001)p.authors[0].percentual='';
+ p.authors.push(blankAuthor(''));
+ save();render();
+}
+function removeCreator(j){
+ const p=state.programs[idx]; if(p.authors.length===1)return;
+ if(!confirm('Remover este criador deste software?'))return;
+ p.authors.splice(j,1);
+ if(p.authors.length===1&&!p.authors[0].percentual)p.authors[0].percentual='100';
+ save();render();
+}
+function updateProgress(){
+ const done=state.programs.filter(complete).length,pct=Math.round(done/state.programs.length*100),co=state.programs.filter(p=>p.authors.length>1).length;
+ document.getElementById('progTxt').textContent=done+'/56 completos';document.getElementById('pctTxt').textContent=pct+'%';document.getElementById('bar').style.width=pct+'%';
+ document.getElementById('missingKpi').textContent=56-done;document.getElementById('coauthKpi').textContent=co;document.getElementById('singleKpi').textContent=56-co;
+}
+function exportJSON(){
+ applyProfiles();save();
+ const payload={schema:'aginov-autoria-56-v2',exportedAt:new Date().toISOString(),profiles:state.profiles,programs:state.programs};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='AGINOV_AUTORIA_56_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500);
+}
+function importJSON(file){if(!file)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.programs||!Array.isArray(d.programs))throw 0;state=mergeData(d);save();idx=0;render();alert('Dados importados e perfis repetidos reaproveitados nos 56 softwares.')}catch(e){alert('Arquivo JSON inválido para este sistema.')}};r.readAsText(file)}
+function clearAll(){if(!confirm('Apagar todos os dados digitados neste navegador?'))return;localStorage.removeItem(KEY);localStorage.removeItem(OLDKEY);state=defaultState();idx=0;render()}
 function copySummary(){const p=state.programs[idx];const lines=[p.title,'Repo: '+p.repo,'Total: '+pctSum(p)+'%'];p.authors.forEach((a,i)=>lines.push((i+1)+'. '+a.name+' | CPF '+(a.cpf||'—')+' | vínculo '+(a.vinculo||'—')+' | tel '+(a.telefone||'—')+' | e-mail '+(a.email||'—')+' | '+(a.percentual||'—')+'% | INPI '+(a.inpi||'—')+' | assinatura '+a.assinatura));const txt=lines.join('\n');navigator.clipboard?.writeText(txt).then(()=>alert('Resumo copiado.')).catch(()=>prompt('Copie o resumo:',txt))}
-document.getElementById('singleSummary').innerHTML=SINGLE.map(x=>'<div>'+esc(x)+' <b>· Ernandes 100%</b></div>').join('');
+document.getElementById('modal')?.remove();
 render();
 </script>
 </body>
