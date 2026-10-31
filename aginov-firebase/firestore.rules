@@ -1,0 +1,65 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function admin() {
+      return request.auth != null
+        && request.auth.token.email == 'ernandes@unemat.br'
+        && request.auth.token.email_verified == true
+        && request.auth.token.firebase.sign_in_provider == 'google.com';
+    }
+    function bound(id) {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/acessos/$(request.auth.uid))
+        && get(/databases/$(database)/documents/acessos/$(request.auth.uid)).data.pessoaId == id;
+    }
+    function permittedPersonUpdate() {
+      return request.resource.data.diff(resource.data).affectedKeys()
+        .hasOnly(['nome','email','cpf','vinculo','telefone','inpi','obs','status'])
+        && request.resource.data.keys().hasAll(resource.data.keys())
+        && request.resource.data.status == 'preenchido'
+        && request.resource.data.nome is string
+        && request.resource.data.email is string
+        && request.resource.data.cpf is string
+        && request.resource.data.vinculo is string
+        && request.resource.data.telefone is string
+        && request.resource.data.obs is string
+        && request.resource.data.inpi in ['sim','nao','nao-sei']
+        && request.resource.data.nome.size() <= 200
+        && request.resource.data.email.size() <= 254
+        && request.resource.data.cpf.matches('^[0-9]{11}$')
+        && request.resource.data.vinculo.size() <= 200
+        && request.resource.data.telefone.size() <= 30
+        && request.resource.data.obs.size() <= 2000;
+    }
+    match /softwares/{id} {
+      allow get, list, create, update, delete: if admin();
+    }
+    match /pessoas/{id} {
+      allow get: if admin() || bound(id);
+      allow list, create, delete: if admin();
+      allow update: if admin() || (bound(id) && permittedPersonUpdate());
+    }
+    match /convites/{token} {
+      // Anyone who knows the long, unguessable token may resolve ONLY that invite.
+      // Never include CPF or personal records in a convite document.
+      allow get: if admin() || (request.auth != null && request.auth.token.firebase.sign_in_provider == 'anonymous');
+      allow list, create, update, delete: if admin();
+    }
+    match /acessos/{uid} {
+      allow get: if admin() || (request.auth != null && request.auth.uid == uid);
+      allow list, update, delete: if admin();
+      allow create: if admin() || (
+        request.auth != null
+        && request.auth.uid == uid
+        && request.auth.token.firebase.sign_in_provider == 'anonymous'
+        && request.resource.data.keys().hasOnly(['pessoaId','token'])
+        && request.resource.data.token is string
+        && request.resource.data.token.size() >= 32
+        && request.resource.data.pessoaId is string
+        && exists(/databases/$(database)/documents/convites/$(request.resource.data.token))
+        && get(/databases/$(database)/documents/convites/$(request.resource.data.token)).data.pessoaId == request.resource.data.pessoaId
+      );
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}
