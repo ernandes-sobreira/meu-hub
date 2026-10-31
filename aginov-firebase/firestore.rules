@@ -10,7 +10,9 @@ service cloud.firestore {
     function bound(id) {
       return request.auth != null
         && exists(/databases/$(database)/documents/acessos/$(request.auth.uid))
-        && get(/databases/$(database)/documents/acessos/$(request.auth.uid)).data.pessoaId == id;
+        && get(/databases/$(database)/documents/acessos/$(request.auth.uid)).data.pessoaId == id
+        && exists(/databases/$(database)/documents/convites/$(get(/databases/$(database)/documents/acessos/$(request.auth.uid)).data.token))
+        && get(/databases/$(database)/documents/convites/$(get(/databases/$(database)/documents/acessos/$(request.auth.uid)).data.token)).data.pessoaId == id;
     }
     function permittedPersonUpdate() {
       return request.resource.data.diff(resource.data).affectedKeys()
