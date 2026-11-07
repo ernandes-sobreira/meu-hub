@@ -4538,19 +4538,19 @@
       "title": "Missão Circular",
       "catId": "avaliacao",
       "domain": "Pantanal & Ambiente",
-      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-04-missao-circular.html",
-      "repo": "jogos-ambientais/missao-circular",
-      "sourceRepo": "jogos-ambientais",
-      "sourcePath": "2026-08-04-missao-circular.html",
+      "url": "https://ernandes-sobreira.github.io/missao-circular/",
+      "repo": "missao-circular",
+      "sourceRepo": "missao-circular",
+      "sourcePath": "index.html",
       "toolType": "jogo",
-      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "desc": "Jogo independente de economia circular com cidade animada, quatro níveis, respostas educativas e ranking Firebase. Idealizado por Ernandes Sobreira.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pronto-unemat",
-        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
+        "note": "Código e documentação migrados para repositório próprio; publicação no GitHub Pages e teste completo devem ser verificados após o deploy."
       },
       "registered": false,
       "readyForUnemat": true
