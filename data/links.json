@@ -4576,22 +4576,22 @@
       "registered": false
     },
     {
-      "title": "Orbita Do Carbono",
+      "title": "Órbita do Carbono",
       "catId": "avaliacao",
       "domain": "Pantanal & Ambiente",
-      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-07-orbita-do-carbono.html",
-      "repo": "jogos-ambientais/orbita-do-carbono",
-      "sourceRepo": "jogos-ambientais",
-      "sourcePath": "2026-08-07-orbita-do-carbono.html",
+      "url": "https://ernandes-sobreira.github.io/orbita-carbono/",
+      "repo": "orbita-carbono",
+      "sourceRepo": "orbita-carbono",
+      "sourcePath": "index.html",
       "toolType": "jogo",
-      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "desc": "Quiz educativo do ciclo do carbono com quatro dificuldades, feedback explicativo e ranking; colaboração com Cleverson Ricardo Soares Viana.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "pronto-unemat",
-        "note": "Aprovado pelo responsável após teste manual para compor a próxima leva de envio à UNEMAT."
+        "note": "Aplicação finalizada e migrada para repositório próprio. Publicação GitHub Pages e funcionamento da página nova ainda pendentes de verificação; teste anterior foi feito na versão do repositório de origem."
       },
       "registered": false,
       "readyForUnemat": true
