@@ -4556,22 +4556,22 @@
       "readyForUnemat": true
     },
     {
-      "title": "Termometro Da Verdade",
+      "title": "Termômetro da Verdade",
       "catId": "avaliacao",
       "domain": "Pantanal & Ambiente",
-      "url": "https://ernandes-sobreira.github.io/jogos-ambientais/2026-08-05-termometro-da-verdade.html",
-      "repo": "jogos-ambientais/termometro-da-verdade",
-      "sourceRepo": "jogos-ambientais",
-      "sourcePath": "2026-08-05-termometro-da-verdade.html",
+      "url": "https://ernandes-sobreira.github.io/termometro-da-verdade/",
+      "repo": "termometro-da-verdade",
+      "sourceRepo": "termometro-da-verdade",
+      "sourcePath": "index.html",
       "toolType": "jogo",
-      "desc": "Jogo educativo independente da coleção Jogos Ambientais, separado para análise individual.",
+      "desc": "Jogo climático de verdadeiro ou falso, com termômetro animado, quatro níveis e ranking. Idealizado por Ernandes Sobreira.",
       "validation": {
         "repo": true,
         "structure": true,
         "page": null,
         "functional": null,
         "status": "avaliacao",
-        "note": "Separado como candidato individual para auditoria, teste funcional e possível registro de programa de computador."
+        "note": "Migrado para repositório independente com README e implantação Pages. A publicação e o fluxo completo de ranking ainda precisam de auditoria antes do registro."
       },
       "registered": false
     },
